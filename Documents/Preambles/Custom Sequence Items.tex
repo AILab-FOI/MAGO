@@ -1,0 +1,47 @@
+% \usepackage{tikz}
+% \usepackage{etoolbox}
+
+% \newtoggle{FirstOne}%
+% \newcommand*{\Menu}[2]{%
+%     \raisebox{-0.3ex}{\scalebox{0.7}{%
+%         \begin{tikzpicture}
+%             \node [anchor=south west, fill=maincolour!69, rounded corners=0.3ex, inner sep=0.3ex, text=maincolour!10] (menu) at (0,0){%
+%                 \toggletrue{FirstOne}%
+%                 \foreach \x in {#1} {%
+%                     \iftoggle{FirstOne}{%
+%                         #2
+%                         % decodearray -- Grayscale is the easiest. Say we want to reduce contrast and make the image overall darker. We'll map black (0) to some dark gray (0.2) and white (1) to some lighter gray (0.5). This is done using decodearray={0.2 0.5} (braces can be omitted).
+%                     }{%
+%                         \raisebox{-0.15ex}{\,\includegraphics[width=0.63ex]{Grafike/caret_white}\,}%
+%                     }%
+%                     % }{\tiny${}\rightarrow{}$}%
+%                     \begin{tikzpicture}
+%                         [baseline=-0.3ex]\node[anchor=west, rounded corners=0.3ex, inner sep=0.4ex, fill=maincolour, minimum height=1em, minimum width=1em] at (0,0) {\centering\tiny\texttt{\x}};
+%                     \end{tikzpicture}%
+%                     \global\togglefalse{FirstOne}%
+%                 }
+%             };
+%         \end{tikzpicture}%
+%     }}%
+% }%
+
+% \newcommand{\menuSequence}[1]{\Menu{#1}{\raisebox{-0.5ex}{~\includegraphics[width=1.5ex]{Grafike/menu_white.png}~}}}
+
+% \newcommand{\windowSequence}[1]{\Menu{#1}{\raisebox{-0.5ex}{~\includegraphics[width=1.5ex]{Grafike/window_white.png}~}}}
+
+% \newcommand{\keyboard}[1]{\Menu{#1}{\raisebox{-0.4ex}{~\includegraphics[width=1.5ex]{Grafike/keyboard_white.png}~}}}
+
+% \newcommand{\download}[2]{\Menu{#2}{\raisebox{-0.5ex}{~\href{#1}{\includegraphics[width=1.5ex]{Grafike/download_white.png}}~}}}
+
+% \newcommand{\tasks}[1]{\hspace{-1.5em}\raisebox{-0.3ex}{\includegraphics[width=1em]{Grafike/tasklist.png}}\hspace{0.5em}Koraci:\begin{itemize}[label={$\Box$}] #1 \end{itemize}}
+
+% \newcommand{\goal}[1]{\hspace{-1.5em}\raisebox{-0.2ex}{\includegraphics[width=1em]{Grafike/journal}}\hspace{0.5em}#1}
+
+% \newcommand{\timing}[1]{\hspace{-1.5em}\raisebox{-0.2ex}{\includegraphics[width=1em]{Grafike/stopwatch.png}}\hspace{0.5em}#1}
+
+
+% % strelica koja ukazuje na to da bi trebalo pogledati sljedeći slajd
+% \newcommand{\vidiSljedeciSlajd}[0]{%
+%     \begin{tikzpicture}[remember picture, overlay]
+%         \node [anchor=south east, inner sep=2em] at (current page.south east) {\color{maincolour}\includegraphics[width=1em]{Grafike/arrow-right-square}};
+%     \end{tikzpicture}}

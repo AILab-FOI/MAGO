@@ -1,0 +1,39 @@
+\usepackage{tikz}
+\usepackage{tikzscale}
+\usetikzlibrary{arrows,arrows.meta,backgrounds,calc,decorations,decorations.pathmorphing,patterns,positioning,shadows,shapes,shapes.misc}
+
+\makeatletter
+\pgfdeclaredecoration{penciline}{initial}{
+    \state{initial}[width=+\pgfdecoratedinputsegmentremainingdistance,auto corner on length=1mm,]{
+        \pgfpathcurveto%
+        {% From
+            \pgfqpoint{\pgfdecoratedinputsegmentremainingdistance}
+                            {\pgfdecorationsegmentamplitude}
+        }
+        {%  Control 1
+        \pgfmathrand
+        \pgfpointadd{\pgfqpoint{\pgfdecoratedinputsegmentremainingdistance}{0pt}}
+                        {\pgfqpoint{-\pgfdecorationsegmentaspect\pgfdecoratedinputsegmentremainingdistance}%
+                                        {\pgfmathresult\pgfdecorationsegmentamplitude}
+                        }
+        }
+        {%TO 
+        \pgfpointadd{\pgfpointdecoratedinputsegmentlast}{\pgfpoint{1pt}{1pt}}
+        }
+    }
+    \state{final}{}
+}
+\makeatother
+
+\tikzstyle{block} = [decorate, rectangle, draw, minimum height=1cm, minimum width=1cm]
+\tikzstyle{free} = []
+\tikzstyle{table} = [rectangle, draw, minimum height=3pt, fill=black!50, anchor = north]
+\tikzset{
+    hand/.pic = {
+        \draw (-0.2,0) -- (1.2,0);
+        \draw (-0.1,0) -- (-0.1,-0.2);
+        \draw (1.1,0) -- (1.1,-0.2);
+        \draw [very thick] (0.5,0) -- (0.5,0.3) -- (1.9, 0.3);
+        \node (-A) at (0,0) {};
+    }
+}

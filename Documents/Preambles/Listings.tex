@@ -1,0 +1,31 @@
+\usepackage{caption}
+\usepackage[newfloat=true]{minted}
+\setminted{
+    frame=lines,
+    autogobble,
+    stripall,
+    breaklines,
+    linenos,
+    numbersep=1em,
+    % numberblanklines=false,
+    % fontsize=\tiny,
+    highlightcolor=maincolour!20,
+    style=arduino,
+    tabsize=4,
+    escapeinside=××,
+}
+
+\newminted[mintedPython]{python}{fontsize=\tiny}
+\newminted[mintedBash]{bash}{fontsize=\tiny}
+\newmintedfile[mintedFilePython]{python}{fontsize=\tiny}
+\newmintedfile[mintedFileJS]{js}{fontsize=\tiny}
+\newmintedfile[mintedFileHTML]{html}{fontsize=\tiny}
+\newmintedfile[mintedFileBash]{text}{fontsize=\tiny}
+\newmintinline[mintedInline]{text}{style=bw}
+\newmintinline[mintedInlinePython]{python}{style=bw}
+\newmintinline[mintedInlineBash]{bash}{style=bw}
+
+\SetupFloatingEnvironment{listing}{name=\prijevod{Isječak koda}{Listing}}
+\SetupFloatingEnvironment{listing}{listname=\prijevod{Popis isječaka koda}{List of Listings}}
+
+\newenvironment{longlisting}{\captionsetup{type=listing}}{}
