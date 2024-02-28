@@ -1,0 +1,9 @@
+\begin{tikzpicture}
+  \node (1) at (0,0) {\RN{1}-B};
+  \node (2) at (2,0) {\RN{2}-B};
+  \node (3) at (2,2) {\RN{2}-A};
+  \node (4) at (0,2) {\RN{1}-A};
+  \draw [->, bend right] (1) to (3);
+  \draw [->, bend left] (3) to (2);
+  \draw [->, bend right] (4) to (1);
+\end{tikzpicture}
