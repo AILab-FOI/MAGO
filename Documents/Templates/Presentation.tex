@@ -26,15 +26,9 @@
             sectionpage=progressbar,
             % block=fill
         ]{metropolis}
-        \setbeamercolor{normal text}{fg=frontcolour, bg=backcolour}
-        % \setbeamercolor{normal text}{fg=maincolour}
-        % \setbeamercolor{normal text}{bg=maincolour, fg=maincolour!10}
-        \setbeamercolor{alerted text}{fg=alertcolour}
-        % \setbeamercolor{example text}{fg=examplecolour}
-        \setbeamertemplate{caption}[numbered]{}% Number float-like environments
-        \setbeamerfont{caption}{size=\scriptsize} % adjust figure caption font size
     }
     
+    \input{Documents/Preambles/Beamer Settings}
     % \setsansfont{Ubuntu}
     \setmonofont{Ubuntu Mono}
     
@@ -51,17 +45,7 @@
     \input{Documents/Preambles/BibLaTeX}
     \input{Documents/Preambles/Custom Sequence Items}
     \input{Documents/Preambles/Chart Donut}
-        
-    
-    %adjust bibliography font size
-    \setbeamertemplate{bibliography item}[text]
-    \renewcommand*{\bibfont}{\tiny}
-    \setbeamerfont{bibliography item}{size=\tiny}
-    \setbeamerfont{bibliography entry author}{size=\tiny}
-    \setbeamerfont{bibliography entry title}{size=\tiny}
-    \setbeamerfont{bibliography entry location}{size=\tiny}
-    \setbeamerfont{bibliography entry note}{size=\tiny}
-    
+            
     \usepackage{booktabs}
     \usepackage[scale=1]{ccicons}
     
@@ -72,14 +56,14 @@
     \usepackage{subcaption}
     % \usepackage{subfigure}
     \usepackage{graphicx}
+    \usepackage{qrcode}
     \usepackage{tabularx}
     \usepackage{hyperref}
     \usepackage{multicol}
     \setlength{\columnsep}{1em}
-    \usepackage{enumitem}
     \usepackage{pifont}
     \usepackage{setspace}
-    
+
     \begin{document}    
 }
 
@@ -168,7 +152,7 @@
 % 
 
 \newcommand{\makeBack}{
-    \begin{frame}
+    \begin{frame}{Acknowledgement}
 
         \begin{multicols}{2}
 
@@ -203,9 +187,9 @@
 
     \begin{frame}[standout]	
         \centering
-        \large \insertauthor
+        \large{\insertauthor}
         
-        \large dokresa@foi.unizg.hr
+        dokresa@foi.unizg.hr
 
         \begin{multicols}{3}
             \includegraphics[width=4cm]{Documents/Common Figures/QR Contact Signal.pdf}
