@@ -1,0 +1,32 @@
+\begin{tikzpicture}
+
+\draw [double] (-10,3) rectangle (10,-1);
+
+\draw[open square - open triangle 45, line width=1pt] (-9.5,-2.5) -- (-9.5,-0.5);
+\draw[open square - open triangle 45, line width=1pt] (9.5,-2.5) -- (9.5,-0.5);
+
+\draw [double] (-10,-2.5) rectangle (10,-5.5);
+
+\node[ellipse, minimum width=2cm, minimum height=1cm,align=center,draw] at (-7,0) (spec) {Specification};
+\node[ellipse, minimum width=2cm, minimum height=1cm,align=center,draw] at (7,0) (odrz) { Maintenance};
+\node[ellipse, minimum width=4cm, minimum height=1cm,align=center,draw] at (-7,2) (konc) { Conceptualisation};
+\node[ellipse, minimum width=4cm, minimum height=1cm,align=center,draw] at (7,2) (imp) { Implementation};
+\node[ellipse, minimum width=4cm, minimum height=1cm,align=center,draw] at (2.5,2) (inte) { Integration};
+\node[ellipse, minimum width=4cm, minimum height=1cm,align=center,draw] at (-2,2) (form) {Formalisation};
+
+\draw[->, line width=1pt] (spec) -- (konc);
+\draw[->, line width=1pt] (konc) -- (form);
+\draw[->, line width=1pt] (form) -- (inte);
+\draw[->, line width=1pt] (inte) -- (imp);
+\draw[->, line width=1pt] (imp) -- (odrz);
+
+\node[text width=2cm,align=right] at (8,3.25) {States};
+\node[text width=2cm,align=right] at (8,-2.25) {Activities};
+
+\draw (-10,-3.5) -- (10,-3.5);
+\draw (-10,-4.5) -- (10,-4.5);
+
+\node[text width=5cm,align=center] at (0,-3) {Knowledge Acquisition};
+\node[text width=3cm,align=center] at (0,-4) {Documentation};
+\node[text width=3cm,align=center] at (0,-5) {Evaluation};
+\end{tikzpicture}

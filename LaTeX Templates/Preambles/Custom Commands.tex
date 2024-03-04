@@ -1,3 +1,6 @@
+\usepackage[linesnumbered]{algorithm2e}
+\usepackage{newfloat}
+
 \newcommand{\margina}[1]{
     \makebox[0pt][r]{\tiny#1\hspace*{-\linewidth}}%
 }
@@ -57,16 +60,42 @@
     \iflanguage{english}{#2}{}}}%
 }
 
-\newcommand{\customQuote}[2]{%
-    \begin{quotation}
-        \raisebox{-4pt}{\Huge "}\!\marginnote{$\triangleleft$\space \prijevod{citat iz}{citation from} \citeauthor{#1}: \citetitle{#1} \autocite{#1}}
-        #2
-    \end{quotation}
-}
-
-
 % O_HAI 
 \newcommand*\circled[1]{\tikz[baseline=(char.base)]{%
             \node[shape=circle,draw,inner sep=0.5pt] (char) {#1};}}
 
 \newcommand{\ohai}{O\_HAI \circled{4} Games}
+
+
+
+\newcommand{\lookAt}[2][0pt]{\marginnote[#1]{\,\hspace{-1pt}\raisebox{-1pt}{ \includegraphics[width=8pt]{LaTeX Templates/Common Figures/eye.pdf}}\enspace\prijevod{vidi}{see}~#2}}
+
+\newcommand{\file}[3][0pt]{\marginnote[#1]{\!\hspace{3.5pt}\raisebox{-2.5pt}{\href{#2}{\includegraphics[width=8pt]{Grafike/file.png}}}\enspace\prijevod{preuzmi}{download}~\href{#2}{#3}}}
+
+\newcommand{\lstLineNumberRef}[3][0em]{%
+    \marginnote[#1]{%
+        \!\hspace{4pt}\raisebox{-2pt}{\includegraphics[width=8pt]{Grafike/code.png}}\enspace%
+        \texttt{#2:#3}%
+    }}
+
+\newcommand{\linktext}[3][0pt]{\marginnote[#1]{\,\hspace{3pt}\raisebox{-1pt}{\includegraphics[width=6pt]{Grafike/link.eps}}\enspace\href{#2}{#3}}}
+
+\newcommand{\link}[2][3pt]{\marginnote[#1]{\,\hspace{3pt}\raisebox{-1pt}{\includegraphics[width=6pt]{Grafike/link.eps}}\enspace\tiny\url{#2}}}
+
+\newcommand{\video}[2][3pt]{\marginnote[#1]{\,\hspace{2pt}\raisebox{-1.5pt}{\includegraphics[width=7pt]{Grafike/play}}\enspace\tiny\url{#2}}}
+
+\newcommand{\videoNaziv}[3][3pt]{\marginnote[#1]{\,\hspace{2pt}\raisebox{-1.5pt}{\includegraphics[width=7pt]{Grafike/play}}\enspace\tiny\href{#2}{#3}}}
+
+\newcommand{\customQuoteReferenced}[2]{%
+    \begin{quotation}
+        \raisebox{-4pt}{\Huge "}\!\marginnote{$\triangleleft$\space citat iz \citeauthor{#1}: \citetitle{#1} \autocite{#1}}
+        #2
+    \end{quotation}
+}
+
+\newcommand{\customQuote}[1]{\enquote{\color{customQuote}{#1}}}
+
+\newcommand{\alert}[1]{\textcolor{alertTextColour}{#1}}
+
+% \newcommand{\tocnaslovdijela}{\addvspace{20pt}\begin{center}\textsc{\prijevod{hrvatski}{english}}\end{center}\addvspace{10pt}}
+

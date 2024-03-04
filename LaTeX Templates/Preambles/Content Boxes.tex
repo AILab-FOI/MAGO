@@ -1,0 +1,124 @@
+% \usepackage[listings]{tcolorbox}
+\tcbuselibrary{skins,breakable,documentation}
+
+\newcommand{\naslovBoxa}[2]{
+    \prijevod{#1}{#2}\marginnote{$\triangleleft$\space\MakeLowercase{\prijevod{#1}{#2}}}
+}
+
+\newcommand{\noviBox}[3]{
+    \newtcolorbox[auto counter, number within = chapter]{#1Box}[2]{
+        title={
+            \prijevod{#1}{#2} \thetcbcounter.%
+            \marginnote{%
+                $\triangleleft$\space\MakeLowercase{\prijevod{#1}{#2}}
+                \thetcbcounter. ##2}},
+        % label={\prijevod{#1}{#2}\thetcbcounter},
+        empty, attach boxed title to top left,
+        boxed title style={empty,size=minimal,toprule=3pt,top=0pt,left=5pt,
+        overlay={
+            \draw[#3!84,line width=1pt, solid]
+            ([yshift=-2pt]frame.south west) -- ([yshift=-2pt]frame.south east);
+        }},
+        coltitle=#3,fonttitle=\scshape,
+        before=\par\medskip\noindent,parbox=false,
+        % boxsep=6pt,
+        left=6pt,right=3pt,top=4pt,
+        breakable,pad at break*=0mm,vfill before first,
+        overlay unbroken={
+            \draw[#3!84,line width=1pt, solid]
+            ([xshift=4pt,yshift=0pt]title.south west) -- 
+            ([xshift=4pt]frame.west) -- 
+            ([xshift=4pt,yshift=4pt]frame.south west);
+            \draw[#3!84,line width=1pt, solid]
+            ([yshift=4pt,xshift=5pt]frame.south east) --
+            ([yshift=4pt,xshift=24pt]frame.south east) --
+            ([yshift=2pt,xshift=20pt]frame.south east) --
+            ([yshift=16pt,xshift=20pt]frame.south east);
+        },
+        overlay first={
+            \draw[#3!84,line width=1pt, solid]
+            ([xshift=4pt,yshift=0pt]title.south west) --
+            ([xshift=4pt]frame.west) -- 
+            ([xshift=4pt,yshift=-4pt]frame.south west);
+        },
+        overlay middle={
+            \draw[#3!84,line width=1pt, solid]
+            ([xshift=4pt,yshift=4pt]frame.north west) -- 
+            ([xshift=4pt]frame.west) -- 
+            ([xshift=4pt,yshift=-4pt]frame.south west);
+        },
+        overlay last={
+            \draw[#3!84,line width=1pt, solid]
+            ([xshift=4pt,yshift=4pt]frame.north west) -- 
+            ([xshift=4pt]frame.west) -- 
+            ([xshift=4pt,yshift=4pt]frame.south west);
+            \draw[#3!84,line width=1pt, solid]
+            ([yshift=4pt,xshift=5pt]frame.south east) --
+            ([yshift=4pt,xshift=24pt]frame.south east) --
+            ([yshift=2pt,xshift=20pt]frame.south east) --
+            ([yshift=16pt,xshift=20pt]frame.south east);
+        },%
+        ##1
+    }
+}
+
+\noviBox{Primjer}{Example}{colour-primjerbox}
+\newcommand{\primjer}[3][]{
+    \begin{PrimjerBox}{#1}{#3}
+        #2
+    \end{PrimjerBox}
+}
+
+\noviBox{Zadatak}{Exercise}{colour-zadatakbox}
+\newcommand{\zadatak}[3][]{
+    \begin{ZadatakBox}{#1}{#3}
+        #2
+    \end{ZadatakBox}
+}
+
+\noviBox{Rjesenje}{Solution}{colour-rjesenjebox}
+\newcommand{\rjesenje}[3][]{
+    \begin{RjesenjeBox}{#1}{#3}
+        #2
+    \end{RjesenjeBox}
+}
+
+\noviBox{Algoritam}{Algorithm}{colour-algoritambox}
+\newcommand{\algoritam}[3][]{
+    \begin{AlgoritamBox}{#1}{#3}
+            #2
+        \end{AlgoritamBox}
+}
+
+\noviBox{Definicija}{Definition}{colour-definicijabox}
+\newcommand{\definicija}[3][]{
+    \begin{DefinicijaBox}{#1}{#3}
+        #2
+    \end{DefinicijaBox}
+}
+
+\noviBox{Propozicija}{Proposition}{mygreen}
+\newcommand{\propozicija}[3][]{
+    \begin{PropozicijaBox}{#1}{#3}
+        #2
+    \end{PropozicijaBox}
+}
+
+\crefname{tcb@cnt@PrimjerBox}{
+    \prijevod{primjer}{example}}{
+    \prijevod{primjere}{examples}}
+\Crefname{tcb@cnt@PrimjerBox}{
+    \prijevod{Primjer}{Example}}{
+    \prijevod{Primjere}{Examples}}
+\crefname{tcb@cnt@ZadatakBox}{
+    \prijevod{zadatak}{exercise}}{
+    \prijevod{zadatke}{exercises}}
+\crefname{tcb@cnt@RjesenjeBox}{
+    \prijevod{rješenje}{solution}}{
+    \prijevod{rješenja}{solutions}}
+\crefname{tcb@cnt@AlgoritamBox}{
+    \prijevod{algoritam}{algorithm}}{
+    \prijevod{algoritme}{algorithms}}
+\crefname{tcb@cnt@DefinicijaBox}{
+    \prijevod{definicija}{definition}}{
+    \prijevod{definicije}{definitions}}

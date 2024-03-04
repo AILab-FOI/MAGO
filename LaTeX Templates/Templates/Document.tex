@@ -1,0 +1,160 @@
+\makeatletter
+\newcommand{\plainsubtitle}{}%     plain-text-only subtitle
+\newcommand{\subtitle}[1]{%
+  \gdef\@subtitle{#1}%
+  \renewcommand{\plainsubtitle}{#1}% use provided plain-text title
+  \ifthenelse{\isundefined{\hypersetup}}%
+    {}% hyperref is not loaded; do nothing
+    {\hypersetup{pdftitle={\plaintitle: \plainsubtitle{}}}}% set the PDF metadata title
+}
+\newcommand{\setpretitle}[1]{
+    \newcommand{\pretitle}{#1}
+}
+% \newcommand{\pretitle}[1]{\gdef\@pretitle{#1}}
+\makeatother
+\newcommand{\useDocumentTemplate}[3]{
+    \RequirePackage[fulladjust]{marginnote}
+    \let\marginpar\marginnote
+    \let\marginnoted\marginnote
+    \let\marginnote\undefined
+    
+    \documentclass[a4paper,notoc,nobib,british]{tufte-book}
+    
+    \renewcommand{\maketitlepage}[0]{%
+        \cleardoublepage%
+        \AddToHook{shipout/background}{%
+            \put (0in,-\paperheight){\includegraphics[width=\paperwidth, height=\paperheight]{LaTeX Templates/Common Figures/MAGO Background Cover.pdf}}%
+        }
+              {%
+        \sffamily%
+        \begin{fullwidth}%
+            \fontsize{18}{20}\selectfont\par\noindent{\allcaps{\thanklessauthor}}%
+            \vspace{11.5pc}%
+            \newline%
+            \begin{minipage}{\linewidth}
+                \noindent
+                \fontsize{10}{12}\textcolor{Colour Cover Title}{\textsc {\pretitle}}\vspace{.5em}
+                
+                \fontsize{30}{30}\textcolor{Colour Cover Title}{\allcaps{\plaintitle}}%
+            \end{minipage}%
+            \newline%
+            \vspace{2em}%
+            \fontsize{18}{20}\selectfont\noindent\textcolor{Colour Cover Subtitle}{\textsc{\plainsubtitle}}%
+            % \fontsize{18}{20}\selectfont\noindent\textcolor{Colour Cover Subtitle}{\scshape{\plainsubtitle}}%
+            \vfill%
+            \fontsize{14}{16}\selectfont\par\noindent\textsc{\thanklesspublisher}%
+            % \fontsize{14}{16}\selectfont\par\noindent\allcaps{\thanklesspublisher}%
+        \end{fullwidth}%
+        }
+        \thispagestyle{empty}%
+        \clearpage%
+        \RemoveFromHook{shipout/background}
+    }
+    
+    \usepackage{aurical}
+    \usepackage[T1]{fontenc}
+    % \usepackage[utf8]{inputenc}
+    \usepackage[british]{babel}
+    
+    \usepackage{xifthen}
+    \usepackage{xparse}
+    \usepackage{pgffor}
+    
+    \usepackage{hyperref}
+    \usepackage{multicol}
+    
+    \usepackage{amsmath,amsfonts,amssymb}
+    
+    \usepackage{mathtools}
+    \usepackage{wasysym}
+    \usepackage{caption}
+    % \usepackage{subcaption}
+    \usepackage{booktabs}
+    \usepackage{array}
+    \usepackage{diagbox}
+    \usepackage{placeins}
+    
+    \usepackage{qrcode}
+    
+    \usepackage{epigraph}
+    
+    % \usepackage[pages=some]{background}
+    
+    
+    \input{LaTeX Templates/Preambles/Listings}
+    \input{LaTeX Templates/Preambles/BibLaTeX}
+    
+    \input{LaTeX Templates/Preambles/Colours}
+    \input{LaTeX Templates/Preambles/Tikz}
+    
+    \input{LaTeX Templates/Preambles/Marginnote}
+    
+    % !!! custom commands used throughout the document
+    \input{LaTeX Templates/Preambles/Custom Commands}
+    
+    
+    \input{LaTeX Templates/Preambles/Acronyms}
+    
+    \input{LaTeX Templates/Preambles/Whatevers Left Tufte Header}
+    
+    \input{LaTeX Templates/Preambles/Cleveref}
+    
+    \input{LaTeX Templates/Preambles/Content Boxes}
+    
+    \input{LaTeX Templates/Preambles/Itemize}
+    
+    \setcounter{secnumdepth}{2}
+    \setcounter{tocdepth}{2}
+    
+    \usepackage{imakeidx}
+    % \usepackage[nonewpage]{imakeidx}
+    % \indexsetup{level=\chapter,toclevel=\chapter,noclearpage}
+    \makeindex
+    % \makeindex[intoc]
+    
+    
+    %%
+    % Book metadata
+    
+    \begin{document}
+
+    #1
+    #2
+    
+    \frontmatter
+    
+    \maketitle
+    
+    \cleardoublepage
+    % \pagenumbering{Roman}
+    
+    % v.4 copyright page
+    \input{LaTeX Templates/Preambles/Copyright Page}
+    
+    {
+    \hypersetup{linkcolor=titlered}
+    \tableofcontents
+    }
+    
+    % Start the main matter (normal chapters)
+    \mainmatter
+    
+    % \pagenumbering{arabic}
+    
+    \setcounter{page}{1}
+
+    #3
+    
+    % The back matter contains appendices, bibliographies, indices, glossaries, etc.
+    
+    \backmatter
+
+    \begin{fullwidth}
+        \printbibliography
+    
+        \printindex
+    \end{fullwidth}
+    
+    \end{document}
+}
+
