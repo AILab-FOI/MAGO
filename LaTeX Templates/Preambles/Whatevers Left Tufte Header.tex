@@ -20,14 +20,6 @@
 % Prints a trailing space in a smart way.
 \usepackage{xspace}
 
-% Prints the month name (e.g., January) and the year (e.g., 2008)
-\newcommand{\monthyear}{%
-    \prijevod{
-        \ifcase\month\or siječanj\or veljača\or ožujak\or travanj\or svibanj\or lipanj\or srpanj\or kolovoz\or rujan\or listopad\or studeni\or prosinac\fi\space\number\year.
-    }{
-        \ifcase\month\or January\or February\or March\or April\or May\or June\or July\or August\or September\or October\or November\or December\fi\space\number\year.
-    }
-}
 
 % Inserts a blank page
 % \newcommand{\blankpage}{\newpage\hbox{}\thispagestyle{empty}\newpage}

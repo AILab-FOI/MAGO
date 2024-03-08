@@ -1,1 +1,44 @@
 \chapter{Specification}\label{ch:Specification}
+
+\blockquote[{{\hfill\cite[p. 2]{fernandez-lopez1997METHONTOLOGYOntologicalArt}}}]{The goal of the specification phase is to produce either an informal, semi-formal or formal ontology specification document written in natural language, using a set of intermediate representations or using competency questions, respectively.}
+
+The specification state of engineering an ontology is the initial one. It contains the initial ontology description and the expectations for the finalised model. The result of this state is an initial ontology specification document that is not necessarily a formalised document or a document containing formal expressions. According to \citeauthor{fernandez-lopez1997METHONTOLOGYOntologicalArt}, such a document should provide the answers to at least the following three questions
+\cite{fernandez-lopez1997METHONTOLOGYOntologicalArt}%
+:
+
+\begin{itemize}
+    \item What is the intended purpose of the ontology?
+    \item How formal is the ontology expected to be implemented?
+    \item What are the planned scope and granularity of the ontology?
+\end{itemize}
+
+The suggested approach to identifying the concepts that should be included in the scope of the ontology, i.e. the concepts that are planned to be modelled as a part of the current ontology, is a middle-out approach \cite{fernandez-lopez1997METHONTOLOGYOntologicalArt,uschold1996OntologiesPrinciplesMethods}. This way, instead of using a bottom-up or a top-down approach, the author immediately identifies the key concepts and provides additional concepts by applying specialisation or generalisation as necessary and seen fit.
+
+To be comparable to the finalised ontology, or any stage of the ontology while it is being engineered, developed or implemented, when finished, the ontology specification document should adhere to the following
+\cite{fernandez-lopez1997METHONTOLOGYOntologicalArt}%
+:
+
+\begin{itemize}
+    \item the document should be concise, the chosen concepts relevant to the topic and the planned purpose of the ontology, featuring no duplicate or unrelated concepts;
+
+    \item the set of identified concepts should be partially complete when the chosen domain is considered, taking into account the selected level of granularity and the breadth of intention of each of the chosen concepts, since total completeness is next to impossible to achieve as new concepts can always be added to an existing specific-domain-related ontology;
+
+    \item the document should be consistent in all its parts, including, but not limited to, a list of consistent concepts applicable to the chosen domain and scope of the ontology adhering to the selected level of formality and the general purpose of the ontology.
+\end{itemize}
+
+
+
+\section{Output}
+
+MAGO-A ontology%
+\marginnote{domain}
+comprises concepts related to the domain of \acp{MAS} of the general area of \ac{AI}. \Iac{MAS} is a system consisting of a set of agents located in an environment wherein they communicate with each other. Every agent, fundamentally, possesses sensors to perceive its environment and actuators to act upon it \cite[p. 54]{russell2022ArtificialIntelligenceModern}. In general, this environment is not static. In particular, the domain of the MAGO-A ontology are \acp{MAS}, and more specifically automatic instantiating of agents according to the data within the ontology, i.e. describing and instantiating a \ac{MAS}.
+
+The purpose%
+\marginnote{purpose}
+of the MAGO-A ontology is to store data as pieces of knowledge that can be used to describe a \ac{MAS}. Such data can then be utilised by the designed MAGO-A framework to automatically instantiate modelled agents of the system described within the ontology. Specifically, the main purpose of the MAGO-A ontology is to provide concepts for enabling the described process -- modelling a \ac{MAS} and instantiating the accompanying agents.
+
+% scenarios of use
+% use-case
+% end-users
+
