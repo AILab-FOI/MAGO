@@ -1,6 +1,8 @@
 \chapter{Specification}\label{ch:Specification}
 
-\blockquote[{{\hfill\cite[p. 2]{fernandez-lopez1997METHONTOLOGYOntologicalArt}}}]{The goal of the specification phase is to produce either an informal, semi-formal or formal ontology specification document written in natural language, using a set of intermediate representations or using competency questions, respectively.}
+% This document includes, at least, the intended use of the ontology, scenarios of use, the intended level of formality to be used when codifying the terms and their meaning, the scope of the ontology, and its granularity.
+
+\blockquote[{{\cite[p. 2]{fernandez-lopez1997METHONTOLOGYOntologicalArt}}}]{The goal of the specification phase is to produce an informal, semi-formal or formal ontology specification document written in natural language, using a set of intermediate representations or using competency questions, respectively.}
 
 The specification state of engineering an ontology is the initial one. It contains the initial ontology description and the expectations for the finalised model. The result of this state is an initial ontology specification document that is not necessarily a formalised document or a document containing formal expressions. According to \citeauthor{fernandez-lopez1997METHONTOLOGYOntologicalArt}, such a document should provide the answers to at least the following three questions
 \cite{fernandez-lopez1997METHONTOLOGYOntologicalArt}%
@@ -12,14 +14,23 @@ The specification state of engineering an ontology is the initial one. It contai
     \item What are the planned scope and granularity of the ontology?
 \end{itemize}
 
-The suggested approach to identifying the concepts that should be included in the scope of the ontology, i.e. the concepts that are planned to be modelled as a part of the current ontology, is a middle-out approach \cite{fernandez-lopez1997METHONTOLOGYOntologicalArt,uschold1996OntologiesPrinciplesMethods}. This way, instead of using a bottom-up or a top-down approach, the author immediately identifies the key concepts and provides additional concepts by applying specialisation or generalisation as necessary and seen fit.
+The suggested approach to identify concepts that should be included in the scope of the ontology, that is, concepts that are planned to be modelled as a part of the current ontology, is a middle-out approach \cite{fernandez-lopez1997METHONTOLOGYOntologicalArt,uschold1996OntologiesPrinciplesMethods}. This way, instead of using a bottom-up or a top-down approach, the author immediately identifies the key concepts and provides additional concepts by applying specialisation or generalisation as necessary and seen fit.
+
+In the context of formality, \citeauthor{fernandez-lopez1997METHONTOLOGYOntologicalArt} refer to \citeauthor{uschold1996OntologiesPrinciplesMethods} when stating the four degrees of formality \cite{uschold1996OntologiesPrinciplesMethods}:
+
+\begin{description}
+    \item [highly informal] is an ontology that is expressed using natural language with loosely constrained concept intention;
+    \item [semi-informal] ontology is still expressed using natural language but in a more structured and restricted way, using more constraints, which results in an increase in clarity and reduced ambiguity;
+    \item [semi-formal] degree of formality expects the ontology to be expressed using an \enquote[\cite{uschold1996OntologiesPrinciplesMethods}]{artificial formally defined language};
+    \item [rigorously formal] ontology comprises concepts constrained by formal semantics and theorems, enriched by further proof of soundness and completeness.
+\end{description}
 
 To be comparable to the finalised ontology, or any stage of the ontology while it is being engineered, developed or implemented, when finished, the ontology specification document should adhere to the following
 \cite{fernandez-lopez1997METHONTOLOGYOntologicalArt}%
 :
 
 \begin{itemize}
-    \item the document should be concise, the chosen concepts relevant to the topic and the planned purpose of the ontology, featuring no duplicate or unrelated concepts;
+    \item the document should be concise, and the chosen concepts relevant to the topic and the planned purpose of the ontology, featuring no duplicate or unrelated concepts;
 
     \item the set of identified concepts should be partially complete when the chosen domain is considered, taking into account the selected level of granularity and the breadth of intention of each of the chosen concepts, since total completeness is next to impossible to achieve as new concepts can always be added to an existing specific-domain-related ontology;
 
@@ -30,15 +41,42 @@ To be comparable to the finalised ontology, or any stage of the ontology while i
 
 \section{Output}
 
-MAGO-A ontology%
-\marginnote{domain}
-comprises concepts related to the domain of \acp{MAS} of the general area of \ac{AI}. \Iac{MAS} is a system consisting of a set of agents located in an environment wherein they communicate with each other. Every agent, fundamentally, possesses sensors to perceive its environment and actuators to act upon it \cite[p. 54]{russell2022ArtificialIntelligenceModern}. In general, this environment is not static. In particular, the domain of the MAGO-A ontology are \acp{MAS}, and more specifically automatic instantiating of agents according to the data within the ontology, i.e. describing and instantiating a \ac{MAS}.
+MAGO-A ontology
+\marginnote{domain}%
+comprises concepts related to the domain of \acp{MAS} of the general area of \ac{AI}. \Iac{MAS} is a system consisting of a set of agents located in an environment where they communicate. Fundamentally, every agent has sensors to perceive its environment and actuators to act upon it \cite[p. 54]{russell2022ArtificialIntelligenceModern}. In general, this environment is not static. In particular, the domain of the MAGO-A ontology are \acp{MAS}, and more specifically, automatic instantiating of agents according to the data within the ontology, i.e. describing and instantiating a \ac{MAS}.
 
-The purpose%
-\marginnote{purpose}
-of the MAGO-A ontology is to store data as pieces of knowledge that can be used to describe a \ac{MAS}. Such data can then be utilised by the designed MAGO-A framework to automatically instantiate modelled agents of the system described within the ontology. Specifically, the main purpose of the MAGO-A ontology is to provide concepts for enabling the described process -- modelling a \ac{MAS} and instantiating the accompanying agents.
+The purpose
+\marginnote{purpose}%
+of the MAGO-A ontology is to store data as pieces of knowledge that can be used to describe \iac{MAS}. The designed MAGO-A framework can then utilise such data to automatically instantiate modelled agents of the system described within the ontology. Specifically, the main purpose of the MAGO-A ontology is to provide concepts to enable the described process -- modelling \iac{MAS} and instantiating the accompanying agents.
 
-% scenarios of use
+This ontology is intended to be used
+\marginnote{intended use}%
+closely with the MAGO-A framework that is going to be developed throughout this project. Such a framework is expected to use this ontology as input, providing the necessary description of a \ac{MAS} as an input. The user will be provided with an instance of the modelled system based on the input provided. Therefore, the ontology's intended purpose is to provide the concepts for describing, i.e. modelling, \iac{MAS} in a way ready to be translated into implementation. Furthermore, the modelled \ac{MAS} is planned to adhere to the definition of the concept of \iac{IVE}.
+
+A brief example of using
+\marginnote{scenario of use}%
+the MAGO-A ontology with the accompanying framework is presented as follows. The system designer can model their system using the available concepts of the ontology, thus describing agents, their goals, roles, available behaviours, communication flows and communication media, artefacts of the environment, if any, etc. The resulting model can then be used as input to the MAGO-A framework and translated into a foundation for implementing the modelled system. The result is an implementation blueprint that the system developer is expected to enrich with actionable code customised to the specific implementation needs of the modelled system being implemented. Additional examples are provided below.%
+\lookAt{\cref{example:recipeworld,example:farming-simulator}}
+
+\primjer[label=example:recipeworld]{
+    RecipeWorld is \blockquote[\cite{Fontana2015recipeWorld}]{\textelp{} an agent based model that simulates the emergence of a network out of a decentralized autonomous interaction;} that can be evolved into a real-time implementation using, e.g. Python and SPADE
+    \cite{gregori2006JabberbasedMultiagentSystem}
+    \linktext{https://spade-mas.readthedocs.io/en/latest/readme.html}{SPADE Documentation}%
+    agents. The two types of agents within RecipeWorld can be described as service providers and service consumers. These types of agents, their goals, allowed interaction media, and behaviour are modelled using the MAGO-A ontology. The finalised model is then fed to the MAGO-A framework, where it is translated into an implementation blueprint of the modelled system. Thus, the implementation process is made somewhat easier, especially concerning the semantic consistency of the implemented concepts.
+}{Using the MAGO-A ontology to model RecipeWorld}
+
+\primjer[label=example:farming-simulator]{
+    The farming simulator referenced here is a system developed by a research team of \ac{VRAIN} of \ac{UPV}. The primary purpose of the system is to implement a virtual model as a digital twin of a crop field and a custom number of tractors tasked with specific tasks related to various agricultural activities. Agents playing these digital twins and their environment are at the moment of writing this document described using a set of configuration files. Some of the parameters of these files can be converted to and modelled using the concepts planned to be part of the MAGO-A ontology. Thus, the system can be modelled using the concepts provided by the ontology, which ensures added semantic value to the modelled and implemented system, and generated into an implementation blueprint of the modelled system.
+}{A farming simulator combined with the MAGO-A ontology}
+
+Based on the above examples and the given scenario of use, the intended end users
+\marginnote{end users}%
+of the MAGO-A ontology are developers, especially developers of \acp{MAS}. The level of competence in terms of programming languages and frameworks for implementing \acp{MAS} is irrelevant since the modelled system's description can never be comprehensive enough to provide a one-on-one replica. Developers of systems classifiable as digital twins are also some of the intended users of this ontology.
+
+In order to achieve the described, the MAGO-A ontology will be expressed using a high degree of formality,
+\marginnote{degree of formality}%
+namely classified as rigorously formal by \cite{uschold1996OntologiesPrinciplesMethods}. Such a formal structure, along with its many constraints, ensures that the ontology is clear and unambiguous and may easily be used and extend or be extended by other ontologies. Furthermore, a highly formal expression of an ontology makes it easier to use it in conjunction with other digital systems.
+
 % use-case
 % end-users
-
+% the scope of the ontology, and its granularity.

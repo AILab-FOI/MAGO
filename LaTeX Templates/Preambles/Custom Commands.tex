@@ -68,19 +68,47 @@
 
 
 
-\newcommand{\lookAt}[2][0pt]{\marginnote[#1]{\,\hspace{-1pt}\raisebox{-1pt}{ \includegraphics[width=8pt]{LaTeX Templates/Common Figures/eye.pdf}}\enspace\prijevod{vidi}{see}~#2}}
+\newcommand{\lookAt}[2][0pt]{%
+    \marginnote[#1]{%
+        \begin{minipage}[t]{0.1\linewidth}%
+            \centering%
+            \raisebox{-1pt}{\includegraphics[width=8pt]{LaTeX Templates/Common Figures/eye.pdf}}%
+        \end{minipage}%
+        \prijevod{vidi}{see}~#2%
+    }%
+}
+
+\newcommand{\linktext}[3][0pt]{%
+    \marginnote[#1]{%
+        \begin{minipage}[t]{0.1\linewidth}%
+            \centering%
+            \raisebox{-0.5pt}{\includegraphics[width=6pt]{LaTeX Templates/Common Figures/link.pdf}}%
+        \end{minipage}%
+        \href{#2}{#3}%
+    }%
+}
+
+\newcommand{\link}[2][3pt]{%
+    \marginnote[#1]{%
+        \begin{minipage}[t]{0.1\linewidth}%
+            \centering%
+            \raisebox{-1pt}{\includegraphics[width=6pt]{LaTeX Templates/Common Figures/link.pdf}}%
+        \end{minipage}%
+        \tiny\url{#2}%
+    }%
+}
+
+\newcommand{\lstLineNumberRef}[3][0pt]{%
+    \marginnote[#1]{%
+        \begin{minipage}[t]{0.1\linewidth}%
+            \centering%
+            \raisebox{-2pt}{\includegraphics[width=8pt]{Grafike/code.png}}%
+        \end{minipage}%
+        \texttt{#2:#3}%
+    }%
+}
 
 \newcommand{\file}[3][0pt]{\marginnote[#1]{\!\hspace{3.5pt}\raisebox{-2.5pt}{\href{#2}{\includegraphics[width=8pt]{Grafike/file.png}}}\enspace\prijevod{preuzmi}{download}~\href{#2}{#3}}}
-
-\newcommand{\lstLineNumberRef}[3][0em]{%
-    \marginnote[#1]{%
-        \!\hspace{4pt}\raisebox{-2pt}{\includegraphics[width=8pt]{Grafike/code.png}}\enspace%
-        \texttt{#2:#3}%
-    }}
-
-\newcommand{\linktext}[3][0pt]{\marginnote[#1]{\,\hspace{3pt}\raisebox{-1pt}{\includegraphics[width=6pt]{Grafike/link.eps}}\enspace\href{#2}{#3}}}
-
-\newcommand{\link}[2][3pt]{\marginnote[#1]{\,\hspace{3pt}\raisebox{-1pt}{\includegraphics[width=6pt]{Grafike/link.eps}}\enspace\tiny\url{#2}}}
 
 \newcommand{\video}[2][3pt]{\marginnote[#1]{\,\hspace{2pt}\raisebox{-1.5pt}{\includegraphics[width=7pt]{Grafike/play}}\enspace\tiny\url{#2}}}
 
@@ -88,7 +116,9 @@
 
 \newcommand{\customQuoteReferenced}[2]{%
     \begin{quotation}
-        \raisebox{-4pt}{\Huge "}\!\marginnote{$\triangleleft$\space citat iz \citeauthor{#1}: \citetitle{#1} \autocite{#1}}
+        \raisebox{-4pt}{\Huge "}\!\marginnote{
+            \begin{minipage}[t]{0.1\linewidth}\centering$\triangleleft$\end{minipage}\MakeLowercase{\prijevod{citat iz}{cited from}} \citeauthor{#1}: \citetitle{#1} \autocite{#1}}
+            % $\triangleleft$\space citat iz \citeauthor{#1}: \citetitle{#1} \autocite{#1}}
         #2
     \end{quotation}
 }

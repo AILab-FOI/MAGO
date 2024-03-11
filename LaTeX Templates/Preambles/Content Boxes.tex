@@ -1,17 +1,17 @@
 % \usepackage[listings]{tcolorbox}
 \tcbuselibrary{skins,breakable,documentation}
 
-\newcommand{\naslovBoxa}[2]{
-    \prijevod{#1}{#2}\marginnote{$\triangleleft$\space\MakeLowercase{\prijevod{#1}{#2}}}
-}
+% \newcommand{\naslovBoxa}[2]{
+%     \prijevod{#1}{#2}\marginnote{$\triangleleft$\space\MakeLowercase{\prijevod{#1}{#2}}}
+% }
 
 \newcommand{\noviBox}[3]{
     \newtcolorbox[auto counter, number within = chapter]{#1Box}[2]{
         title={
             \prijevod{#1}{#2} \thetcbcounter.%
             \marginnote{%
-                $\triangleleft$\space\MakeLowercase{\prijevod{#1}{#2}}
-                \thetcbcounter. ##2}},
+                % $\triangleleft$\space\MakeLowercase{\prijevod{#1}{#2}}
+                \begin{minipage}[t]{0.1\linewidth}\centering$\triangleleft$\end{minipage}\MakeLowercase{\prijevod{#1}{#2}} \thetcbcounter. ##2}},
         % label={\prijevod{#1}{#2}\thetcbcounter},
         empty, attach boxed title to top left,
         boxed title style={empty,size=minimal,toprule=3pt,top=0pt,left=5pt,
