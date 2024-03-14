@@ -16,4 +16,4 @@ The main focus of **Part I** is on multiagent systems (MASs) in general, i.e. de
 - **Phase A**: Modelling, developing, and implementing an ontology for describing video games as an intelligent virtual environment (IVE). Modelling, developing, and implementing an ontology for describing gamification and gamified systems, focusing on applicability to artificial agents.
 - **Phase B**: Designing, developing and implementing the ontology-based agent gamification framework as an upgrade of the framework from Part I-B and implementing a testbed environment for applying, testing and evaluating the developed ontology.
 
-![alt text](<LaTeX Templates/Common Figures/Vidljivost bez pozadine.png>)
+![alt text](<LaTeX Templates/Common Figures/Vidljivost s pozadinom.png>)
