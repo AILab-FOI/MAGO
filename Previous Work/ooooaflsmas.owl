@@ -1,0 +1,1913 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://personales.upv.es/ccarrasc/ooooaflsmas"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://personales.upv.es/ccarrasc/ooooaflsmas.owl">
+    <Prefix name="" IRI="http://personales.upv.es/ccarrasc/ooooaflsmas"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#CultureRelation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MergerStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Norm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrganizationalUnit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesStructure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCriteriaOfOrganizingFor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BioteamingOrganization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InternalMarketStructure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#modelsStrategyFor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OneShotBehavior"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProductDivisionalStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComplexAnalyticalMethod"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEnvironment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrganizationalDesignMethod"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRelationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#accepts"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasChange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FrontBackStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProcessRelation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRoleIn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RelationValuePartition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAccessTo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ListenerBehavior"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClusterStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FractalStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TeamBasedStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SequentialBehavior"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#modelsEnvironmentFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAcceptedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShamrockOrganization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesCulture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrganizationalStructure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProcesses"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ObserverBehavior"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BusinessProcessReengineering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrganizationalChange"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#modelsCultureFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#triggers"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#performs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrganizationalArchitecture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrganizationalKnowledgeNetwork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlatformOrganization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CriteriaOfOrganizing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AcquisitionStructure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesAgents"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StaticNetworkStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NormativeSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TeritorialStructure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAchievedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CustomerOrientedStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrganizationalCulture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StrategyRelation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StarburstStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SuperStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HybridStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StrategicAllianceStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KnowledgeArtifact"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRelation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Culture"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/bogdan/ontologies/2016/11/MAMbO5#consistsOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DivisionalStructure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesChange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ValuePartition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DynamicNetworkStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FiniteStateMachineBehavior"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InfiniteFlatHierarchyStructure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesEnvironment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FunctionalStructure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCriteriaOfOrganizing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ItineraryBehavior"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPerformedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HierarchicalStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ParallelBehavior"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClientServerBehavior"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#achieves"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrganizationalProcesses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#modelIndividualsFor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VirtualStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProjectOrientedStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LeanManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TotalQualityManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAccessibleTo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StableSuperStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OpenOrganization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Behavior"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Objective"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRoleOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AmoebaStructure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#definesRoles"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PeriodicBehavior"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdhocracyStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RoleFactoryBehavior"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SixSigma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HypertextOrganization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MatrixStructure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#modelProcessesFor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kaizen"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStrategy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesStrategy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StructuralRelation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StrategicOrganization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Strategy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LearningOrganization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CommunitiesOfPractice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#modelsChangeFor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrganizationalIndividuals"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasIndividuals"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TensorStructure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTriggeredBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesProcesses"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrganizationalStrategy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InvertedStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeterarchicalStructure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#modelsStructureFor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TaguchiMethod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AcademicStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FishnetStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EmpoweredOrganization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrganizationalEnvironment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCulture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrganizationalMemory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Agent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/bogdan/ontologies/2016/11/MAMbO5#EnvironmentIsUsedBy"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Activity"/>
+        <Class IRI="#Behavior"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OrganizationalArchitecture"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#hasChange"/>
+                <Class IRI="#OrganizationalChange"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#hasCulture"/>
+                <Class IRI="#OrganizationalCulture"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#hasEnvironment"/>
+                <Class IRI="#OrganizationalEnvironment"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#hasIndividuals"/>
+                <Class IRI="#OrganizationalIndividuals"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#hasProcesses"/>
+                <Class IRI="#OrganizationalProcesses"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#hasStrategy"/>
+                <Class IRI="#OrganizationalStrategy"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#hasStructure"/>
+                <Class IRI="#OrganizationalStructure"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OrganizationalChange"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#modelsChangeFor"/>
+                <Class IRI="#OrganizationalArchitecture"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#usesChange"/>
+                <Class IRI="#OrganizationalDesignMethod"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#modelsChangeFor"/>
+                <Class IRI="#OrganizationalArchitecture"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OrganizationalCulture"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#modelsCultureFor"/>
+                <Class IRI="#OrganizationalArchitecture"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#modelsCultureFor"/>
+                <Class IRI="#OrganizationalArchitecture"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#usesCulture"/>
+                <Class IRI="#Culture"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OrganizationalEnvironment"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#modelsEnvironmentFor"/>
+                <Class IRI="#OrganizationalArchitecture"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.semanticweb.org/bogdan/ontologies/2016/11/MAMbO5#EnvironmentIsUsedBy"/>
+                <Class IRI="#Agent"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#modelsEnvironmentFor"/>
+                <Class IRI="#OrganizationalArchitecture"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OrganizationalIndividuals"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#modelIndividualsFor"/>
+                <Class IRI="#OrganizationalArchitecture"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#modelIndividualsFor"/>
+                <Class IRI="#OrganizationalArchitecture"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#usesAgents"/>
+                <Class IRI="#Agent"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OrganizationalKnowledgeNetwork"/>
+        <ObjectUnionOf>
+            <Class IRI="#KnowledgeArtifact"/>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasRelation"/>
+                    <Class IRI="#CultureRelation"/>
+                </ObjectSomeValuesFrom>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="#hasRelation"/>
+                    <Class IRI="#CultureRelation"/>
+                </ObjectAllValuesFrom>
+                <ObjectExactCardinality cardinality="1">
+                    <ObjectProperty IRI="#hasCriteriaOfOrganizing"/>
+                    <Class IRI="#CriteriaOfOrganizing"/>
+                </ObjectExactCardinality>
+            </ObjectIntersectionOf>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OrganizationalProcesses"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#modelProcessesFor"/>
+                <Class IRI="#OrganizationalArchitecture"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#modelProcessesFor"/>
+                <Class IRI="#OrganizationalArchitecture"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#usesProcesses"/>
+                <Class IRI="#Process"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OrganizationalStrategy"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#modelsStrategyFor"/>
+                <Class IRI="#OrganizationalArchitecture"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#modelsStrategyFor"/>
+                <Class IRI="#OrganizationalArchitecture"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#usesStrategy"/>
+                <Class IRI="#Strategy"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OrganizationalStructure"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#modelsStructureFor"/>
+                <Class IRI="#OrganizationalArchitecture"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#modelsStructureFor"/>
+                <Class IRI="#OrganizationalArchitecture"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#usesStructure"/>
+                <Class IRI="#OrganizationalUnit"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OrganizationalUnit"/>
+        <ObjectUnionOf>
+            <Class IRI="#Agent"/>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#definesRoles"/>
+                    <Class IRI="#Role"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasRelation"/>
+                    <Class IRI="#StructuralRelation"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasRole"/>
+                    <Class IRI="#Role"/>
+                </ObjectSomeValuesFrom>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="#hasRelation"/>
+                    <Class IRI="#StructuralRelation"/>
+                </ObjectAllValuesFrom>
+                <ObjectMinCardinality cardinality="1">
+                    <ObjectProperty IRI="#definesRoles"/>
+                    <Class IRI="#Role"/>
+                </ObjectMinCardinality>
+                <ObjectMinCardinality cardinality="1">
+                    <ObjectProperty IRI="#usesStructure"/>
+                    <Class IRI="#OrganizationalStructure"/>
+                </ObjectMinCardinality>
+                <ObjectMinCardinality cardinality="1">
+                    <ObjectProperty IRI="http://www.semanticweb.org/bogdan/ontologies/2016/11/MAMbO5#consistsOf"/>
+                    <Class IRI="#OrganizationalUnit"/>
+                </ObjectMinCardinality>
+                <ObjectExactCardinality cardinality="1">
+                    <ObjectProperty IRI="#hasCriteriaOfOrganizing"/>
+                    <Class IRI="#CriteriaOfOrganizing"/>
+                </ObjectExactCardinality>
+            </ObjectIntersectionOf>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Process"/>
+        <ObjectUnionOf>
+            <Class IRI="#Activity"/>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasRelation"/>
+                    <Class IRI="#ProcessRelation"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#isTriggeredBy"/>
+                    <Class IRI="#Strategy"/>
+                </ObjectSomeValuesFrom>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="#hasRelation"/>
+                    <Class IRI="#ProcessRelation"/>
+                </ObjectAllValuesFrom>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="#isTriggeredBy"/>
+                    <Class IRI="#Strategy"/>
+                </ObjectAllValuesFrom>
+                <ObjectExactCardinality cardinality="1">
+                    <ObjectProperty IRI="#hasCriteriaOfOrganizing"/>
+                    <Class IRI="#CriteriaOfOrganizing"/>
+                </ObjectExactCardinality>
+            </ObjectIntersectionOf>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#RelationValuePartition"/>
+        <ObjectUnionOf>
+            <Class IRI="#CultureRelation"/>
+            <Class IRI="#ProcessRelation"/>
+            <Class IRI="#StrategyRelation"/>
+            <Class IRI="#StructuralRelation"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Role"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#isRoleIn"/>
+            <Class IRI="#OrganizationalUnit"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Strategy"/>
+        <ObjectUnionOf>
+            <Class IRI="#Objective"/>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasRelation"/>
+                    <Class IRI="#StrategyRelation"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#triggers"/>
+                    <Class IRI="#Process"/>
+                </ObjectSomeValuesFrom>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="#hasRelation"/>
+                    <Class IRI="#StrategyRelation"/>
+                </ObjectAllValuesFrom>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="#triggers"/>
+                    <Class IRI="#Process"/>
+                </ObjectAllValuesFrom>
+                <ObjectExactCardinality cardinality="1">
+                    <ObjectProperty IRI="#hasCriteriaOfOrganizing"/>
+                    <Class IRI="#CriteriaOfOrganizing"/>
+                </ObjectExactCardinality>
+            </ObjectIntersectionOf>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#AcademicStructure"/>
+        <Class IRI="#HybridStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AcquisitionStructure"/>
+        <Class IRI="#SuperStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Activity"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#achieves"/>
+                <Class IRI="#Objective"/>
+            </ObjectMinCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#isPerformedBy"/>
+                <Class IRI="#Agent"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdhocracyStructure"/>
+        <Class IRI="#SuperStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Agent"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasAccessTo"/>
+                <Class IRI="#KnowledgeArtifact"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#performs"/>
+                <Class IRI="#Activity"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasAccessTo"/>
+                <Class IRI="#KnowledgeArtifact"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#performs"/>
+                <Class IRI="#Activity"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AmoebaStructure"/>
+        <Class IRI="#AdhocracyStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Behavior"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isAcceptedBy"/>
+                <Class IRI="#NormativeSystem"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#isAcceptedBy"/>
+                <Class IRI="#NormativeSystem"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BioteamingOrganization"/>
+        <Class IRI="#OrganizationalArchitecture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusinessProcessReengineering"/>
+        <Class IRI="#OrganizationalDesignMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClientServerBehavior"/>
+        <Class IRI="#Behavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClusterStructure"/>
+        <Class IRI="#StableSuperStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommunitiesOfPractice"/>
+        <Class IRI="#OrganizationalDesignMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComplexAnalyticalMethod"/>
+        <Class IRI="#OrganizationalDesignMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CultureRelation"/>
+        <Class IRI="#RelationValuePartition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CustomerOrientedStructure"/>
+        <Class IRI="#DivisionalStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DivisionalStructure"/>
+        <Class IRI="#HierarchicalStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DynamicNetworkStructure"/>
+        <Class IRI="#HeterarchicalStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EmpoweredOrganization"/>
+        <Class IRI="#OrganizationalArchitecture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FiniteStateMachineBehavior"/>
+        <Class IRI="#Behavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FishnetStructure"/>
+        <Class IRI="#HeterarchicalStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FractalStructure"/>
+        <Class IRI="#SuperStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FrontBackStructure"/>
+        <Class IRI="#HybridStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FunctionalStructure"/>
+        <Class IRI="#HierarchicalStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeterarchicalStructure"/>
+        <Class IRI="#OrganizationalStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HierarchicalStructure"/>
+        <Class IRI="#OrganizationalStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HybridStructure"/>
+        <Class IRI="#OrganizationalStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HypertextOrganization"/>
+        <Class IRI="#OrganizationalArchitecture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InfiniteFlatHierarchyStructure"/>
+        <Class IRI="#HeterarchicalStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InternalMarketStructure"/>
+        <Class IRI="#HeterarchicalStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InvertedStructure"/>
+        <Class IRI="#HybridStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ItineraryBehavior"/>
+        <Class IRI="#Behavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kaizen"/>
+        <Class IRI="#OrganizationalDesignMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KnowledgeArtifact"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isAccessibleTo"/>
+                <Class IRI="#Agent"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#isAccessibleTo"/>
+                <Class IRI="#Agent"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LeanManagement"/>
+        <Class IRI="#OrganizationalDesignMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LearningOrganization"/>
+        <Class IRI="#OrganizationalArchitecture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ListenerBehavior"/>
+        <Class IRI="#ObserverBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MatrixStructure"/>
+        <Class IRI="#HierarchicalStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MergerStructure"/>
+        <Class IRI="#SuperStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Norm"/>
+        <Class IRI="#KnowledgeArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NormativeSystem"/>
+        <Class IRI="#OrganizationalKnowledgeNetwork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Objective"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isAchievedBy"/>
+                <Class IRI="#Activity"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#triggers"/>
+                <Class IRI="#Process"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#triggers"/>
+                <Class IRI="#Process"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObserverBehavior"/>
+        <Class IRI="#Behavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OneShotBehavior"/>
+        <Class IRI="#Behavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OpenOrganization"/>
+        <Class IRI="#OrganizationalArchitecture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OrganizationalKnowledgeNetwork"/>
+        <Class IRI="#Culture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OrganizationalMemory"/>
+        <Class IRI="#OrganizationalDesignMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ParallelBehavior"/>
+        <Class IRI="#Behavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PeriodicBehavior"/>
+        <Class IRI="#Behavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlatformOrganization"/>
+        <Class IRI="#OrganizationalArchitecture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProcessRelation"/>
+        <Class IRI="#RelationValuePartition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductDivisionalStructure"/>
+        <Class IRI="#DivisionalStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProjectOrientedStructure"/>
+        <Class IRI="#HierarchicalStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RelationValuePartition"/>
+        <Class IRI="#ValuePartition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Role"/>
+        <Class IRI="#Norm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RoleFactoryBehavior"/>
+        <Class IRI="#Behavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SequentialBehavior"/>
+        <Class IRI="#Behavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShamrockOrganization"/>
+        <Class IRI="#OrganizationalArchitecture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SixSigma"/>
+        <Class IRI="#OrganizationalDesignMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StableSuperStructure"/>
+        <Class IRI="#SuperStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StarburstStructure"/>
+        <Class IRI="#StableSuperStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StaticNetworkStructure"/>
+        <Class IRI="#HeterarchicalStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StrategicAllianceStructure"/>
+        <Class IRI="#SuperStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StrategicOrganization"/>
+        <Class IRI="#OrganizationalArchitecture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StrategyRelation"/>
+        <Class IRI="#RelationValuePartition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StructuralRelation"/>
+        <Class IRI="#RelationValuePartition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SuperStructure"/>
+        <Class IRI="#OrganizationalStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TaguchiMethod"/>
+        <Class IRI="#OrganizationalDesignMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TeamBasedStructure"/>
+        <Class IRI="#AdhocracyStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TensorStructure"/>
+        <Class IRI="#HierarchicalStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TeritorialStructure"/>
+        <Class IRI="#DivisionalStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TotalQualityManagement"/>
+        <Class IRI="#OrganizationalDesignMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VirtualStructure"/>
+        <Class IRI="#AdhocracyStructure"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AcademicStructure"/>
+        <Class IRI="#FrontBackStructure"/>
+        <Class IRI="#InvertedStructure"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AcquisitionStructure"/>
+        <Class IRI="#AdhocracyStructure"/>
+        <Class IRI="#FractalStructure"/>
+        <Class IRI="#MergerStructure"/>
+        <Class IRI="#StableSuperStructure"/>
+        <Class IRI="#StrategicAllianceStructure"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Activity"/>
+        <Class IRI="#Agent"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Activity"/>
+        <Class IRI="#CriteriaOfOrganizing"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Activity"/>
+        <Class IRI="#OrganizationalUnit"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Activity"/>
+        <Class IRI="#Role"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Agent"/>
+        <Class IRI="#CriteriaOfOrganizing"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Agent"/>
+        <Class IRI="#Process"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Agent"/>
+        <Class IRI="#Role"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AmoebaStructure"/>
+        <Class IRI="#TeamBasedStructure"/>
+        <Class IRI="#VirtualStructure"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BioteamingOrganization"/>
+        <Class IRI="#EmpoweredOrganization"/>
+        <Class IRI="#HypertextOrganization"/>
+        <Class IRI="#LearningOrganization"/>
+        <Class IRI="#OpenOrganization"/>
+        <Class IRI="#PlatformOrganization"/>
+        <Class IRI="#ShamrockOrganization"/>
+        <Class IRI="#StrategicOrganization"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BusinessProcessReengineering"/>
+        <Class IRI="#CommunitiesOfPractice"/>
+        <Class IRI="#ComplexAnalyticalMethod"/>
+        <Class IRI="#Kaizen"/>
+        <Class IRI="#LeanManagement"/>
+        <Class IRI="#OrganizationalMemory"/>
+        <Class IRI="#SixSigma"/>
+        <Class IRI="#TaguchiMethod"/>
+        <Class IRI="#TotalQualityManagement"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClusterStructure"/>
+        <Class IRI="#StarburstStructure"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CriteriaOfOrganizing"/>
+        <Class IRI="#OrganizationalUnit"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CriteriaOfOrganizing"/>
+        <Class IRI="#Process"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CriteriaOfOrganizing"/>
+        <Class IRI="#Role"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CultureRelation"/>
+        <Class IRI="#ProcessRelation"/>
+        <Class IRI="#StrategyRelation"/>
+        <Class IRI="#StructuralRelation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CustomerOrientedStructure"/>
+        <Class IRI="#ProductDivisionalStructure"/>
+        <Class IRI="#TeritorialStructure"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DivisionalStructure"/>
+        <Class IRI="#FunctionalStructure"/>
+        <Class IRI="#MatrixStructure"/>
+        <Class IRI="#ProjectOrientedStructure"/>
+        <Class IRI="#TensorStructure"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DynamicNetworkStructure"/>
+        <Class IRI="#FishnetStructure"/>
+        <Class IRI="#InfiniteFlatHierarchyStructure"/>
+        <Class IRI="#InternalMarketStructure"/>
+        <Class IRI="#StaticNetworkStructure"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HeterarchicalStructure"/>
+        <Class IRI="#HierarchicalStructure"/>
+        <Class IRI="#HybridStructure"/>
+        <Class IRI="#SuperStructure"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#OrganizationalUnit"/>
+        <Class IRI="#Process"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#OrganizationalUnit"/>
+        <Class IRI="#Role"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Process"/>
+        <Class IRI="#Role"/>
+    </DisjointClasses>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#accepts"/>
+        <ObjectProperty IRI="#isAcceptedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#achieves"/>
+        <ObjectProperty IRI="#isAchievedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#definesRoles"/>
+        <ObjectProperty IRI="#isRoleIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasAccessTo"/>
+        <ObjectProperty IRI="#isAccessibleTo"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasChange"/>
+        <ObjectProperty IRI="#modelsChangeFor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasCriteriaOfOrganizing"/>
+        <ObjectProperty IRI="#isCriteriaOfOrganizingFor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasCulture"/>
+        <ObjectProperty IRI="#modelsCultureFor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasEnvironment"/>
+        <ObjectProperty IRI="#modelsEnvironmentFor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasIndividuals"/>
+        <ObjectProperty IRI="#modelIndividualsFor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasProcesses"/>
+        <ObjectProperty IRI="#modelProcessesFor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasRelation"/>
+        <ObjectProperty IRI="#isRelationOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasRole"/>
+        <ObjectProperty IRI="#isRoleOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasStrategy"/>
+        <ObjectProperty IRI="#modelsStrategyFor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasStructure"/>
+        <ObjectProperty IRI="#modelsStructureFor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isPerformedBy"/>
+        <ObjectProperty IRI="#performs"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isTriggeredBy"/>
+        <ObjectProperty IRI="#triggers"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasCriteriaOfOrganizing"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasRelation"/>
+    </FunctionalObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasRole"/>
+    </AsymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#accepts"/>
+        <Class IRI="#NormativeSystem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#achieves"/>
+        <Class IRI="#Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#definesRoles"/>
+        <Class IRI="#OrganizationalUnit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAccessTo"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCriteriaOfOrganizing"/>
+        <ObjectUnionOf>
+            <Class IRI="#OrganizationalUnit"/>
+            <Class IRI="#Process"/>
+            <Class IRI="#Strategy"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRole"/>
+        <Class IRI="#OrganizationalUnit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCriteriaOfOrganizingFor"/>
+        <Class IRI="#CriteriaOfOrganizing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPerformedBy"/>
+        <Class IRI="#Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isRelationOf"/>
+        <Class IRI="#RelationValuePartition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isRoleIn"/>
+        <Class IRI="#Role"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isRoleOf"/>
+        <Class IRI="#Role"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isTriggeredBy"/>
+        <Class IRI="#Process"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#modelIndividualsFor"/>
+        <Class IRI="#OrganizationalIndividuals"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#modelProcessesFor"/>
+        <Class IRI="#OrganizationalProcesses"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#modelsChangeFor"/>
+        <Class IRI="#OrganizationalChange"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#modelsCultureFor"/>
+        <Class IRI="#OrganizationalCulture"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#modelsEnvironmentFor"/>
+        <Class IRI="#OrganizationalEnvironment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#modelsStrategyFor"/>
+        <Class IRI="#OrganizationalStrategy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#modelsStructureFor"/>
+        <Class IRI="#OrganizationalStructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#performs"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usesAgents"/>
+        <Class IRI="#OrganizationalIndividuals"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usesCulture"/>
+        <Class IRI="#OrganizationalCulture"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usesEnvironment"/>
+        <Class IRI="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usesProcesses"/>
+        <Class IRI="#OrganizationalProcesses"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usesStrategy"/>
+        <Class IRI="#OrganizationalStrategy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usesStructure"/>
+        <Class IRI="#OrganizationalUnit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#accepts"/>
+        <Class IRI="#Behavior"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#achieves"/>
+        <Class IRI="#Objective"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#definesRoles"/>
+        <Class IRI="#Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAccessTo"/>
+        <Class IRI="#KnowledgeArtifact"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCriteriaOfOrganizing"/>
+        <Class IRI="#CriteriaOfOrganizing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRelation"/>
+        <Class IRI="#RelationValuePartition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRole"/>
+        <Class IRI="#Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCriteriaOfOrganizingFor"/>
+        <ObjectUnionOf>
+            <Class IRI="#OrganizationalUnit"/>
+            <Class IRI="#Process"/>
+            <Class IRI="#Strategy"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPerformedBy"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isRoleIn"/>
+        <Class IRI="#OrganizationalUnit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isRoleOf"/>
+        <Class IRI="#OrganizationalUnit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isTriggeredBy"/>
+        <Class IRI="#Strategy"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#modelIndividualsFor"/>
+        <Class IRI="#OrganizationalArchitecture"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#modelProcessesFor"/>
+        <Class IRI="#OrganizationalArchitecture"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#modelsChangeFor"/>
+        <Class IRI="#OrganizationalArchitecture"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#modelsCultureFor"/>
+        <Class IRI="#OrganizationalArchitecture"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#modelsEnvironmentFor"/>
+        <Class IRI="#OrganizationalArchitecture"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#modelsStrategyFor"/>
+        <Class IRI="#OrganizationalArchitecture"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#modelsStructureFor"/>
+        <Class IRI="#OrganizationalArchitecture"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#performs"/>
+        <Class IRI="#Activity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesAgents"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesCulture"/>
+        <Class IRI="#Culture"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesEnvironment"/>
+        <Class IRI="#OrganizationalEnvironment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesProcesses"/>
+        <Class IRI="#Process"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesStrategy"/>
+        <Class IRI="#Strategy"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesStructure"/>
+        <Class IRI="#OrganizationalStructure"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AcademicStructure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Akademska%20organizacijska%20struktura for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AcquisitionStructure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Spajanja%20i%20preuzimanja for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Activity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Any atomic activity performed by some individual agent
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AdhocracyStructure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Ad-hoc%20suprastrukture%20(ad-hoc-kracije) for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Agent</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A person or thing (or piece of software of course) that takes an active role or produces a specified effect</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AmoebaStructure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Organizacijska%20struktura%20amebe for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Behavior</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An agent behavior is some kind of activity performed by some agent. It has to be acceptable by a normative system the agent belongs to.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BioteamingOrganization</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Biotimovi for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BusinessProcessReengineering</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Rein%C5%BEenjering%20poslovnih%20procesa for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ClientServerBehavior</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Behavior which resembles the client-server model, e.g. the client sends requests, the server responds to them</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ClusterStructure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Klaster%20organizacijska%20struktura for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CommunitiesOfPractice</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Dru%C5%A1tva%20razmjene%20najboljih%20praksi for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ComplexAnalyticalMethod</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Kompleksna%20analiti%C4%8Dka%20metoda for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CriteriaOfOrganizing</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A particular criteria for organizing things like processes, organizational units, strategies or cultural artifacts.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Culture</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Organizational culture in organizations is a complex cybernetic system that deals with various intangible aspects of organizational behavior including but not limited to language, symbols, rituals, customs, norms, methods of problem solving, knowledge, learning etc. 
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CultureRelation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A relation between cultural artifacts (e.g. knowledge, norms etc.) in the organizational culture perspective</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CustomerOrientedStructure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Organizacijska%20struktura%20orijentirana%20prema%20potro%C5%A1a%C4%8Dima for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DivisionalStructure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Divizionalna%20organizacijska%20struktura for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DynamicNetworkStructure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See:
+http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Dinami%C4%8Dna%20mre%C5%BEa
+http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=%C5%A0pageti%20organizacijska%20struktura
+http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Hollywoodska%20organizacijska%20struktura
+http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Umre%C5%BEena%20organizacijska%20struktura
+for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EmpoweredOrganization</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Osna%C5%BEena%20organizacija for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FiniteStateMachineBehavior</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A behavior which resembles a finite state machine in which every node is
+an activity to be performed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FishnetStructure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Organizacijska%20struktura%20ribarske%20mre%C5%BEe for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FractalStructure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Fraktalna%20organizacijska%20struktura%20i%20koncept%20kaosa%20u%20organizaciji for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FrontBackStructure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Pramac/krma%20organizacijska%20struktura for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FunctionalStructure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Funkcionalna%20organizacijska%20struktura for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HeterarchicalStructure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Heterarhijske%20strukture for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HierarchicalStructure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Hijerarhijske%20strukture for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HybridStructure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Hibridne%20strukture for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HypertextOrganization</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Hipertekst%20organizacija for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#InfiniteFlatHierarchyStructure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Beskona%C4%8Dno%20plitka%20organizacijska%20struktura for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#InternalMarketStructure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Unutarnja%20tr%C5%BEi%C5%A1ta for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#InvertedStructure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Izvrnuta%20organizacijska%20struktura for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ItineraryBehavior</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Behavior which allows mobile agents to travel across various locations and perform tasks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Kaizen</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Kaizen for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KnowledgeArtifact</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">By knowledge artifact we understand a wide range of explicit knowledge in which we assume that it is queriable by the agent, including but not limited to data and knowledge bases, neural networks and machine learning architectures, various information services etc.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LeanManagement</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Vitki%20menad%C5%BEment for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LearningOrganization</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Organizacija%20koja%20u%C4%8Di for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ListenerBehavior</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A special type of observer behavior in which and agent awaits a message of some other agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MatrixStructure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Matri%C4%8Dna%20organizacijska%20struktura for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MergerStructure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Spajanja%20i%20preuzimanja for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Norm</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Norms are defined as (socially) accepted behavior in a defined group and represent a blueprint for behaving in said group</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NormativeSystem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A normative system is a system of norms which apply to some organizational unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Objective</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Any measurable objective that can be achieved by an atomic activity. Objectives can trigger processes.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ObserverBehavior</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Behavior in which an agents awaits an event in order to perform its actions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OneShotBehavior</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A behavior which represents a simple task or activity which is stopped after performance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OpenOrganization</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Otvorena%20organizacija for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OrganizationalArchitecture</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A model of an agent organization consisting of various perspectives including structure, culture, processes, strategy and individuals.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OrganizationalChange</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A model of organizational change in some agent organization (possibly influenced by some organizational design method)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OrganizationalCulture</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A model of an agent organization&apos;s culture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OrganizationalDesignMethod</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A method which brings change in and influences any part of an agent organization </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OrganizationalEnvironment</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A model of the organizational environment of some agent organization (includes besides the environemnt the organization is located in also other organizations which are engaged in some way)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OrganizationalIndividuals</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A model of an agent organization&apos;s individuals (agents)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OrganizationalKnowledgeNetwork</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Agent organizations can be seen as a network of knowledge artifacts which are accessible by particular agents. We will denote these with the label organizational knowldge network. Special cases of knowledge artifacts are norms which establish the rules of interaction between agents and values which influence decision making and selection of objectives
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OrganizationalMemory</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Organizacijska%20memorija for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OrganizationalProcesses</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A model of an agent organization&apos;s processes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OrganizationalStrategy</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A model of an agent organization&apos;s strategy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OrganizationalStructure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A model of an agent organization&apos;s structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OrganizationalUnit</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An organizational unit is (1) a network of agents (or lower level units), (2) which are organized according to some organizational criteria and (3) in which roles for lower level units are defined. This definition has an important implication: it allows us to deal with agents, groups and teams of agents, organizations of agents, networks of organizations of agents (or organizations of organizations) as well as virtual organizations of agents (as overlay structures) in the same way. This in particular means that organizational units may form a lattice structure in which each unit can belong to several super-units and/or be composed of several subunits. The criteria of organizing could for example be an objective, function, goal, mission, unit name, higher-order role etc.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ParallelBehavior</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Various behaviors are run in parallel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PeriodicBehavior</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A behavior which is looped possibly with a given period of time intervals between iterations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PlatformOrganization</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Platformska%20organizacija for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Process</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A process is (1) a network of activities (or lower level processes) (2) according to some criteria of organizing and (3) triggered by some strategy. The given definition allows for modeling organizations as networks of processes which can be defined in a number of ways. For example, the criteria for organizing might be that one process uses inputs from another or that two processes are using the same resources, or even that two processes are performed by the same organizational unit or that they are crucial for the same organizational goal.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ProcessRelation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A relation between two processes in the processes perspective</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ProductDivisionalStructure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Predmetna%20divizionalna%20organizacijska%20struktura for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ProjectOrientedStructure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Projektna%20organizacijska%20struktura for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RelationValuePartition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Value partition for the various organizational networks in some organizational architecture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Role</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A prescribed or expected behavior associated with a particular position or status in a group or organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RoleFactoryBehavior</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Behavior added at runtime and then enacted by the agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SequentialBehavior</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A sequence of other behaviors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ShamrockOrganization</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See:
+http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Organizacija%20djeteline
+http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Federalizam
+http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Obrnuta%20krafna
+for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SixSigma</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=6%20%CF%83%20(Six%20Sigma) for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#StableSuperStructure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Stabilne%20suprastrukture for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#StarburstStructure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Organizacijska%20struktura%20raspr%C5%A1ene%20zvijezde for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#StaticNetworkStructure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Stati%C4%8Dna%20mre%C5%BEa for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#StrategicAllianceStructure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See:
+http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Strate%C5%A1ki%20savezi%20i%20alijanse
+http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Internetski%20savezi
+http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Keiretsu
+http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Chaebol
+for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#StrategicOrganization</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Strategijska%20organizacija for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Strategy</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Strategy is closely bound the the Balanced ScoreCard paradigm. A strategy consists of: (1) a network of objectives (or other smaller strategies), (2) a criteria of organizing this network e.g. criteria might be influence (the outcome of one strategy influences another, for example a mathematical function), responsibility (two strategies are under the responsibility of the same organizational unit), achieveability (two strategies can be achieved by the same organizational process), etc., (3) a process which is triggered from the strategy as a response to some environmental or internal change.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#StrategyRelation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A relation between two strategies in the strategic perspective</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#StructuralRelation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A relation between two organizational units in the organizational structure perspective</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SuperStructure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Suprastrukture for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TaguchiMethod</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Taguchi%20metoda for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TeamBasedStructure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Timska%20organizacijska%20struktura for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TensorStructure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Tenzorska%20organizacijska%20struktura for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TeritorialStructure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Teritorijalna%20organizacijska%20struktura for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TotalQualityManagement</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Cjelovito%20upravljanje%20kvalitetom for details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ValuePartition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Value partitions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VirtualStructure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">See http://ai.foi.hr/oovasis/wiki/wiki.php?name=OOVASIS&amp;parent=NULL&amp;page=Virtualna%20organizacijska%20struktura for details</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

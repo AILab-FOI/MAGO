@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/bogdan/ontologies/2016/11/MAMbO5"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/bogdan/ontologies/2016/11/MAMbO5">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="mambo5" IRI="http://www.semanticweb.org/bogdan/ontologies/2016/11/MAMbO5#"/>
+    <Prefix name="OOVASIS" IRI="http://personales.upv.es/ccarrasc/ooooaflsmas#"/>
+    <Prefix name="JaCalIVE" IRI="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#"/>
+    <Import>http://personales.upv.es/ccarrasc/JaCalIVE_Ontology.owl</Import>
+    <Import>http://personales.upv.es/ccarrasc/ooooaflsmas.owl</Import>
+    <Declaration>
+        <ObjectProperty IRI="#isActiveWithin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SituatedOrganizationalUnit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasActiveNorms"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="OOVASIS:Behavior"/>
+        <Class abbreviatedIRI="JaCalIVE:Agent_Action"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SituatedOrganizationalUnit"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="JaCalIVE:Inhabitant_Agent"/>
+            <ObjectIntersectionOf>
+                <Class abbreviatedIRI="OOVASIS:OrganizationalUnit"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty abbreviatedIRI="JaCalIVE:has_IVE_Law"/>
+                    <Class abbreviatedIRI="JaCalIVE:IVE_Law"/>
+                </ObjectSomeValuesFrom>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty abbreviatedIRI="JaCalIVE:has_IVE_Law"/>
+                    <Class abbreviatedIRI="JaCalIVE:IVE_Law"/>
+                </ObjectAllValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class abbreviatedIRI="OOVASIS:KnowledgeArtifact"/>
+        <Class abbreviatedIRI="JaCalIVE:Artifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="OOVASIS:OrganizationalUnit"/>
+        <Class abbreviatedIRI="JaCalIVE:Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="JaCalIVE:IVE_Law"/>
+        <Class abbreviatedIRI="OOVASIS:Norm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="JaCalIVE:Plan"/>
+        <Class abbreviatedIRI="OOVASIS:Strategy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SituatedOrganizationalUnit"/>
+        <Class abbreviatedIRI="OOVASIS:OrganizationalUnit"/>
+    </SubClassOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasActiveNorms"/>
+        <ObjectProperty IRI="#isActiveWithin"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isActiveWithin"/>
+        <Class abbreviatedIRI="JaCalIVE:IVE_Law"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isActiveWithin"/>
+        <Class abbreviatedIRI="JaCalIVE:IVE_Workspace"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>OOVASIS:OrganizationalEnvironment</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Everything outside of the modelled system that can affect the modelled system. E.g. outside forces and agents that will not bemodelled in detail at the moment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>JaCalIVE:Action</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Action as an effect-inducing function of an artefact.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>JaCalIVE:IVE_Law</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A type of norm that is dependent on a specific Workspace, i.e. it is location-based.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>JaCalIVE:Manual</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Used to define Artifacts and describe how to use them.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>JaCalIVE:Workspace</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Everything that is being modelled at the moment. May contain Organizational Units (Individual and Grouped). Does not contain concepts of the system that are not being modelled at the moment.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

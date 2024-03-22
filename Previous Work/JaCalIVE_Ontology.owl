@@ -1,0 +1,995 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://personales.upv.es/ccarrasc/JaCalIVE_ontology">
+    <Prefix name="" IRI="https://personales.upv.es/ccarrasc/JaCalIVE_Ontology"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="http://personales.upv.es/ccarrasc/ooooaflsmas#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Action_Rule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agent_Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Artifact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Human_Immersed_Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IVE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IVE_Artifact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IVE_Law"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IVE_Law_Condition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IVE_Law_Type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IVE_Workspace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inhabitant_Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manual"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Observable_Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Observable_Property"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Operation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Physical_Artifact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Physical_Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Physical_Property"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Signal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SimpleType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Smart_Resource_Artifact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vector3D"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Workspace"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#generates_Signal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Acceleration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Action"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Action_Rule"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Agent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Agent_Action"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Arguments"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Artifact"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Attribute"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Body_Artifact"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Component"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Do_Action"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_IVE_Artifact"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_IVE_Law"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_IVE_Law_Cond_Type"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_IVE_Law_Type"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_IVE_Workspace"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Inh_Attribute"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Inhabitant_Agent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Joint"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Observable_Property"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Operation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Physical_Event"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Physical_Property"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Plan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Position"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_PreCondition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Velocity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Workspace"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_Action_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_Agent_Action_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_Agent_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_Artifact_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_Body_Artifact_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_Component_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_IVE_Artifact_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_IVE_Law_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_IVE_Workspace_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_Inhabitant_Agent_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_Observable_Property_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_Operation_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_Physical_Property_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_Plan_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_Signal_generated_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_Workspace_of"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Action"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Agent_Code_File"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Angle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Artifact_Code_File"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Condition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#File"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#IVE_Law_Action"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#IVE_Law_Condition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#IVE_Law_Sentence"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#IVE_Law_Type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Linkeable"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Manual"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Mass"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Operand_Type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Physical_Property_Type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Shape"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#X"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Y"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Z"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_SimpleValue"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#IVE_Law_Condition"/>
+        <Class IRI="#IVE_Law_Type"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SimpleType"/>
+        <Class IRI="#Vector3D"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Action"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#has_Action_Rule"/>
+            <Class IRI="#Action_Rule"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Action"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty IRI="#has_Physical_Event"/>
+            <Class IRI="#Physical_Event"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Action_Rule"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#has_Do_Action"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Action_Rule"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty IRI="#has_PreCondition"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human_Immersed_Agent"/>
+        <Class IRI="#Inhabitant_Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IVE_Artifact"/>
+        <Class IRI="#Artifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IVE_Law"/>
+        <DataMinCardinality cardinality="1">
+            <DataProperty IRI="#IVE_Law_Action"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IVE_Workspace"/>
+        <Class IRI="#Workspace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inhabitant_Agent"/>
+        <Class IRI="http://personales.upv.es/ccarrasc/ooooaflsmas#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Physical_Artifact"/>
+        <Class IRI="#IVE_Artifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Physical_Event"/>
+        <Class IRI="#Observable_Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Physical_Property"/>
+        <Class IRI="#Observable_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Smart_Resource_Artifact"/>
+        <Class IRI="#Physical_Artifact"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#IVE_Law_Condition"/>
+        <Class IRI="#IVE_Law_Type"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SimpleType"/>
+        <Class IRI="#Vector3D"/>
+    </DisjointClasses>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#generates_Signal"/>
+        <ObjectProperty IRI="#is_Signal_generated_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_Action"/>
+        <ObjectProperty IRI="#is_Action_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_Agent"/>
+        <ObjectProperty IRI="#is_Agent_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_Agent_Action"/>
+        <ObjectProperty IRI="#is_Agent_Action_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_Artifact"/>
+        <ObjectProperty IRI="#is_Artifact_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_Body_Artifact"/>
+        <ObjectProperty IRI="#is_Body_Artifact_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_Component"/>
+        <ObjectProperty IRI="#is_Component_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_IVE_Artifact"/>
+        <ObjectProperty IRI="#is_IVE_Artifact_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_IVE_Law"/>
+        <ObjectProperty IRI="#is_IVE_Law_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_IVE_Workspace"/>
+        <ObjectProperty IRI="#is_IVE_Workspace_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_Inhabitant_Agent"/>
+        <ObjectProperty IRI="#is_Inhabitant_Agent_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_Observable_Property"/>
+        <ObjectProperty IRI="#is_Observable_Property_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_Operation"/>
+        <ObjectProperty IRI="#is_Operation_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_Physical_Property"/>
+        <ObjectProperty IRI="#is_Physical_Property_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_Plan"/>
+        <ObjectProperty IRI="#is_Plan_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_Workspace"/>
+        <ObjectProperty IRI="#is_Workspace_of"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#generates_Signal"/>
+        <Class IRI="#Artifact"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_Acceleration"/>
+        <Class IRI="#Physical_Property"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_Action"/>
+        <Class IRI="#IVE_Artifact"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_Action_Rule"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_Agent"/>
+        <Class IRI="#Workspace"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_Agent_Action"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_Arguments"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_Artifact"/>
+        <Class IRI="#Workspace"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_Attribute"/>
+        <Class IRI="#Artifact"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_Body_Artifact"/>
+        <Class IRI="#Inhabitant_Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_Component"/>
+        <Class IRI="#IVE_Artifact"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_Do_Action"/>
+        <Class IRI="#Action_Rule"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_IVE_Artifact"/>
+        <Class IRI="#IVE_Workspace"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_IVE_Law"/>
+        <Class IRI="#IVE_Workspace"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_IVE_Law_Cond_Type"/>
+        <Class IRI="#IVE_Law"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_IVE_Law_Type"/>
+        <Class IRI="#IVE_Law_Type"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_IVE_Workspace"/>
+        <Class IRI="#IVE"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_Inh_Attribute"/>
+        <Class IRI="#Inhabitant_Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_Inhabitant_Agent"/>
+        <Class IRI="#IVE_Workspace"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_Joint"/>
+        <Class IRI="#Physical_Property"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_Observable_Property"/>
+        <Class IRI="#Artifact"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_Operation"/>
+        <Class IRI="#Artifact"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_Physical_Event"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_Physical_Property"/>
+        <Class IRI="#IVE_Artifact"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_Plan"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_Position"/>
+        <Class IRI="#Physical_Property"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_PreCondition"/>
+        <Class IRI="#Action_Rule"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_Velocity"/>
+        <Class IRI="#Physical_Property"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_Workspace"/>
+        <Class IRI="#IVE"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_Action_of"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_Agent_Action_of"/>
+        <Class IRI="#Agent_Action"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_Agent_of"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_Artifact_of"/>
+        <Class IRI="#Artifact"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_Body_Artifact_of"/>
+        <Class IRI="#IVE_Artifact"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_Component_of"/>
+        <Class IRI="#IVE_Artifact"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_IVE_Artifact_of"/>
+        <Class IRI="#IVE_Artifact"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_IVE_Law_of"/>
+        <Class IRI="#IVE_Law"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_IVE_Workspace_of"/>
+        <Class IRI="#IVE_Workspace"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_Inhabitant_Agent_of"/>
+        <Class IRI="#Inhabitant_Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_Observable_Property_of"/>
+        <Class IRI="#Observable_Property"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_Operation_of"/>
+        <Class IRI="#Operation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_Physical_Property_of"/>
+        <Class IRI="#Physical_Property"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_Plan_of"/>
+        <Class IRI="#Plan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_Signal_generated_by"/>
+        <Class IRI="#Signal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_Workspace_of"/>
+        <Class IRI="#Workspace"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#generates_Signal"/>
+        <Class IRI="#Signal"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_Acceleration"/>
+        <Class IRI="#Vector3D"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_Action"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_Action_Rule"/>
+        <Class IRI="#Action_Rule"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_Agent"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_Agent_Action"/>
+        <Class IRI="#Agent_Action"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_Artifact"/>
+        <Class IRI="#Artifact"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_Body_Artifact"/>
+        <Class IRI="#IVE_Artifact"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_Component"/>
+        <Class IRI="#IVE_Artifact"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_IVE_Artifact"/>
+        <Class IRI="#IVE_Artifact"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_IVE_Law"/>
+        <Class IRI="#IVE_Law"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_IVE_Law_Cond_Type"/>
+        <Class IRI="#IVE_Law_Condition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_IVE_Law_Type"/>
+        <ObjectUnionOf>
+            <Class IRI="#SimpleType"/>
+            <Class IRI="#Vector3D"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_IVE_Workspace"/>
+        <Class IRI="#IVE_Workspace"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_Inhabitant_Agent"/>
+        <Class IRI="#Inhabitant_Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_Joint"/>
+        <Class IRI="#Vector3D"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_Observable_Property"/>
+        <Class IRI="#Observable_Property"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_Operation"/>
+        <Class IRI="#Operation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_Physical_Event"/>
+        <Class IRI="#Physical_Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_Physical_Property"/>
+        <Class IRI="#Physical_Property"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_Plan"/>
+        <Class IRI="#Plan"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_Position"/>
+        <Class IRI="#Vector3D"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_Velocity"/>
+        <Class IRI="#Vector3D"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_Workspace"/>
+        <Class IRI="#Workspace"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_Action_of"/>
+        <Class IRI="#IVE_Artifact"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_Agent_Action_of"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_Agent_of"/>
+        <Class IRI="#Workspace"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_Artifact_of"/>
+        <Class IRI="#Workspace"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_Body_Artifact_of"/>
+        <Class IRI="#Inhabitant_Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_Component_of"/>
+        <Class IRI="#IVE_Artifact"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_IVE_Artifact_of"/>
+        <Class IRI="#IVE_Workspace"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_IVE_Law_of"/>
+        <Class IRI="#IVE_Workspace"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_IVE_Workspace_of"/>
+        <Class IRI="#IVE"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_Inhabitant_Agent_of"/>
+        <Class IRI="#IVE_Workspace"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_Observable_Property_of"/>
+        <Class IRI="#Artifact"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_Operation_of"/>
+        <Class IRI="#Artifact"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_Physical_Property_of"/>
+        <Class IRI="#IVE_Artifact"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_Plan_of"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_Signal_generated_by"/>
+        <Class IRI="#Artifact"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_Workspace_of"/>
+        <Class IRI="#IVE"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Action"/>
+        <Class IRI="#IVE_Law"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Agent_Code_File"/>
+        <Class IRI="#Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Angle"/>
+        <Class IRI="#Physical_Property"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Artifact_Code_File"/>
+        <Class IRI="#Artifact"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Condition"/>
+        <Class IRI="#IVE_Law"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#File"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#IVE_Law_Action"/>
+        <Class IRI="#IVE_Law"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#IVE_Law_Condition"/>
+        <Class IRI="#IVE_Law_Condition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#IVE_Law_Sentence"/>
+        <Class IRI="#IVE_Law_Condition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#IVE_Law_Type"/>
+        <Class IRI="#IVE_Law"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Linkeable"/>
+        <Class IRI="#Artifact"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Manual"/>
+        <Class IRI="#Artifact"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Mass"/>
+        <Class IRI="#Physical_Property"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Name"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Operand_Type"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Physical_Property_Type"/>
+        <Class IRI="#Physical_Property"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Shape"/>
+        <Class IRI="#Physical_Property"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#X"/>
+        <Class IRI="#Vector3D"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Y"/>
+        <Class IRI="#Vector3D"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Z"/>
+        <Class IRI="#Vector3D"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#has_SimpleValue"/>
+        <Class IRI="#SimpleType"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Action"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Agent_Code_File"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Angle"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Artifact_Code_File"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Condition"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#File"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#IVE_Law_Action"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#IVE_Law_Condition"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#IVE_Law_Sentence"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#IVE_Law_Type"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+            <Datatype abbreviatedIRI="xsd:int"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Linkeable"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Manual"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Mass"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Operand_Type"/>
+        <DataOneOf>
+            <Literal>ADD</Literal>
+            <Literal>AND</Literal>
+            <Literal>BOOLEAN_VAL</Literal>
+            <Literal>DIVIDE</Literal>
+            <Literal>DOUBLE_VAL</Literal>
+            <Literal>ELEMENT_ATT</Literal>
+            <Literal>ELEMENT_PROP</Literal>
+            <Literal>EQUAL</Literal>
+            <Literal>FLOAT_VAL</Literal>
+            <Literal>GREATERTHAN</Literal>
+            <Literal>INT_VAL</Literal>
+            <Literal>LESSTHAN</Literal>
+            <Literal>MOD</Literal>
+            <Literal>MULTIPLY</Literal>
+            <Literal>OR</Literal>
+            <Literal>PARAMETER</Literal>
+            <Literal>STRING_VAL</Literal>
+            <Literal>SUBSTRACT</Literal>
+            <Literal>UNEQUAL</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Physical_Property_Type"/>
+        <DataOneOf>
+            <Literal>Internal</Literal>
+            <Literal>Perceivable</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Shape"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#X"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Y"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Z"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has_SimpleValue"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IVE</IRI>
+        <Literal>Intelligent Virtual Environment Definition</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
