@@ -1,0 +1,759 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://dragon.foi.hr/mago-a.owx#"
+     xml:base="http://dragon.foi.hr/mago-a.owx"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:mago="http://dragon.foi.hr/mago-a.owx/"
+     xmlns:owlr="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://dragon.foi.hr/mago-a.owx#">
+        <rdfs:comment>The ontology for MAGO research visit.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#python_name -->
+
+    <owl:AnnotationProperty rdf:about="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#python_name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/R7MvUIWpnOdfB3dxpRXTUAK -->
+
+    <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx/R7MvUIWpnOdfB3dxpRXTUAK">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx/R7dQDUF81SOJC29Sctpy6aP"/>
+        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx/R84KrWu3ZBbXCifW6B9GSmZ"/>
+        <rdfs:label xml:lang="en-gb">implements action</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/R7NTCPsMvJdxinMk2P28ppg -->
+
+    <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx/R7NTCPsMvJdxinMk2P28ppg">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx/RDqoRvx1aDeStUw4zNRdR0o"/>
+        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx/RDqoRvx1aDeStUw4zNRdR0o"/>
+        <rdfs:label xml:lang="en-gb">has final objective</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/R7o5TdA2HQOQxwVPrUJrLpq -->
+
+    <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx/R7o5TdA2HQOQxwVPrUJrLpq">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx/RDqoRvx1aDeStUw4zNRdR0o"/>
+        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx/RDqoRvx1aDeStUw4zNRdR0o"/>
+        <rdfs:label xml:lang="en-gb">is before objective</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/R84IuDzXJ7QCZi1bY6fzFxZ -->
+
+    <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx/R84IuDzXJ7QCZi1bY6fzFxZ">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx/RDm65h4GNQjimv0axMIRnMX"/>
+        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx/R84KrWu3ZBbXCifW6B9GSmZ"/>
+        <rdfs:label xml:lang="en-gb">requires action</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/R8ZWdA7HWDzIIwhQZrSwAIj -->
+
+    <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx/R8ZWdA7HWDzIIwhQZrSwAIj">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx/RDgoxtmVWC61IdqtaNK9QBf"/>
+        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx/RDgoxtmVWC61IdqtaNK9QBf"/>
+        <rdfs:label xml:lang="en-gb">is after state</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/R8ZXgNqWa8M3RnwigsFBxvc -->
+
+    <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx/R8ZXgNqWa8M3RnwigsFBxvc">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx/R9iXau1ZAN6oZTRbdCgbmgd"/>
+        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx/R9iXau1ZAN6oZTRbdCgbmgd"/>
+        <rdfs:label xml:lang="en-gb">features role</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/R8nS5zlvvUfE9N1xZBYTpcG -->
+
+    <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx/R8nS5zlvvUfE9N1xZBYTpcG">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx/R84KrWu3ZBbXCifW6B9GSmZ"/>
+        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx/RDqoRvx1aDeStUw4zNRdR0o"/>
+        <rdfs:label xml:lang="en-gb">has objective</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/R9QlFkpwG4P6QT3YaFGdAPM -->
+
+    <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx/R9QlFkpwG4P6QT3YaFGdAPM">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx/R84KrWu3ZBbXCifW6B9GSmZ"/>
+        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx/R84KrWu3ZBbXCifW6B9GSmZ"/>
+        <rdfs:label xml:lang="en-gb">is after action</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/R9Y2982rI3hZL4oBhv8Ohhv -->
+
+    <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx/R9Y2982rI3hZL4oBhv8Ohhv">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx/RDm65h4GNQjimv0axMIRnMX"/>
+        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx/RDm65h4GNQjimv0axMIRnMX"/>
+        <rdfs:label xml:lang="en-gb">is part of process</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/R9wYaBAe5LQpMMDI7zKHWhc -->
+
+    <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx/R9wYaBAe5LQpMMDI7zKHWhc">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx/R84KrWu3ZBbXCifW6B9GSmZ"/>
+        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx/R84KrWu3ZBbXCifW6B9GSmZ"/>
+        <rdfs:label xml:lang="en-gb">is before action</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/RB8ofKEO8zM8jcK0WetPpLI -->
+
+    <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx/RB8ofKEO8zM8jcK0WetPpLI">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx/R9lwUrkbSftwsmlPcopLgzT"/>
+        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx/RB4lINuYfn41lvT2d2GduUO"/>
+        <rdfs:label xml:lang="en-gb">can access artefact</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/RBOL8y2xs4VvKc6D0kikOup -->
+
+    <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx/RBOL8y2xs4VvKc6D0kikOup">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx/R9iXau1ZAN6oZTRbdCgbmgd"/>
+        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx/R9iXau1ZAN6oZTRbdCgbmgd"/>
+        <rdfs:label xml:lang="en-gb">is part of role</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/RBmpSay8yjDZmklOv6Mw1rc -->
+
+    <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx/RBmpSay8yjDZmklOv6Mw1rc">
+        <rdfs:subPropertyOf rdf:resource="http://dragon.foi.hr/mago-a.owx/RCcC3SXJ5MvuHMJyzs8OpU6"/>
+        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx/R9lwUrkbSftwsmlPcopLgzT"/>
+        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx/R9iXau1ZAN6oZTRbdCgbmgd"/>
+        <rdfs:label xml:lang="en-gb">plays role</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/RBntfnmvB9JVuK1xvAe6Hm8 -->
+
+    <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx/RBntfnmvB9JVuK1xvAe6Hm8">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx/RDqoRvx1aDeStUw4zNRdR0o"/>
+        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx/RDqoRvx1aDeStUw4zNRdR0o"/>
+        <rdfs:label xml:lang="en-gb">is after objective</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/RC6rldf2VsWBaHtUobIELQL -->
+
+    <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx/RC6rldf2VsWBaHtUobIELQL">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx/RDMv7ayhi9xuRAzbfALLhKS"/>
+        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx/RDgoxtmVWC61IdqtaNK9QBf"/>
+        <rdfs:label xml:lang="en-gb">has initial state</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/RCAv5UwFPy5OUQdjN61nXbw -->
+
+    <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx/RCAv5UwFPy5OUQdjN61nXbw">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx/R7dQDUF81SOJC29Sctpy6aP"/>
+        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx/R9iXau1ZAN6oZTRbdCgbmgd"/>
+        <rdfs:label xml:lang="en-gb">is provided by role</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/RCPuCz8AunmmX3PS6A0U0XL -->
+
+    <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx/RCPuCz8AunmmX3PS6A0U0XL">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx/RDMv7ayhi9xuRAzbfALLhKS"/>
+        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx/RDgoxtmVWC61IdqtaNK9QBf"/>
+        <rdfs:label xml:lang="en-gb">has final state</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/RCWrWcZCQ3lxj6jFw9zRJ6m -->
+
+    <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx/RCWrWcZCQ3lxj6jFw9zRJ6m">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx/RB4lINuYfn41lvT2d2GduUO"/>
+        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx/RChP69av2xqRwh6LALfwsKq"/>
+        <rdfs:label xml:lang="en-gb">provides resource</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/RCcC3SXJ5MvuHMJyzs8OpU6 -->
+
+    <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx/RCcC3SXJ5MvuHMJyzs8OpU6">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx/R9lwUrkbSftwsmlPcopLgzT"/>
+        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx/R9iXau1ZAN6oZTRbdCgbmgd"/>
+        <rdfs:label xml:lang="en-gb">can play role</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/RCkUIZx8f7TQwTrh3wmfyBD -->
+
+    <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx/RCkUIZx8f7TQwTrh3wmfyBD">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx/R84KrWu3ZBbXCifW6B9GSmZ"/>
+        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx/R7dQDUF81SOJC29Sctpy6aP"/>
+        <rdfs:label xml:lang="en-gb">is implemented using behaviour</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/RCsnmcyqIe70G3lagH4y3bE -->
+
+    <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx/RCsnmcyqIe70G3lagH4y3bE">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx/RDqoRvx1aDeStUw4zNRdR0o"/>
+        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx/RDqoRvx1aDeStUw4zNRdR0o"/>
+        <rdfs:label xml:lang="en-gb">is part of objective</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/RDGoFrovO0PhBCQGPkFeUuR -->
+
+    <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx/RDGoFrovO0PhBCQGPkFeUuR">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx/RDgoxtmVWC61IdqtaNK9QBf"/>
+        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx/RDgoxtmVWC61IdqtaNK9QBf"/>
+        <rdfs:label xml:lang="en-gb">is before state</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/RDrm00K6AJVd5OJmoVCqPy6 -->
+
+    <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx/RDrm00K6AJVd5OJmoVCqPy6">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx/RDqoRvx1aDeStUw4zNRdR0o"/>
+        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx/RDqoRvx1aDeStUw4zNRdR0o"/>
+        <rdfs:label xml:lang="en-gb">has initial objective</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/RY56GiCpqJHON677qnE5sT -->
+
+    <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx/RY56GiCpqJHON677qnE5sT">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx/R9iXau1ZAN6oZTRbdCgbmgd"/>
+        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx/R7dQDUF81SOJC29Sctpy6aP"/>
+        <rdfs:label xml:lang="en-gb">provides behaviour</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/ReKEcwE01zu4hSOL1gSBu2 -->
+
+    <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx/ReKEcwE01zu4hSOL1gSBu2">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx/RDqoRvx1aDeStUw4zNRdR0o"/>
+        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx/RDqoRvx1aDeStUw4zNRdR0o"/>
+        <rdfs:label xml:lang="en-gb">features objective</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/RoDHPMWwB604EEv4qQbsGC -->
+
+    <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx/RoDHPMWwB604EEv4qQbsGC">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx/RDm65h4GNQjimv0axMIRnMX"/>
+        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx/RDm65h4GNQjimv0axMIRnMX"/>
+        <rdfs:label xml:lang="en-gb">features process</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/RpmDQcEqabFOwsZHv82QuP -->
+
+    <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx/RpmDQcEqabFOwsZHv82QuP">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx/R9lwUrkbSftwsmlPcopLgzT"/>
+        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx/RCdOsGdA0yrGZdnzgQesQx7"/>
+        <owlr:python_name>lives_on_host</owlr:python_name>
+        <rdfs:label xml:lang="en-gb">lives on host</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx#OWLDataProperty_13076287_43a5_47ba_80d4_aa0b2fcbf767 -->
+
+    <owl:DatatypeProperty rdf:about="http://dragon.foi.hr/mago-a.owx#OWLDataProperty_13076287_43a5_47ba_80d4_aa0b2fcbf767">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">is implemented as</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx#expected_input_type -->
+
+    <owl:DatatypeProperty rdf:about="http://dragon.foi.hr/mago-a.owx#expected_input_type">
+        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx#Endpoint"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en-gb">expected input type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx#expected_output_type -->
+
+    <owl:DatatypeProperty rdf:about="http://dragon.foi.hr/mago-a.owx#expected_output_type">
+        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx#Endpoint"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en-gb">expected output type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/R8l3NnmqnvjfzJkS5rDNvFm -->
+
+    <owl:DatatypeProperty rdf:about="http://dragon.foi.hr/mago-a.owx/R8l3NnmqnvjfzJkS5rDNvFm">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx/RCjIVQ3sTEfJR8m9yEY3Mhe"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+        <rdfs:label xml:lang="en-gb">has period</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/R9J48UjiiUd5fDfTuG4Mj8i -->
+
+    <owl:DatatypeProperty rdf:about="http://dragon.foi.hr/mago-a.owx/R9J48UjiiUd5fDfTuG4Mj8i">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx/R8EpacdsHKWIyPDRwsmkSta"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+        <rdfs:label xml:lang="en-gb">has timeout</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/RBffMlV8TQxoNtbLRneUYsb -->
+
+    <owl:DatatypeProperty rdf:about="http://dragon.foi.hr/mago-a.owx/RBffMlV8TQxoNtbLRneUYsb">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en-gb">JSON description of the basic features of the modelled system, e.g. {&quot;number of agents&quot;: 10}</rdfs:comment>
+        <rdfs:label xml:lang="en-gb">has system features</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/RDxmweKrzFGij8P5HOOsXZK -->
+
+    <owl:DatatypeProperty rdf:about="http://dragon.foi.hr/mago-a.owx/RDxmweKrzFGij8P5HOOsXZK">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en-gb">has name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx#Endpoint -->
+
+    <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx#Endpoint">
+        <rdfs:subClassOf rdf:resource="http://dragon.foi.hr/mago-a.owx/RChP69av2xqRwh6LALfwsKq"/>
+        <rdfs:label xml:lang="en-gb">Endpoint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/R7dQDUF81SOJC29Sctpy6aP -->
+
+    <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx/R7dQDUF81SOJC29Sctpy6aP">
+        <owl:disjointWith rdf:resource="http://dragon.foi.hr/mago-a.owx/R84KrWu3ZBbXCifW6B9GSmZ"/>
+        <rdfs:label xml:lang="en-gb">Behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/R84KrWu3ZBbXCifW6B9GSmZ -->
+
+    <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx/R84KrWu3ZBbXCifW6B9GSmZ">
+        <rdfs:label xml:lang="en-gb">Action</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/R8EpacdsHKWIyPDRwsmkSta -->
+
+    <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx/R8EpacdsHKWIyPDRwsmkSta">
+        <rdfs:subClassOf rdf:resource="http://dragon.foi.hr/mago-a.owx/R7dQDUF81SOJC29Sctpy6aP"/>
+        <rdfs:label xml:lang="en-gb">One Shot Behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/R8qZIr2HXGJ6b0ElO4Ml6GH -->
+
+    <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx/R8qZIr2HXGJ6b0ElO4Ml6GH">
+        <rdfs:subClassOf rdf:resource="http://dragon.foi.hr/mago-a.owx/RBzqbNmJP5lfpPIgYCvLGDa"/>
+        <rdfs:label xml:lang="en-gb">Remote Software Artefact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/R9iXau1ZAN6oZTRbdCgbmgd -->
+
+    <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx/R9iXau1ZAN6oZTRbdCgbmgd">
+        <rdfs:label xml:lang="en-gb">Role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/R9lwUrkbSftwsmlPcopLgzT -->
+
+    <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx/R9lwUrkbSftwsmlPcopLgzT">
+        <rdfs:label xml:lang="en-gb">Agent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/RB4lINuYfn41lvT2d2GduUO -->
+
+    <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx/RB4lINuYfn41lvT2d2GduUO">
+        <rdfs:label xml:lang="en-gb">Artefact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/RB7E1Pc7CjNxOm8CrfunqBu -->
+
+    <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx/RB7E1Pc7CjNxOm8CrfunqBu">
+        <rdfs:subClassOf rdf:resource="http://dragon.foi.hr/mago-a.owx/RBzqbNmJP5lfpPIgYCvLGDa"/>
+        <rdfs:label xml:lang="en-gb">Local Software Artefact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/RBGp2C7WAHzeIMoeFp3K6lr -->
+
+    <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx/RBGp2C7WAHzeIMoeFp3K6lr">
+        <rdfs:label xml:lang="en-gb">Strategy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/RBzqbNmJP5lfpPIgYCvLGDa -->
+
+    <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx/RBzqbNmJP5lfpPIgYCvLGDa">
+        <rdfs:subClassOf rdf:resource="http://dragon.foi.hr/mago-a.owx/RB4lINuYfn41lvT2d2GduUO"/>
+        <rdfs:label xml:lang="en-gb">Software Artefact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/RCdOsGdA0yrGZdnzgQesQx7 -->
+
+    <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx/RCdOsGdA0yrGZdnzgQesQx7">
+        <rdfs:subClassOf rdf:resource="http://dragon.foi.hr/mago-a.owx/R8qZIr2HXGJ6b0ElO4Ml6GH"/>
+        <rdfs:label xml:lang="en-gb">Agent Host Server</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/RChP69av2xqRwh6LALfwsKq -->
+
+    <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx/RChP69av2xqRwh6LALfwsKq">
+        <rdfs:label xml:lang="en-gb">Artefact Resource</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/RCjIVQ3sTEfJR8m9yEY3Mhe -->
+
+    <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx/RCjIVQ3sTEfJR8m9yEY3Mhe">
+        <rdfs:subClassOf rdf:resource="http://dragon.foi.hr/mago-a.owx/R7dQDUF81SOJC29Sctpy6aP"/>
+        <rdfs:label xml:lang="en-gb">Cyclic Behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/RDMv7ayhi9xuRAzbfALLhKS -->
+
+    <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx/RDMv7ayhi9xuRAzbfALLhKS">
+        <rdfs:subClassOf rdf:resource="http://dragon.foi.hr/mago-a.owx/R7dQDUF81SOJC29Sctpy6aP"/>
+        <rdfs:label xml:lang="en-gb">Finite State Machine Behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/RDgoxtmVWC61IdqtaNK9QBf -->
+
+    <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx/RDgoxtmVWC61IdqtaNK9QBf">
+        <rdfs:subClassOf rdf:resource="http://dragon.foi.hr/mago-a.owx/R8EpacdsHKWIyPDRwsmkSta"/>
+        <rdfs:label xml:lang="en-gb">State Behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/RDl2yHd2gEWyEDMtUcL67d -->
+
+    <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx/RDl2yHd2gEWyEDMtUcL67d">
+        <rdfs:subClassOf rdf:resource="http://dragon.foi.hr/mago-a.owx/Rm3YabirGXstrtBtkrthoH"/>
+        <rdfs:label xml:lang="en-gb">Individual Knowledge Artefact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/RDm65h4GNQjimv0axMIRnMX -->
+
+    <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx/RDm65h4GNQjimv0axMIRnMX">
+        <rdfs:subClassOf rdf:resource="http://dragon.foi.hr/mago-a.owx/RBGp2C7WAHzeIMoeFp3K6lr"/>
+        <rdfs:label xml:lang="en-gb">Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/RDqoRvx1aDeStUw4zNRdR0o -->
+
+    <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx/RDqoRvx1aDeStUw4zNRdR0o">
+        <rdfs:subClassOf rdf:resource="http://dragon.foi.hr/mago-a.owx/RBGp2C7WAHzeIMoeFp3K6lr"/>
+        <rdfs:label xml:lang="en-gb">Objective</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/RDthziSE3duD8pOUD5idMfO -->
+
+    <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx/RDthziSE3duD8pOUD5idMfO">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://dragon.foi.hr/mago-a.owx/R8EpacdsHKWIyPDRwsmkSta"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://dragon.foi.hr/mago-a.owx/R9J48UjiiUd5fDfTuG4Mj8i"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en-gb">Time-out Behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/RWOhadIHzH5yfBTDwuDICD -->
+
+    <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx/RWOhadIHzH5yfBTDwuDICD">
+        <rdfs:subClassOf rdf:resource="http://dragon.foi.hr/mago-a.owx/Rm3YabirGXstrtBtkrthoH"/>
+        <rdfs:label xml:lang="en-gb">Organisational Knowledge Artefact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/Rce2iHbgKH3gy3TygYasFi -->
+
+    <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx/Rce2iHbgKH3gy3TygYasFi">
+        <rdfs:label xml:lang="en-gb">System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/Rip7CRo5Sv8C6NFZrhvEDH -->
+
+    <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx/Rip7CRo5Sv8C6NFZrhvEDH">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://dragon.foi.hr/mago-a.owx/RCjIVQ3sTEfJR8m9yEY3Mhe"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://dragon.foi.hr/mago-a.owx/R8l3NnmqnvjfzJkS5rDNvFm"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en-gb">Periodic Behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/Rm3YabirGXstrtBtkrthoH -->
+
+    <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx/Rm3YabirGXstrtBtkrthoH">
+        <rdfs:subClassOf rdf:resource="http://dragon.foi.hr/mago-a.owx/RB4lINuYfn41lvT2d2GduUO"/>
+        <rdfs:label xml:lang="en-gb">Knowledge Artefact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/localhost -->
+
+    <owl:NamedIndividual rdf:about="http://dragon.foi.hr/mago-a.owx/localhost">
+        <rdf:type rdf:resource="http://dragon.foi.hr/mago-a.owx/RCdOsGdA0yrGZdnzgQesQx7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/r9lwurkbsftwsmlpcoplgzt1 -->
+
+    <owl:NamedIndividual rdf:about="http://dragon.foi.hr/mago-a.owx/r9lwurkbsftwsmlpcoplgzt1">
+        <rdf:type rdf:resource="http://dragon.foi.hr/mago-a.owx/R9lwUrkbSftwsmlPcopLgzT"/>
+        <mago:RpmDQcEqabFOwsZHv82QuP rdf:resource="http://dragon.foi.hr/mago-a.owx/rcdosgda0yrgzdnzgqesqx76"/>
+        <mago:RDxmweKrzFGij8P5HOOsXZK>SevenOfNine</mago:RDxmweKrzFGij8P5HOOsXZK>
+        <rdfs:label>Broj dva</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/rcdosgda0yrgzdnzgqesqx71 -->
+
+    <owl:NamedIndividual rdf:about="http://dragon.foi.hr/mago-a.owx/rcdosgda0yrgzdnzgqesqx71">
+        <rdf:type rdf:resource="http://dragon.foi.hr/mago-a.owx/RCdOsGdA0yrGZdnzgQesQx7"/>
+        <rdfs:label>drugi_host.com</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/rcdosgda0yrgzdnzgqesqx72 -->
+
+    <owl:NamedIndividual rdf:about="http://dragon.foi.hr/mago-a.owx/rcdosgda0yrgzdnzgqesqx72">
+        <rdf:type rdf:resource="http://dragon.foi.hr/mago-a.owx/RCdOsGdA0yrGZdnzgQesQx7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/rcdosgda0yrgzdnzgqesqx73 -->
+
+    <owl:NamedIndividual rdf:about="http://dragon.foi.hr/mago-a.owx/rcdosgda0yrgzdnzgqesqx73">
+        <rdf:type rdf:resource="http://dragon.foi.hr/mago-a.owx/RCdOsGdA0yrGZdnzgQesQx7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/rcdosgda0yrgzdnzgqesqx74 -->
+
+    <owl:NamedIndividual rdf:about="http://dragon.foi.hr/mago-a.owx/rcdosgda0yrgzdnzgqesqx74">
+        <rdf:type rdf:resource="http://dragon.foi.hr/mago-a.owx/RCdOsGdA0yrGZdnzgQesQx7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/rcdosgda0yrgzdnzgqesqx75 -->
+
+    <owl:NamedIndividual rdf:about="http://dragon.foi.hr/mago-a.owx/rcdosgda0yrgzdnzgqesqx75">
+        <rdf:type rdf:resource="http://dragon.foi.hr/mago-a.owx/RCdOsGdA0yrGZdnzgQesQx7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/rcdosgda0yrgzdnzgqesqx76 -->
+
+    <owl:NamedIndividual rdf:about="http://dragon.foi.hr/mago-a.owx/rcdosgda0yrgzdnzgqesqx76">
+        <rdf:type rdf:resource="http://dragon.foi.hr/mago-a.owx/RCdOsGdA0yrGZdnzgQesQx7"/>
+        <rdfs:label>localhost</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx/Broj%20jedan -->
+
+    <owl:NamedIndividual rdf:about="http://dragon.foi.hr/mago-a.owx/Broj%20jedan">
+        <rdf:type rdf:resource="http://dragon.foi.hr/mago-a.owx/R9lwUrkbSftwsmlPcopLgzT"/>
+        <mago:RpmDQcEqabFOwsZHv82QuP rdf:resource="http://dragon.foi.hr/mago-a.owx/localhost"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
