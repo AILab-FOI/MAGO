@@ -19,7 +19,9 @@ class Agent(Thing):
         self.password = password
         self.behaviours = []
         self.query_roles = """"""
-        self.knowledge_artefact_uris = get_related_knowledge_artefact_uris(self.onto_individual)
+        self.knowledge_artefact_uris = get_related_knowledge_artefact_uris(
+            self.onto_individual
+        )
 
     def render_agent_implementation(self):
         self.set_implementation_template(
@@ -91,20 +93,21 @@ class $agent_type(Agent):
     def get_related_roles_and_behaviours(self):
         result = {}
 
-        result.update({
-            role.iri: {
-                "name": role.has_name,
-                "behaviours": {}
+        result.update(
+            {
+                role.iri: {"name": role.has_name, "behaviours": {}}
+                for role in self.onto_individual.can_play_role
             }
-            for role in self.onto_individual.can_play_role
-        })
+        )
 
         for role in self.onto_individual.can_play_role:
-            result.get(role.iri).get("behaviours").update({
-                behaviour.iri: behaviour.has_name
-                for behaviour in role.provides_behaviour
-            })
-        
+            result.get(role.iri).get("behaviours").update(
+                {
+                    behaviour.iri: behaviour.has_name
+                    for behaviour in role.provides_behaviour
+                }
+            )
+
         return result if result else None
 
     def render_agent_instantiation(self):

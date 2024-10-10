@@ -63,10 +63,16 @@ class Behaviour(Thing):
         implementation = []
 
         state_names = {}
-        state_names.update({
-            state: clean_string(state.has_name) if state.has_name else clean_string(state.name)
-            for state in states
-        })
+        state_names.update(
+            {
+                state: (
+                    clean_string(state.has_name)
+                    if state.has_name
+                    else clean_string(state.name)
+                )
+                for state in states
+            }
+        )
 
         print(state_names)
 
@@ -83,15 +89,13 @@ class Behaviour(Thing):
         for source_state, dest_state in transitions:
             source_name = state_names.get(source_state)
             dest_name = state_names.get(dest_state)
-            code_line = f"self.add_transition(source='{source_name}', dest='{dest_name}')"
+            code_line = (
+                f"self.add_transition(source='{source_name}', dest='{dest_name}')"
+            )
             implementation.append(code_line)
 
         # Join the code lines into a single string
-        return textwrap.indent(
-            text="\n".join(implementation),
-            prefix="        "
-        )
-
+        return textwrap.indent(text="\n".join(implementation), prefix="        ")
 
     def prepare_behaviour_implementation_template(self):
         template = [

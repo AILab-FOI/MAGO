@@ -4,10 +4,11 @@ from mago_agent import Agent
 from mago_behaviour import Behaviour
 from mago_process import Process
 
+
 class World(Thing):
     """The world containing general system data and agent instantiation."""
 
-    def __init__(self, ontology: Ontology=None, *args, **kwargs):
+    def __init__(self, ontology: Ontology = None, *args, **kwargs):
         super().__init__(entity_type="world", *args, **kwargs)
         self.agents: dict[str, list[Agent]] = {}
         self.agent_import_sources = None
@@ -21,7 +22,7 @@ class World(Thing):
     def get_list_of_agents(self):
         return self.agents
 
-    def read_agents_from_ontology(self, onto: Ontology=None):
+    def read_agents_from_ontology(self, onto: Ontology = None):
         if onto is None:
             onto = self.onto
 
@@ -35,13 +36,13 @@ class World(Thing):
                         host_server=agent.lives_on_host[0].label[0],
                         name=agent.has_name,
                         password="tajna",
-                        onto_individual=agent
+                        onto_individual=agent,
                     )
                     for agent in agents
                 ]
             )
 
-    def render_behaviours_from_ontology(self, onto: Ontology=None):
+    def render_behaviours_from_ontology(self, onto: Ontology = None):
         if onto is None:
             onto = self.onto
 
@@ -53,27 +54,35 @@ class World(Thing):
             Behaviour(
                 cycling=behaviour.is_repeating,
                 period=behaviour.has_period if behaviour.has_period else None,
-                onto_individual=behaviour
-            ) for behaviour in behaviours
+                onto_individual=behaviour,
+            )
+            for behaviour in behaviours
         ]
 
-        self.behaviours_rendered = "\n\n\n".join([
-            behaviour.render_behaviour_implementation() for behaviour in behaviours_mago
-        ])
+        self.behaviours_rendered = "\n\n\n".join(
+            [
+                behaviour.render_behaviour_implementation()
+                for behaviour in behaviours_mago
+            ]
+        )
 
         return self.behaviours_rendered
 
-    def read_processes_from_ontology(self, onto: Ontology=None):
+    def read_processes_from_ontology(self, onto: Ontology = None):
         if onto is None:
             onto = self.onto
 
         result = {}
 
-        processes = onto.search_one(iri="http://dragon.foi.hr/mago-a.owx#RDm65h4GNQjimv0axMIRnMX").instances()
+        processes = onto.search_one(
+            iri="http://dragon.foi.hr/mago-a.owx#RDm65h4GNQjimv0axMIRnMX"
+        ).instances()
 
         for process in processes:
             result.update(
-                Process(onto_individual=process).get_process_action_behaviour_objective()
+                Process(
+                    onto_individual=process
+                ).get_process_action_behaviour_objective()
             )
 
         return result
@@ -118,7 +127,7 @@ class World(Thing):
             agents[0].render_agent_implementation()
             agents[0].write_implementation_to_file()
 
-    def render_world_implementation(self):        
+    def render_world_implementation(self):
         self.set_implementation_template(
             """
 import spade
