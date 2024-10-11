@@ -1,13 +1,5 @@
 Deliverables/Phase 1/Implementation/*.bak
-Deliverables/Phase 1/Implementation/__pycache__/Agent_Factory_Agent.cpython-310.pyc
-Deliverables/Phase 1/Implementation/__pycache__/Agent_Recipe_Agent.cpython-310.pyc
-Deliverables/Phase 1/Implementation/__pycache__/aux.cpython-310.pyc
-Deliverables/Phase 1/Implementation/__pycache__/behaviours.cpython-310.pyc
-Deliverables/Phase 1/Implementation/__pycache__/mago_agent.cpython-310.pyc
-Deliverables/Phase 1/Implementation/__pycache__/mago_behaviour.cpython-310.pyc
-Deliverables/Phase 1/Implementation/__pycache__/mago_process.cpython-310.pyc
-Deliverables/Phase 1/Implementation/__pycache__/mago_thing.cpython-310.pyc
-Deliverables/Phase 1/Implementation/__pycache__/mago_world.cpython-310.pyc
+Deliverables/Phase 1/Implementation/__pycache__/*.pyc
 .vscode/settings.json
 Deliverables/Phase 1/Implementation/Template/Agent_Factory_Agent.py
 Deliverables/Phase 1/Implementation/Template/Agent_Recipe_Agent.py
