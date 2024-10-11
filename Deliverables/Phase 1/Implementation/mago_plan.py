@@ -1,26 +1,26 @@
 from mago_thing import *
 
 
-class Process(Thing):
+class Plan(Thing):
     def __init__(self, *args, **kwargs):
-        super().__init__(entity_type="process", *args, **kwargs)
+        super().__init__(entity_type="plan", *args, **kwargs)
 
-    def get_process_action_behaviour_objective(self):
-        process_dict = {}
+    def get_plan_action_behaviour_objective(self):
+        plan_dict = {}
 
-        process_iri = self.onto_individual.iri
+        plan_iri = self.onto_individual.iri
 
-        # Get the process name
-        process_name = (
+        # Get the plan name
+        plan_name = (
             self.onto_individual.has_name
             if self.onto_individual.has_name
             else self.onto_individual.name
         )
 
-        # Initialize the process entry
-        process_entry = {"name": process_name, "actions": {}}
+        # Initialize the plan entry
+        plan_entry = {"name": plan_name, "actions": {}}
 
-        # Get the actions associated with the process
+        # Get the actions associated with the plan
         actions = self.onto_individual.requires_action
         for action in actions:
             action_iri = action.iri
@@ -54,12 +54,12 @@ class Process(Thing):
                 # Add the behaviour to the action's behaviours
                 action_entry["behaviours"][behaviour_iri] = behaviour_name
 
-            # Add the action entry to the process's actions
-            process_entry["actions"][action_iri] = action_entry
+            # Add the action entry to the plan's actions
+            plan_entry["actions"][action_iri] = action_entry
 
-        # Add the process entry to the main dictionary
-        process_dict[process_iri] = process_entry
+        # Add the plan entry to the main dictionary
+        plan_dict[plan_iri] = plan_entry
 
-        logging.info(f"Process {process_name} visited.")
+        logging.info(f"Plan {plan_name} visited.")
 
-        return process_dict
+        return plan_dict

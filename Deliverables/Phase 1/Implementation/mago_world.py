@@ -2,7 +2,7 @@
 from mago_thing import *
 from mago_agent import Agent
 from mago_behaviour import Behaviour
-from mago_process import Process
+from mago_plan import Plan
 
 
 class World(Thing):
@@ -68,21 +68,21 @@ class World(Thing):
 
         return self.behaviours_rendered
 
-    def read_processes_from_ontology(self, onto: Ontology = None):
+    def read_plan_from_ontology(self, onto: Ontology = None):
         if onto is None:
             onto = self.onto
 
         result = {}
 
-        processes = onto.search_one(
+        plan = onto.search_one(
             iri="http://dragon.foi.hr/mago-a.owx#RDm65h4GNQjimv0axMIRnMX"
         ).instances()
 
-        for process in processes:
+        for plan in plan:
             result.update(
-                Process(
-                    onto_individual=process
-                ).get_process_action_behaviour_objective()
+                Plan(
+                    onto_individual=plan
+                ).get_plan_action_behaviour_objective()
             )
 
         return result
@@ -138,14 +138,14 @@ async def main():
     agent_individuals = {}
 $agent_instantiation
     for agent in [agent for host_dict in agent_individuals.values() for agent in host_dict.values()]:
-        agent.process_action_behaviour_objective = $process_action_behaviour_objective
+        agent.plan_action_behaviour_objective = $plan_action_behaviour_objective
         await agent.start()
 
 spade.run(main())
 """
         )
 
-        self.process_action_behaviour_objective = self.read_processes_from_ontology()
+        self.plan_action_behaviour_objective = self.read_plan_from_ontology()
 
         self.render_agent_import_sources()
         self.render_agent_instantiation()

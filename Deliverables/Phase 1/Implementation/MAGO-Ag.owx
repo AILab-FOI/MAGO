@@ -734,7 +734,7 @@
 
     <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx#RDm65h4GNQjimv0axMIRnMX">
         <rdfs:subClassOf rdf:resource="http://dragon.foi.hr/mago-a.owx#RBGp2C7WAHzeIMoeFp3K6lr"/>
-        <rdfs:label xml:lang="en-gb">Process</rdfs:label>
+        <rdfs:label xml:lang="en-gb">Plan</rdfs:label>
     </owl:Class>
     
 
@@ -868,8 +868,8 @@
 
     <owl:NamedIndividual rdf:about="http://dragon.foi.hr/mago-a.owx#OWLNamedIndividual_4ce555df_0daa_451c_8cee_3869fb46f599">
         <rdf:type rdf:resource="http://dragon.foi.hr/mago-a.owx#RDm65h4GNQjimv0axMIRnMX"/>
-        <RDxmweKrzFGij8P5HOOsXZK rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">Delivery Process</RDxmweKrzFGij8P5HOOsXZK>
-        <rdfs:label xml:lang="en">Delivery Process</rdfs:label>
+        <RDxmweKrzFGij8P5HOOsXZK rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">Delivery Plan</RDxmweKrzFGij8P5HOOsXZK>
+        <rdfs:label xml:lang="en">Delivery Plan</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -994,8 +994,8 @@
     <owl:NamedIndividual rdf:about="http://dragon.foi.hr/mago-a.owx#OWLNamedIndividual_df91a3a0_7a62_46fb_ac02_75dde4d82493">
         <rdf:type rdf:resource="http://dragon.foi.hr/mago-a.owx#RDm65h4GNQjimv0axMIRnMX"/>
         <R84IuDzXJ7QCZi1bY6fzFxZ rdf:resource="http://dragon.foi.hr/mago-a.owx#OWLNamedIndividual_a5438295_391f_4d36_b6f9_b163ade1b2e5"/>
-        <RDxmweKrzFGij8P5HOOsXZK rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">Manufacturing Process</RDxmweKrzFGij8P5HOOsXZK>
-        <rdfs:label xml:lang="en">Manufacturing Process</rdfs:label>
+        <RDxmweKrzFGij8P5HOOsXZK rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">Manufacturing Plan</RDxmweKrzFGij8P5HOOsXZK>
+        <rdfs:label xml:lang="en">Manufacturing Plan</rdfs:label>
     </owl:NamedIndividual>
     
 
