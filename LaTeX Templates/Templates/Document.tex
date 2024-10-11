@@ -55,9 +55,10 @@
     \usepackage[T1]{fontenc}
     % \usepackage[utf8]{inputenc}
     \usepackage[british]{babel}
-    
+        
     \usepackage{xifthen}
     \usepackage{xparse}
+    \usepackage{xspace}
     \usepackage{pgffor}
     
     \usepackage{hyperref}
@@ -79,6 +80,12 @@
     \usepackage{epigraph}
     
     % \usepackage[pages=some]{background}
+    
+    \usepackage{imakeidx}
+    % \usepackage[nonewpage]{imakeidx}
+    % \indexsetup{level=\chapter,toclevel=\chapter,noclearpage}
+    \makeindex
+    % \makeindex[intoc]
     
     
     \input{LaTeX Templates/Preambles/Listings}
@@ -105,13 +112,6 @@
     
     \setcounter{secnumdepth}{2}
     \setcounter{tocdepth}{2}
-    
-    \usepackage{imakeidx}
-    % \usepackage[nonewpage]{imakeidx}
-    % \indexsetup{level=\chapter,toclevel=\chapter,noclearpage}
-    \makeindex
-    % \makeindex[intoc]
-    
     
     %%
     % Book metadata
