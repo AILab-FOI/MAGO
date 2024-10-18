@@ -13,46 +13,49 @@ The purpose of \magoontologyname ontology is to enable modelling a \ac{MAS} in a
 Building on the MAMbO5 ontology, the \magoontologyname ontology is planned to comply with the digital twin concept and the idea of containing concepts applicable to instantiating a \ac{MAS} based on the model expressed using the developed ontology. Therefore, it must include some concepts related to the implementation domain, e.g., describing agents' internal variables or the knowledge models used. The following is an overview of the selection of the more interesting concepts, followed by a selection of the concepts that have to be added. Both the described tables include the concepts identified as such and are not necessarily exhaustive.
 
 
-\section{Glossary}
+\section{Glossary of Terms}\label{sec: Glossary of Terms}
 
-\newthought{Agent}
-    \marginnote{Overview of the select concepts contained in MAMbO5 ontology}%
-\blockquote[{{\cite[p. 54]{russell2022ArtificialIntelligenceModern}}}]{An agent is anything that can be viewed as perceiving its environment through sensors and acting upon that environment through actuators.} 
+A \ac{GT} is a critical resource that defines and organizes key concepts, entities, and relationships within the modelled domain. This glossary forms the foundation for the ontology by ensuring that all participants in the development process share a common understanding of the domain's terminology. 
 
-\newthought{Organisational unit} An organisational unit is an \mintedInline{Agent} subclass that is a part of an organisation. Usually, a \ac{MAS} can be considered an organisation comprising multiple agents. Strictly speaking, it would have to feature and use some other concepts related to defining, for example, an organisational structure. An organisational unit can be a part of another organisational unit and consist of organisational units. This feature, similar to the concept of holons and holarchy, allows for modelling organisations on different levels of abstraction or hierarchy. Each \mintedInline{OrganisationalUnit} instance is expected, at any given point in time, to be able to enact one of a set of \mintedInline{Role} individuals at its disposal. 
+The glossary is created to maintain conceptual clarity across the ontology. It avoids duplicate or overlapping concepts, ensuring every term is clearly defined. Additionally, \ac{GT} serves as a stepping stone toward formalization, wherein these terms and relationships will later be translated into more structured, formal representations, such as in description logics or other ontology languages (e.g., OWL, RDF).
 
-\newthought{Behaviour} The concept of agent behaviour is described in the \mintedInline{ooooaflsmas} ontology as \blockquote{\textelp{} some kind of activity performed by some agent. It has to be acceptable by a normative system the agent belongs to.} In terms of SPADE implementation, behaviour is the most basic way of implementing the operations of an agent. Each agent can have multiple behaviours. Types of behaviours offered by default by SPADE can already be found in the \mintedInline{ooooaflsmas} ontology,
-\lookAt{\cref{fig: behaviour subclasses in ooooaflsmas}}%
-i.e., one-shot, periodic, and finite state behaviour that acts according to the principles of finite automata. Each \mintedInline{Behaviour} individual is expected to provide its \mintedInline{Agent} individual with the ability to achieve a certain objective. Some innate \mintedInline{Behaviour} individuals will be available to specific \mintedInline{Agent} subclasses by default.
+The \ac{GT} typically includes:
 
-\begin{figure}
+\begin{itemize}
+    \item Concepts and definitions: A list of core terms representing the domain's important entities or phenomena. Each term is clearly defined to avoid ambiguity and to ensure consistency throughout the ontology.
+
+    \item Relationships between concepts: The glossary may also describe how different concepts are interrelated. For example, it can specify hierarchies (e.g., subclasses), associations, or dependencies among the terms.
+
+    \item Attributes and characteristics: Each concept might include specific attributes that describe it in greater detail. These attributes help formalize the ontology during later phases.
+\end{itemize}
+
+By ensuring that all relevant concepts are properly identified and explained, the \ac{GT} helps to streamline the ontology's development process and ensures that the final product accurately reflects the domain's knowledge structure.
+
+The following list of 
+\crefrange{gt: Acquisition}{gt: Workspace}
+encompasses definitions and descriptions of the most relevant terms that can be found in the MAMBO5 ontology and the ontologies it was built upon. Other features, such as attributes and explicitly stated relationships between concepts, are not stated here since the concepts of the \ac{GT} must be filtered before being added to the developed ontology. The content of the tables is directly derived from the author's doctoral thesis \cite{okresaduric2019OrganizationalModelingLargeScale}.
+
+\csvreader[
+    separator=semicolon,
+    head to column names,
+    filter equal={\Include}{1},
+    ]{DD.csv}{}% use head of csv as column names
+{
+\begin{table}[h]
     \centering
-    \includegraphics[width=0.84\linewidth]{Deliverables/Phase 1/Figures/Behaviours in ooooaflsmas.png}
-    \caption{Subclasses of the \mintedInline{Behavior} concept in \mintedInline{ooooaflsmas}}
-    \label{fig: behaviour subclasses in ooooaflsmas}
-\end{figure}
-
-\newthought{Role} The concept of a role is described within the \mintedInline{ooooaflsmas} ontology as a \blockquote{prescribed or expected behavior associated with a particular position or status in a group or organization}. This concept is in the mentioned ontology designated as a direct subclass of the concept \mintedInline{Norm}, derived from the domain of organisational modelling and describing organisation systems. The \mintedInline{Norm} concept is defined therein as \blockquote{(socially) accepted behavior in a defined group and \textins{they} represent a blueprint for behaving in said group.} Based on the stated, the concept of \mintedInline{Role} is interesting because it enables defining a set of features that will be put at the agent's disposal playing the chosen role. In other words, roles can be used as a way of combining different features that can be enacted by an agent. The \mintedInline{Role} concept was modelled in \cite{okresaduric2019OrganizationalModelingLargeScale} as a concept which was related to (possibly) several instances of concepts describing behaviours and objectives, meaning that specific roles allow agents who enact them to attain a specific set of behaviours
-\lookAt{\cref{fig: roles achieve objectives and enable knowledge}}%
-that enables and empowers them to achieve specific objectives, thus solving specific tasks. Different objectives demand the enactment of various roles from the pool of roles available (defined) in the system. 
-
-\begin{figure}
-    \centering
-    \input{Deliverables/Phase 1/Figures/roles achieve objectives and enable knowledge}
-    \caption{A \mintedInline{Role} individual can achieve some \mintedInline{Objective} individuals and can provide access to some \mintedInline{Knowledge} individuals}
-    \label{fig: roles achieve objectives and enable knowledge}
-\end{figure}
-
-\newthought{Artefact} An artefact is used in the \mintedInline{JaCalIVE} ontology as a comprehensive concept encompassing all interactive and non-interactive objects that are not suitable to be implemented as agents but should be present in the modelled system nonetheless. \mintedInline{MAMbO5} ontology recognises specific versions of artefacts as an \mintedInline{IVE_Artifact}, which is located within the \ac{IVE}, and its even more specific version \mintedInline{Physical_Artifact}, which can be physically represented or is expected to be physically represented, and a complementary specification given as a \mintedInline{KnowledgeArtifact} that is an artefact that is abstract and describes various rules that can be found within the modelled system. Its initial authors describe the latter concept as encompassing \enquote{a wide range of explicit knowledge,} including, but not limited to, knowledge models, such as machine learning models or neural networks. The \mintedInline{Norm} concept and its subclass \mintedInline{Role} are subclasses of the \mintedInline{KnowledgeArtifact} concept,
-\lookAt{\cref{fig: Hierarchy artefact KNartefact norm role}}%
-as defined in \mintedInline{ooooaflsmas}.
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.84\linewidth]{Deliverables/Phase 1/Figures/Hierarchy artefact KNartefact norm role.png}
-    \caption{Class hierarchy on subclasses of the \mintedInline{Artifact} concept in \mintedInline{ooooaflsmas} ontology}
-    \label{fig: Hierarchy artefact KNartefact norm role}
-\end{figure}
-
-\newthought{Stage} By definition, an \mintedInline{Agent} is located in an environment. Such an environment can comprise multiple agents and other entities, such as instances of the \mintedInline{Artefact} concept. During one of the brainstorming sessions on the topic of this research with the colleagues of the host institution (\acf{VRAIN} at the \ac{UPV}), a more specific environmental concept was discussed. Since the system described by this ontology is planned to be able to implement several more specific environments of the same domain, it is deemed useful to define a concept describing a smaller-scale environment. This is where the \mintedInline{Stage} concept comes in. In the context of this research, a stage should represent a smaller-scale environment, a specialised version of the general environment, that is related to the general domain of the modelled system.
-Furthermore, a \mintedInline{Stage} individual groups related agents and artefacts together. It is possible to think of an individual of the \mintedInline{Stage} concept as a room or stage where a specific set of activities or processes is conducted. A single stage is envisioned as comprising of some \mintedInline{Agent} individuals.
+    \caption{\emph{\ConceptName} glossary entry}
+    \label{gt: \ConceptName}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{0.20\linewidth}|p{0.76\linewidth}}
+        \toprule
+        \textbf{Concept name} & \ConceptName \if \Symbol \else \space(\Symbol) \fi \\
+        \if \Synonyms
+            \else 
+                \textbf{Synonyms} & \Synonyms\\
+            \fi
+        \midrule \textbf{Definition} & \Definition \\\noalign{\vskip 2mm}
+        \textbf{Description} & \Description\\
+        \bottomrule
+            
+    \end{tabular*}
+\end{table}
+}
