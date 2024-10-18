@@ -55,7 +55,9 @@
     \usepackage[T1]{fontenc}
     % \usepackage[utf8]{inputenc}
     \usepackage[british]{babel}
-        
+
+    \usepackage{csvsimple}
+    % \usepackage{ifthen}
     \usepackage{xifthen}
     \usepackage{xparse}
     \usepackage{xspace}
@@ -86,6 +88,10 @@
     % \indexsetup{level=\chapter,toclevel=\chapter,noclearpage}
     \makeindex
     % \makeindex[intoc]
+
+    \usepackage{enotez}
+    \let\footnote=\endnote
+
     
     
     \input{LaTeX Templates/Preambles/Listings}
@@ -151,6 +157,8 @@
 
     \begin{fullwidth}
         \printbibliography
+
+        \printendnotes
     
         \printindex
     \end{fullwidth}
