@@ -1,0 +1,14 @@
+\begin{tikzpicture}
+    [
+        every node/.style={minimum height=2em, text width=6em, align=center},
+        every path/.style={->},
+    ]
+  % Nodes
+  \node [] (O) at (-4,0) {ontology model};
+  \node [] (F) at (0,0) {framework};
+  \node [] (I) at (4,0) {implementation template};
+
+  % Connections
+  \draw [] (O) to[bend left] node[midway, above] {input} (F);
+  \draw [] (F) to[bend right] node[midway, below] {output} (I);
+\end{tikzpicture}
