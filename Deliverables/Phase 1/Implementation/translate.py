@@ -1,6 +1,6 @@
 import os
 from owlready2 import World, Ontology, onto_path, set_render_func, sync_reasoner
-from mago_world import World as MAGO_World
+from mago_workspace import Workspace
 
 
 def render_using_label(entity):
@@ -26,7 +26,7 @@ def main():
     if not os.path.exists(template_folder):
         os.makedirs(template_folder)
 
-    aMAGOWorld = MAGO_World(ontology=onto, name="World")
+    aMAGOWorld = Workspace(ontology=onto, name="World")
     aMAGOWorld.write_implementation_to_disk()
 
 
