@@ -13,7 +13,6 @@ def render_using_iri(entity):
 
 def main():
     onto_path.append(os.getcwd())
-    # print(onto_path)
 
     mago_world = World()
     onto: Ontology = mago_world.get_ontology("MAGO-Ag.owx").load(reload=True)
