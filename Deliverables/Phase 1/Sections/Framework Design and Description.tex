@@ -221,14 +221,46 @@ consisting of artefacts' names and \acp{URI}.
 is the last entity to be developed. The Python class for this concept is used to perform most of the necessary rendering and writing to file operations of the related concepts and individuals. This class contains all the methods necessary for getting all the data from the ontology and rendering the implementation templates. While writing rendered implementation templates to files is mostly performed by calling the related methods of the \mintedInline{Thing} class, the following more interesting methods are used to retrieve data from the ontology containing the modelled \ac{MAS}:
 
 \begin{itemize}
-    \item \mintedInline{read_agents_from_ontology} implements how to read the ontology, retrieve the most important data related to agents, and prepare those data for rendering agent implementation templates;
-    \item \mintedInline{render_behaviours_from_ontology} renders behaviour implementation templates based on their ontology data
-    \item \mintedInline{read_plan_from_ontology} takes all the \mintedInline{Plan} individuals and renders their related data as a Python dictionary.
+    \item \mintedInline{read_agents_from_ontology} implements
+    \lookAt[4px]{\cref{lst: mago-ag workspace read_agents_from_ontology}}%
+    how to read the ontology, retrieve the most important data related to agents, and prepare those data for rendering agent implementation templates;
+    
+    \item \mintedInline{render_behaviours_from_ontology} renders
+    \lookAt[4px]{\cref{lst: mago-ag workspace render_behaviours_from_ontology}}%
+    behaviour implementation templates based on their ontology data
+    
+    \item \mintedInline{read_plan_from_ontology} takes
+    \lookAt[4px]{\cref{lst: mago-ag workspace read_plan_from_ontology}}%
+    all the \mintedInline{Plan} individuals and renders their related data as a Python dictionary.
 \end{itemize}
 
 \begin{listing}
-    \mintedFilePython[firstline=32, lastline=56]{Deliverables/Phase 1/Implementation/aux.py}
-    \caption{Implementation of the \mintedInline{get_related_knowledge_artefact_uris} function}
-    \label{lst: mago-ag aux get_related_knowledge_artefact_uris}
+    \mintedFilePython[firstline=25, lastline=43]{Deliverables/Phase 1/Implementation/mago_workspace.py}
+    \caption{Implementation of the \mintedInline{read_agents_from_ontology} method of the \mintedInline{Workspace} class}
+    \label{lst: mago-ag workspace read_agents_from_ontology}
 \end{listing}
 
+\begin{listing}
+    \mintedFilePython[firstline=45, lastline=69]{Deliverables/Phase 1/Implementation/mago_workspace.py}
+    \caption{Implementation of the \mintedInline{render_behaviours_from_ontology} method of the \mintedInline{Workspace} class}
+    \label{lst: mago-ag workspace render_behaviours_from_ontology}
+\end{listing}
+
+\begin{listing}
+    \mintedFilePython[firstline=71, lastline=88]{Deliverables/Phase 1/Implementation/mago_workspace.py}
+    \caption{Implementation of the \mintedInline{read_plan_from_ontology} method of the \mintedInline{Workspace} class}
+    \label{lst: mago-ag workspace read_plan_from_ontology}
+\end{listing}
+
+
+
+\newthought{Translation}
+script
+\lookAt{\cref{lst: mago-ag translate}}%
+is the very last element that must be added to the mix, in order to make the framework easily runnable and usable. The main translation script starts by reading the ontology using the \mintedInline{owlready2} library, then instantiates the \mintedInline{Workspace} object, and by calling the \mintedInline{write_implementation_to_disk} of the instantiated \mintedInline{World} object finally runs the translation process. Thus, the ontology is consulted, the necessary string templates are rendered, and the implementation template is written to respective files.
+
+\begin{listing}
+    \mintedFilePython[]{Deliverables/Phase 1/Implementation/translate.py}
+    \caption{The main script of the framework}
+    \label{lst: mago-ag translate}
+\end{listing}
