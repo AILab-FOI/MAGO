@@ -571,15 +571,6 @@
     
 
 
-    <!-- http://dragon.foi.hr/mago-a.owx#R8qZIr2HXGJ6b0ElO4Ml6GH -->
-
-    <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx#R8qZIr2HXGJ6b0ElO4Ml6GH">
-        <rdfs:subClassOf rdf:resource="http://dragon.foi.hr/mago-a.owx#RBzqbNmJP5lfpPIgYCvLGDa"/>
-        <rdfs:label xml:lang="en-gb">Remote Software Artefact</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://dragon.foi.hr/mago-a.owx#R9iXau1ZAN6oZTRbdCgbmgd -->
 
     <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx#R9iXau1ZAN6oZTRbdCgbmgd">
@@ -606,15 +597,6 @@
     
 
 
-    <!-- http://dragon.foi.hr/mago-a.owx#RB7E1Pc7CjNxOm8CrfunqBu -->
-
-    <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx#RB7E1Pc7CjNxOm8CrfunqBu">
-        <rdfs:subClassOf rdf:resource="http://dragon.foi.hr/mago-a.owx#RBzqbNmJP5lfpPIgYCvLGDa"/>
-        <rdfs:label xml:lang="en-gb">Local Software Artefact</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://dragon.foi.hr/mago-a.owx#RBGp2C7WAHzeIMoeFp3K6lr -->
 
     <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx#RBGp2C7WAHzeIMoeFp3K6lr">
@@ -635,7 +617,7 @@
     <!-- http://dragon.foi.hr/mago-a.owx#RCdOsGdA0yrGZdnzgQesQx7 -->
 
     <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx#RCdOsGdA0yrGZdnzgQesQx7">
-        <rdfs:subClassOf rdf:resource="http://dragon.foi.hr/mago-a.owx#R8qZIr2HXGJ6b0ElO4Ml6GH"/>
+        <rdfs:subClassOf rdf:resource="http://dragon.foi.hr/mago-a.owx#RBzqbNmJP5lfpPIgYCvLGDa"/>
         <rdfs:label xml:lang="en-gb">Agent Host Server</rdfs:label>
     </owl:Class>
     
@@ -760,7 +742,7 @@
     <!-- http://dragon.foi.hr/mago-a.owx#Rce2iHbgKH3gy3TygYasFi -->
 
     <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx#Rce2iHbgKH3gy3TygYasFi">
-        <rdfs:label xml:lang="en-gb">System</rdfs:label>
+        <rdfs:label xml:lang="en-gb">Workspace</rdfs:label>
     </owl:Class>
     
 
