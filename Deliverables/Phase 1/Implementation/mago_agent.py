@@ -81,7 +81,7 @@ class $agent_type(Agent):
             self.available_roles = None
             self.available_behaviours = None
 
-        print(self.name, self.available_roles, self.available_behaviours)
+        print(self.name, self.available_roles, self.available_behaviours, self.knowledge_artefacts)
 
         self.world = self.knowledge_artefacts.get("Main ontology").get("world")
         self.onto_individual = self.world.search_one(iri=self.uri)
