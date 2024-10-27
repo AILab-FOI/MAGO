@@ -5,11 +5,11 @@ from mago_behaviour import Behaviour
 from mago_plan import Plan
 
 
-class World(Thing):
+class Workspace(Thing):
     """The world containing general system data and agent instantiation."""
 
     def __init__(self, ontology: Ontology = None, *args, **kwargs):
-        super().__init__(entity_type="world", *args, **kwargs)
+        super().__init__(entity_type="workspace", *args, **kwargs)
         self.agents: dict[str, list[Agent]] = {}
         self.agent_import_sources = None
         self.agent_instantiation = None
