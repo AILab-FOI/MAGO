@@ -1,10 +1,7 @@
 Deliverables/Phase 1/Implementation/*.bak
 Deliverables/Phase 1/Implementation/__pycache__/*.pyc
 .vscode/settings.json
-Deliverables/Phase 1/Implementation/Template/Agent_Factory_Agent.py
-Deliverables/Phase 1/Implementation/Template/Agent_Recipe_Agent.py
-Deliverables/Phase 1/Implementation/Template/Behaviours.py
-Deliverables/Phase 1/Implementation/Template/World_world.py
+Deliverables/Phase 1/Implementation/Template/*
 Deliverables/Phase 1/Implementation/test.py
 Deliverables/Phase 1/Implementation/agent_test.py
 Deliverables/Phase 1/Implementation/log.log
