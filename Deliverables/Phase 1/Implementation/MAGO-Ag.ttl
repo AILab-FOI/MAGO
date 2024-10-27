@@ -1,0 +1,756 @@
+@prefix : <http://dragon.foi.hr/mago-a.owx#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owlr: <http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://dragon.foi.hr/mago-a.owx#> .
+
+<http://dragon.foi.hr/mago-a.owx#> rdf:type owl:Ontology ;
+                                    rdfs:comment "The ontology for MAGO research visit." .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#python_name
+owlr:python_name rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://dragon.foi.hr/mago-a.owx#R7MvUIWpnOdfB3dxpRXTUAK
+:R7MvUIWpnOdfB3dxpRXTUAK rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         rdfs:domain :R7dQDUF81SOJC29Sctpy6aP ;
+                         rdfs:range :R84KrWu3ZBbXCifW6B9GSmZ ;
+                         rdfs:label "implements action"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#R7NTCPsMvJdxinMk2P28ppg
+:R7NTCPsMvJdxinMk2P28ppg rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         rdfs:domain :RDqoRvx1aDeStUw4zNRdR0o ;
+                         rdfs:range :RDqoRvx1aDeStUw4zNRdR0o ;
+                         rdfs:label "has final objective"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#R7o5TdA2HQOQxwVPrUJrLpq
+:R7o5TdA2HQOQxwVPrUJrLpq rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         rdfs:domain :RDqoRvx1aDeStUw4zNRdR0o ;
+                         rdfs:range :RDqoRvx1aDeStUw4zNRdR0o ;
+                         rdfs:label "is before objective"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#R84IuDzXJ7QCZi1bY6fzFxZ
+:R84IuDzXJ7QCZi1bY6fzFxZ rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         rdfs:domain :RDm65h4GNQjimv0axMIRnMX ;
+                         rdfs:range :R84KrWu3ZBbXCifW6B9GSmZ ;
+                         owlr:python_name "requires_action" ;
+                         rdfs:label "requires action"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#R8ZWdA7HWDzIIwhQZrSwAIj
+:R8ZWdA7HWDzIIwhQZrSwAIj rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         owl:inverseOf :RDGoFrovO0PhBCQGPkFeUuR ;
+                         rdf:type owl:IrreflexiveProperty ;
+                         rdfs:domain :RDgoxtmVWC61IdqtaNK9QBf ;
+                         rdfs:range :RDgoxtmVWC61IdqtaNK9QBf ;
+                         owlr:python_name "is_after_state" ;
+                         rdfs:label "is after state"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#R8ZXgNqWa8M3RnwigsFBxvc
+:R8ZXgNqWa8M3RnwigsFBxvc rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         rdfs:domain :R9iXau1ZAN6oZTRbdCgbmgd ;
+                         rdfs:range :R9iXau1ZAN6oZTRbdCgbmgd ;
+                         rdfs:label "features role"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#R8nS5zlvvUfE9N1xZBYTpcG
+:R8nS5zlvvUfE9N1xZBYTpcG rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         rdfs:domain :R84KrWu3ZBbXCifW6B9GSmZ ;
+                         rdfs:range :RDqoRvx1aDeStUw4zNRdR0o ;
+                         owlr:python_name "has_objective" ;
+                         rdfs:label "has objective"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#R9QlFkpwG4P6QT3YaFGdAPM
+:R9QlFkpwG4P6QT3YaFGdAPM rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         rdfs:domain :R84KrWu3ZBbXCifW6B9GSmZ ;
+                         rdfs:range :R84KrWu3ZBbXCifW6B9GSmZ ;
+                         rdfs:label "is after action"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#R9Y2982rI3hZL4oBhv8Ohhv
+:R9Y2982rI3hZL4oBhv8Ohhv rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         rdfs:domain :RDm65h4GNQjimv0axMIRnMX ;
+                         rdfs:range :RDm65h4GNQjimv0axMIRnMX ;
+                         rdfs:label "is part of process"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#R9wYaBAe5LQpMMDI7zKHWhc
+:R9wYaBAe5LQpMMDI7zKHWhc rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         rdfs:domain :R84KrWu3ZBbXCifW6B9GSmZ ;
+                         rdfs:range :R84KrWu3ZBbXCifW6B9GSmZ ;
+                         rdfs:label "is before action"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#RB8ofKEO8zM8jcK0WetPpLI
+:RB8ofKEO8zM8jcK0WetPpLI rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         rdfs:domain [ rdf:type owl:Class ;
+                                       owl:unionOf ( :R9iXau1ZAN6oZTRbdCgbmgd
+                                                     :R9lwUrkbSftwsmlPcopLgzT
+                                                   )
+                                     ] ;
+                         rdfs:range :RB4lINuYfn41lvT2d2GduUO ;
+                         owlr:python_name "can_access_artefact" ;
+                         rdfs:label "can access artefact"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#RBOL8y2xs4VvKc6D0kikOup
+:RBOL8y2xs4VvKc6D0kikOup rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         rdfs:domain :R9iXau1ZAN6oZTRbdCgbmgd ;
+                         rdfs:range :R9iXau1ZAN6oZTRbdCgbmgd ;
+                         owlr:python_name "is_part_of_role" ;
+                         rdfs:label "is part of role"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#RBmpSay8yjDZmklOv6Mw1rc
+:RBmpSay8yjDZmklOv6Mw1rc rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf :RCcC3SXJ5MvuHMJyzs8OpU6 ;
+                         rdf:type owl:FunctionalProperty ;
+                         rdfs:domain :R9lwUrkbSftwsmlPcopLgzT ;
+                         rdfs:range :R9iXau1ZAN6oZTRbdCgbmgd ;
+                         owlr:python_name "plays_role" ;
+                         rdfs:label "plays role"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#RBntfnmvB9JVuK1xvAe6Hm8
+:RBntfnmvB9JVuK1xvAe6Hm8 rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         rdfs:domain :RDqoRvx1aDeStUw4zNRdR0o ;
+                         rdfs:range :RDqoRvx1aDeStUw4zNRdR0o ;
+                         rdfs:label "is after objective"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#RC6rldf2VsWBaHtUobIELQL
+:RC6rldf2VsWBaHtUobIELQL rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         rdfs:domain :RDMv7ayhi9xuRAzbfALLhKS ;
+                         rdfs:range :RDgoxtmVWC61IdqtaNK9QBf ;
+                         owlr:python_name "has_initial_state" ;
+                         rdfs:label "has initial state"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#RCAv5UwFPy5OUQdjN61nXbw
+:RCAv5UwFPy5OUQdjN61nXbw rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         rdfs:domain :R7dQDUF81SOJC29Sctpy6aP ;
+                         rdfs:range :R9iXau1ZAN6oZTRbdCgbmgd ;
+                         owlr:python_name "is_provided_by_role" ;
+                         rdfs:label "is provided by role"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#RCPuCz8AunmmX3PS6A0U0XL
+:RCPuCz8AunmmX3PS6A0U0XL rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         rdfs:domain :RDMv7ayhi9xuRAzbfALLhKS ;
+                         rdfs:range :RDgoxtmVWC61IdqtaNK9QBf ;
+                         owlr:python_name "has_final_state" ;
+                         rdfs:label "has final state"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#RCWrWcZCQ3lxj6jFw9zRJ6m
+:RCWrWcZCQ3lxj6jFw9zRJ6m rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         rdfs:domain :RB4lINuYfn41lvT2d2GduUO ;
+                         rdfs:range :RChP69av2xqRwh6LALfwsKq ;
+                         owlr:python_name "provides_resource" ;
+                         rdfs:label "provides resource"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#RCcC3SXJ5MvuHMJyzs8OpU6
+:RCcC3SXJ5MvuHMJyzs8OpU6 rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         rdfs:domain :R9lwUrkbSftwsmlPcopLgzT ;
+                         rdfs:range :R9iXau1ZAN6oZTRbdCgbmgd ;
+                         owlr:python_name "can_play_role" ;
+                         rdfs:label "can play role"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#RCkUIZx8f7TQwTrh3wmfyBD
+:RCkUIZx8f7TQwTrh3wmfyBD rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         rdfs:domain :R84KrWu3ZBbXCifW6B9GSmZ ;
+                         rdfs:range :R7dQDUF81SOJC29Sctpy6aP ;
+                         owlr:python_name "has_behaviour" ;
+                         rdfs:label "is implemented using behaviour"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#RCsnmcyqIe70G3lagH4y3bE
+:RCsnmcyqIe70G3lagH4y3bE rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         rdfs:domain :RDqoRvx1aDeStUw4zNRdR0o ;
+                         rdfs:range :RDqoRvx1aDeStUw4zNRdR0o ;
+                         rdfs:label "is part of objective"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#RDGoFrovO0PhBCQGPkFeUuR
+:RDGoFrovO0PhBCQGPkFeUuR rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         rdf:type owl:IrreflexiveProperty ;
+                         rdfs:domain :RDgoxtmVWC61IdqtaNK9QBf ;
+                         rdfs:range :RDgoxtmVWC61IdqtaNK9QBf ;
+                         owlr:python_name "is_before_state" ;
+                         rdfs:label "is before state"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#RDrm00K6AJVd5OJmoVCqPy6
+:RDrm00K6AJVd5OJmoVCqPy6 rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         rdfs:domain :RDqoRvx1aDeStUw4zNRdR0o ;
+                         rdfs:range :RDqoRvx1aDeStUw4zNRdR0o ;
+                         rdfs:label "has initial objective"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#RY56GiCpqJHON677qnE5sT
+:RY56GiCpqJHON677qnE5sT rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf owl:topObjectProperty ;
+                        rdfs:domain :R9iXau1ZAN6oZTRbdCgbmgd ;
+                        rdfs:range :R7dQDUF81SOJC29Sctpy6aP ;
+                        owlr:python_name "provides_behaviour" ;
+                        rdfs:label "provides behaviour"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#ReKEcwE01zu4hSOL1gSBu2
+:ReKEcwE01zu4hSOL1gSBu2 rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf owl:topObjectProperty ;
+                        rdfs:domain :RDqoRvx1aDeStUw4zNRdR0o ;
+                        rdfs:range :RDqoRvx1aDeStUw4zNRdR0o ;
+                        rdfs:label "features objective"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#RoDHPMWwB604EEv4qQbsGC
+:RoDHPMWwB604EEv4qQbsGC rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf owl:topObjectProperty ;
+                        rdfs:domain :RDm65h4GNQjimv0axMIRnMX ;
+                        rdfs:range :RDm65h4GNQjimv0axMIRnMX ;
+                        rdfs:label "features process"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#RpmDQcEqabFOwsZHv82QuP
+:RpmDQcEqabFOwsZHv82QuP rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf owl:topObjectProperty ;
+                        rdfs:domain :R9lwUrkbSftwsmlPcopLgzT ;
+                        rdfs:range :RCdOsGdA0yrGZdnzgQesQx7 ;
+                        owlr:python_name "lives_on_host" ;
+                        rdfs:label "lives on host"@en-gb .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://dragon.foi.hr/mago-a.owx#OWLDataProperty_13076287_43a5_47ba_80d4_aa0b2fcbf767
+:OWLDataProperty_13076287_43a5_47ba_80d4_aa0b2fcbf767 rdf:type owl:DatatypeProperty ;
+                                                      rdfs:range xsd:string ;
+                                                      rdfs:label "is implemented as"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#OWLDataProperty_15a4602e_47e2_4459_be8c_532c6e1062ab
+:OWLDataProperty_15a4602e_47e2_4459_be8c_532c6e1062ab rdf:type owl:DatatypeProperty ,
+                                                               owl:FunctionalProperty ;
+                                                      rdfs:domain [ rdf:type owl:Class ;
+                                                                    owl:unionOf ( :RB4lINuYfn41lvT2d2GduUO
+                                                                                  :RChP69av2xqRwh6LALfwsKq
+                                                                                )
+                                                                  ] ;
+                                                      rdfs:range xsd:anyURI ;
+                                                      owlr:python_name "has_uri" ;
+                                                      rdfs:label "has URI"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#OWLDataProperty_1dd27442_1507_4890_8c6b_89ff9a5a4f49
+:OWLDataProperty_1dd27442_1507_4890_8c6b_89ff9a5a4f49 rdf:type owl:DatatypeProperty ;
+                                                      rdfs:domain :R7dQDUF81SOJC29Sctpy6aP ;
+                                                      rdfs:range xsd:boolean ;
+                                                      owlr:python_name "is_repeating" ;
+                                                      rdfs:comment "This property defines whether the behaviour is repeating or not, designating cyclic or one-shot behaviour types." ;
+                                                      rdfs:label "is repeating"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#OWLDataProperty_8f71ec98_a3b3_4f5b_b39f_dab911dd0b9f
+:OWLDataProperty_8f71ec98_a3b3_4f5b_b39f_dab911dd0b9f rdf:type owl:DatatypeProperty ;
+                                                      rdfs:domain :OWLClass_27e9637c_fe4f_4875_8d16_087da4a1cb00 ;
+                                                      rdfs:range xsd:string ;
+                                                      owlr:python_name "uses_input_template" ;
+                                                      rdfs:comment "API Endpoint will accept input following the JSON template presented here." ;
+                                                      rdfs:label "uses input template"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#OWLDataProperty_ee1f7846_6528_4e64_9e86_cc34af99f912
+:OWLDataProperty_ee1f7846_6528_4e64_9e86_cc34af99f912 rdf:type owl:DatatypeProperty ;
+                                                      rdfs:domain :OWLClass_27e9637c_fe4f_4875_8d16_087da4a1cb00 ;
+                                                      rdfs:range xsd:string ;
+                                                      owlr:python_name "uses_output_template" ;
+                                                      rdfs:comment "API Endpoint will provide ouptut following the JSON template presented here." ;
+                                                      rdfs:label "uses output template"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#R8l3NnmqnvjfzJkS5rDNvFm
+:R8l3NnmqnvjfzJkS5rDNvFm rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf owl:topDataProperty ;
+                         rdf:type owl:FunctionalProperty ;
+                         rdfs:domain :R7dQDUF81SOJC29Sctpy6aP ;
+                         rdfs:range xsd:positiveInteger ;
+                         owlr:python_name "has_period" ;
+                         rdfs:comment "This property contains the information  about the length of the temporal designation of a behaviour. A cyclic behaviour that has a period is a periodic behaviour, and an acyclic behaviour that has a defined period is considered to be a time-out behaviour, i.e. a one-shot behaviour that runs its main loop only after a specific period of time passes."@en-gb ;
+                         rdfs:label "has period"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#RBffMlV8TQxoNtbLRneUYsb
+:RBffMlV8TQxoNtbLRneUYsb rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf owl:topDataProperty ;
+                         rdfs:range xsd:string ;
+                         rdfs:comment "JSON description of the basic features of the modelled system, e.g. {\"number of agents\": 10}"@en-gb ;
+                         rdfs:label "has system features"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#RDxmweKrzFGij8P5HOOsXZK
+:RDxmweKrzFGij8P5HOOsXZK rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf owl:topDataProperty ;
+                         rdf:type owl:FunctionalProperty ;
+                         rdfs:range xsd:string ;
+                         owlr:python_name "has_name" ;
+                         rdfs:label "has name"@en-gb .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://dragon.foi.hr/mago-a.owx#OWLClass_256a9011_3e88_4389_acde_aa6320fe2953
+:OWLClass_256a9011_3e88_4389_acde_aa6320fe2953 rdf:type owl:Class ;
+                                               rdfs:subClassOf :R9lwUrkbSftwsmlPcopLgzT ;
+                                               rdfs:label "Factory Agent"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#OWLClass_27e9637c_fe4f_4875_8d16_087da4a1cb00
+:OWLClass_27e9637c_fe4f_4875_8d16_087da4a1cb00 rdf:type owl:Class ;
+                                               rdfs:subClassOf :RChP69av2xqRwh6LALfwsKq ;
+                                               rdfs:label "RestAPI Endpoint"@en .
+
+
+###  http://dragon.foi.hr/mago-a.owx#OWLClass_30630ea0_e2d1_4057_8419_5ec603426309
+:OWLClass_30630ea0_e2d1_4057_8419_5ec603426309 rdf:type owl:Class ;
+                                               owl:equivalentClass [ owl:intersectionOf ( :R8EpacdsHKWIyPDRwsmkSta
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty :R8l3NnmqnvjfzJkS5rDNvFm ;
+                                                                                            owl:someValuesFrom xsd:positiveInteger
+                                                                                          ]
+                                                                                        ) ;
+                                                                     rdf:type owl:Class
+                                                                   ] ;
+                                               rdfs:subClassOf :R8EpacdsHKWIyPDRwsmkSta ;
+                                               rdfs:label "Time-out Behaviour"@en .
+
+
+###  http://dragon.foi.hr/mago-a.owx#OWLClass_4e210354_6993_4cf7_96ae_3c18254ef7ce
+:OWLClass_4e210354_6993_4cf7_96ae_3c18254ef7ce rdf:type owl:Class ;
+                                               rdfs:subClassOf :R9lwUrkbSftwsmlPcopLgzT ;
+                                               rdfs:label "Recipe Agent"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#R7dQDUF81SOJC29Sctpy6aP
+:R7dQDUF81SOJC29Sctpy6aP rdf:type owl:Class ;
+                         owl:disjointWith :R84KrWu3ZBbXCifW6B9GSmZ ;
+                         rdfs:label "Behaviour"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#R84KrWu3ZBbXCifW6B9GSmZ
+:R84KrWu3ZBbXCifW6B9GSmZ rdf:type owl:Class ;
+                         rdfs:label "Action"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#R8EpacdsHKWIyPDRwsmkSta
+:R8EpacdsHKWIyPDRwsmkSta rdf:type owl:Class ;
+                         owl:equivalentClass [ owl:intersectionOf ( :R7dQDUF81SOJC29Sctpy6aP
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :OWLDataProperty_1dd27442_1507_4890_8c6b_89ff9a5a4f49 ;
+                                                                      owl:hasValue "false"^^xsd:boolean
+                                                                    ]
+                                                                  ) ;
+                                               rdf:type owl:Class
+                                             ] ;
+                         rdfs:subClassOf :R7dQDUF81SOJC29Sctpy6aP ;
+                         rdfs:label "One Shot Behaviour"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#R9iXau1ZAN6oZTRbdCgbmgd
+:R9iXau1ZAN6oZTRbdCgbmgd rdf:type owl:Class ;
+                         rdfs:subClassOf :RWOhadIHzH5yfBTDwuDICD ;
+                         rdfs:label "Role"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#R9lwUrkbSftwsmlPcopLgzT
+:R9lwUrkbSftwsmlPcopLgzT rdf:type owl:Class ;
+                         owlr:python_name "Agent" ;
+                         rdfs:label "Agent"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#RB4lINuYfn41lvT2d2GduUO
+:RB4lINuYfn41lvT2d2GduUO rdf:type owl:Class ;
+                         rdfs:label "Artefact"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#RBGp2C7WAHzeIMoeFp3K6lr
+:RBGp2C7WAHzeIMoeFp3K6lr rdf:type owl:Class ;
+                         rdfs:label "Strategy"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#RBzqbNmJP5lfpPIgYCvLGDa
+:RBzqbNmJP5lfpPIgYCvLGDa rdf:type owl:Class ;
+                         rdfs:subClassOf :RB4lINuYfn41lvT2d2GduUO ;
+                         rdfs:label "Software Artefact"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#RCdOsGdA0yrGZdnzgQesQx7
+:RCdOsGdA0yrGZdnzgQesQx7 rdf:type owl:Class ;
+                         rdfs:subClassOf :RBzqbNmJP5lfpPIgYCvLGDa ;
+                         rdfs:label "Agent Host Server"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#RChP69av2xqRwh6LALfwsKq
+:RChP69av2xqRwh6LALfwsKq rdf:type owl:Class ;
+                         rdfs:label "Artefact Resource"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#RCjIVQ3sTEfJR8m9yEY3Mhe
+:RCjIVQ3sTEfJR8m9yEY3Mhe rdf:type owl:Class ;
+                         owl:equivalentClass [ owl:intersectionOf ( :R7dQDUF81SOJC29Sctpy6aP
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :OWLDataProperty_1dd27442_1507_4890_8c6b_89ff9a5a4f49 ;
+                                                                      owl:hasValue "true"^^xsd:boolean
+                                                                    ]
+                                                                  ) ;
+                                               rdf:type owl:Class
+                                             ] ;
+                         rdfs:subClassOf :R7dQDUF81SOJC29Sctpy6aP ;
+                         rdfs:label "Cyclic Behaviour"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#RDMv7ayhi9xuRAzbfALLhKS
+:RDMv7ayhi9xuRAzbfALLhKS rdf:type owl:Class ;
+                         owl:equivalentClass [ owl:intersectionOf ( :R7dQDUF81SOJC29Sctpy6aP
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :RC6rldf2VsWBaHtUobIELQL ;
+                                                                      owl:someValuesFrom :RDgoxtmVWC61IdqtaNK9QBf
+                                                                    ]
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :RCPuCz8AunmmX3PS6A0U0XL ;
+                                                                      owl:someValuesFrom :RDgoxtmVWC61IdqtaNK9QBf
+                                                                    ]
+                                                                  ) ;
+                                               rdf:type owl:Class
+                                             ] ;
+                         rdfs:subClassOf :R7dQDUF81SOJC29Sctpy6aP ;
+                         rdfs:label "Finite State Machine Behaviour"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#RDgoxtmVWC61IdqtaNK9QBf
+:RDgoxtmVWC61IdqtaNK9QBf rdf:type owl:Class ;
+                         owl:equivalentClass [ owl:intersectionOf ( :R7dQDUF81SOJC29Sctpy6aP
+                                                                    [ rdf:type owl:Class ;
+                                                                      owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty :R8ZWdA7HWDzIIwhQZrSwAIj ;
+                                                                                      owl:someValuesFrom :R7dQDUF81SOJC29Sctpy6aP
+                                                                                    ]
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty :RDGoFrovO0PhBCQGPkFeUuR ;
+                                                                                      owl:someValuesFrom :R7dQDUF81SOJC29Sctpy6aP
+                                                                                    ]
+                                                                                  )
+                                                                    ]
+                                                                  ) ;
+                                               rdf:type owl:Class
+                                             ] ;
+                         rdfs:subClassOf :R8EpacdsHKWIyPDRwsmkSta ;
+                         rdfs:label "State Behaviour"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#RDl2yHd2gEWyEDMtUcL67d
+:RDl2yHd2gEWyEDMtUcL67d rdf:type owl:Class ;
+                        rdfs:subClassOf :Rm3YabirGXstrtBtkrthoH ;
+                        rdfs:label "Individual Knowledge Artefact"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#RDm65h4GNQjimv0axMIRnMX
+:RDm65h4GNQjimv0axMIRnMX rdf:type owl:Class ;
+                         rdfs:subClassOf :RBGp2C7WAHzeIMoeFp3K6lr ;
+                         rdfs:label "Plan"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#RDqoRvx1aDeStUw4zNRdR0o
+:RDqoRvx1aDeStUw4zNRdR0o rdf:type owl:Class ;
+                         rdfs:subClassOf :RBGp2C7WAHzeIMoeFp3K6lr ;
+                         rdfs:label "Objective"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#RWOhadIHzH5yfBTDwuDICD
+:RWOhadIHzH5yfBTDwuDICD rdf:type owl:Class ;
+                        rdfs:subClassOf :Rm3YabirGXstrtBtkrthoH ;
+                        rdfs:label "Organisational Knowledge Artefact"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#Rce2iHbgKH3gy3TygYasFi
+:Rce2iHbgKH3gy3TygYasFi rdf:type owl:Class ;
+                        rdfs:label "Workspace"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#Rip7CRo5Sv8C6NFZrhvEDH
+:Rip7CRo5Sv8C6NFZrhvEDH rdf:type owl:Class ;
+                        owl:equivalentClass [ owl:intersectionOf ( :RCjIVQ3sTEfJR8m9yEY3Mhe
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty :R8l3NnmqnvjfzJkS5rDNvFm ;
+                                                                     owl:someValuesFrom xsd:positiveInteger
+                                                                   ]
+                                                                 ) ;
+                                              rdf:type owl:Class
+                                            ] ;
+                        rdfs:label "Periodic Behaviour"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#Rm3YabirGXstrtBtkrthoH
+:Rm3YabirGXstrtBtkrthoH rdf:type owl:Class ;
+                        rdfs:subClassOf :RB4lINuYfn41lvT2d2GduUO ;
+                        rdfs:label "Knowledge Artefact"@en-gb .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://dragon.foi.hr/mago-a.owx#OWLNamedIndividual_0d1a0882_c9ac_494c_9872_f4f90e94b7fd
+:OWLNamedIndividual_0d1a0882_c9ac_494c_9872_f4f90e94b7fd rdf:type owl:NamedIndividual ,
+                                                                  :R7dQDUF81SOJC29Sctpy6aP ;
+                                                         :OWLDataProperty_1dd27442_1507_4890_8c6b_89ff9a5a4f49 "false"^^xsd:boolean ;
+                                                         :RDxmweKrzFGij8P5HOOsXZK "Register" ;
+                                                         rdfs:label "Register"@en .
+
+
+###  http://dragon.foi.hr/mago-a.owx#OWLNamedIndividual_12c619ee_d747_4d66_8165_25991df28f70
+:OWLNamedIndividual_12c619ee_d747_4d66_8165_25991df28f70 rdf:type owl:NamedIndividual ,
+                                                                  :OWLClass_4e210354_6993_4cf7_96ae_3c18254ef7ce ;
+                                                         :RB8ofKEO8zM8jcK0WetPpLI :OWLNamedIndividual_f1ff2f43_7dbb_483e_8f22_1a5102c9a8cc ;
+                                                         :RCcC3SXJ5MvuHMJyzs8OpU6 :OWLNamedIndividual_83d43aa5_243d_4472_8111_16f642b55228 ,
+                                                                                  :OWLNamedIndividual_caa11e73_a20b_4e88_8068_63ae9cfe2e4c ;
+                                                         :RpmDQcEqabFOwsZHv82QuP :rcdosgda0yrgzdnzgqesqx76 ;
+                                                         :RDxmweKrzFGij8P5HOOsXZK "Pizza Naepolitana" ;
+                                                         rdfs:label "Drugi recept"@en .
+
+
+###  http://dragon.foi.hr/mago-a.owx#OWLNamedIndividual_2a83ad76_03cf_474c_ace1_5667d7689ad2
+:OWLNamedIndividual_2a83ad76_03cf_474c_ace1_5667d7689ad2 rdf:type owl:NamedIndividual ,
+                                                                  :RWOhadIHzH5yfBTDwuDICD ;
+                                                         :OWLDataProperty_15a4602e_47e2_4459_be8c_532c6e1062ab "https://raw.githubusercontent.com/AILab-FOI/MAGO/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx"^^xsd:anyURI ;
+                                                         :RDxmweKrzFGij8P5HOOsXZK "The other ontology"^^xsd:anyURI ;
+                                                         rdfs:label "Secondary ontology"@en .
+
+
+###  http://dragon.foi.hr/mago-a.owx#OWLNamedIndividual_3a6da667_46f7_421b_84b9_afdae9406a3b
+:OWLNamedIndividual_3a6da667_46f7_421b_84b9_afdae9406a3b rdf:type owl:NamedIndividual ,
+                                                                  :R9iXau1ZAN6oZTRbdCgbmgd ;
+                                                         :RY56GiCpqJHON677qnE5sT :OWLNamedIndividual_0d1a0882_c9ac_494c_9872_f4f90e94b7fd ,
+                                                                                 :OWLNamedIndividual_c17807e1_7a97_4b2c_b0ef_354af3ac8e55 ;
+                                                         :RDxmweKrzFGij8P5HOOsXZK "Wizard" ;
+                                                         rdfs:label "Wizard"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#OWLNamedIndividual_44e0578c_c818_4c97_a1cf_081d31543933
+:OWLNamedIndividual_44e0578c_c818_4c97_a1cf_081d31543933 rdf:type owl:NamedIndividual ,
+                                                                  :R7dQDUF81SOJC29Sctpy6aP ;
+                                                         :R8ZWdA7HWDzIIwhQZrSwAIj :OWLNamedIndividual_77064793_551f_4645_8bc4_7d69c3908246 ;
+                                                         :RDGoFrovO0PhBCQGPkFeUuR :OWLNamedIndividual_d422ba16_c564_422e_bca8_9e793add1c0b ;
+                                                         :RDxmweKrzFGij8P5HOOsXZK "Rotate" ;
+                                                         rdfs:label "Rotate"@en .
+
+
+###  http://dragon.foi.hr/mago-a.owx#OWLNamedIndividual_4ce555df_0daa_451c_8cee_3869fb46f599
+:OWLNamedIndividual_4ce555df_0daa_451c_8cee_3869fb46f599 rdf:type owl:NamedIndividual ,
+                                                                  :RDm65h4GNQjimv0axMIRnMX ;
+                                                         :RDxmweKrzFGij8P5HOOsXZK "Delivery Plan"^^xsd:anyURI ;
+                                                         rdfs:label "Delivery Plan"@en .
+
+
+###  http://dragon.foi.hr/mago-a.owx#OWLNamedIndividual_5ea5abf1_cf9f_4fe0_8842_25b90ea7beac
+:OWLNamedIndividual_5ea5abf1_cf9f_4fe0_8842_25b90ea7beac rdf:type owl:NamedIndividual ,
+                                                                  :RDqoRvx1aDeStUw4zNRdR0o ;
+                                                         :RDxmweKrzFGij8P5HOOsXZK "Increase Efficiency"^^xsd:anyURI ;
+                                                         rdfs:label "Increase Efficiency"@en .
+
+
+###  http://dragon.foi.hr/mago-a.owx#OWLNamedIndividual_644f18d0_b719_4ce3_9f18_5ed00cfaf3e7
+:OWLNamedIndividual_644f18d0_b719_4ce3_9f18_5ed00cfaf3e7 rdf:type owl:NamedIndividual ,
+                                                                  :RDqoRvx1aDeStUw4zNRdR0o ;
+                                                         :RDxmweKrzFGij8P5HOOsXZK "Reduce Costs"^^xsd:anyURI ;
+                                                         rdfs:label "Reduce Costs"@en .
+
+
+###  http://dragon.foi.hr/mago-a.owx#OWLNamedIndividual_77064793_551f_4645_8bc4_7d69c3908246
+:OWLNamedIndividual_77064793_551f_4645_8bc4_7d69c3908246 rdf:type owl:NamedIndividual ,
+                                                                  :R7dQDUF81SOJC29Sctpy6aP ;
+                                                         :OWLDataProperty_1dd27442_1507_4890_8c6b_89ff9a5a4f49 "true"^^xsd:boolean ;
+                                                         :RDxmweKrzFGij8P5HOOsXZK "Observe environment" ;
+                                                         rdfs:label "Observe environment"@en .
+
+
+###  http://dragon.foi.hr/mago-a.owx#OWLNamedIndividual_7bdd32fb_271c_4f2c_aafd_d20c74aa22b9
+:OWLNamedIndividual_7bdd32fb_271c_4f2c_aafd_d20c74aa22b9 rdf:type owl:NamedIndividual ,
+                                                                  :R7dQDUF81SOJC29Sctpy6aP ;
+                                                         :RC6rldf2VsWBaHtUobIELQL :OWLNamedIndividual_77064793_551f_4645_8bc4_7d69c3908246 ;
+                                                         :RCPuCz8AunmmX3PS6A0U0XL :OWLNamedIndividual_d422ba16_c564_422e_bca8_9e793add1c0b ;
+                                                         :RDxmweKrzFGij8P5HOOsXZK "Navigate" ;
+                                                         rdfs:label "Navigate"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#OWLNamedIndividual_83d43aa5_243d_4472_8111_16f642b55228
+:OWLNamedIndividual_83d43aa5_243d_4472_8111_16f642b55228 rdf:type owl:NamedIndividual ,
+                                                                  :R9iXau1ZAN6oZTRbdCgbmgd ;
+                                                         :RB8ofKEO8zM8jcK0WetPpLI :OWLNamedIndividual_2a83ad76_03cf_474c_ace1_5667d7689ad2 ,
+                                                                                  :OWLNamedIndividual_ca5f1a1d_3af7_45da_a3d1_7ee2d7bbc098 ;
+                                                         :RY56GiCpqJHON677qnE5sT :OWLNamedIndividual_77064793_551f_4645_8bc4_7d69c3908246 ,
+                                                                                 :OWLNamedIndividual_c17807e1_7a97_4b2c_b0ef_354af3ac8e55 ;
+                                                         :RDxmweKrzFGij8P5HOOsXZK "Warrior" ;
+                                                         rdfs:label "Warrior"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#OWLNamedIndividual_a5438295_391f_4d36_b6f9_b163ade1b2e5
+:OWLNamedIndividual_a5438295_391f_4d36_b6f9_b163ade1b2e5 rdf:type owl:NamedIndividual ,
+                                                                  :R84KrWu3ZBbXCifW6B9GSmZ ;
+                                                         :R8nS5zlvvUfE9N1xZBYTpcG :OWLNamedIndividual_5ea5abf1_cf9f_4fe0_8842_25b90ea7beac ,
+                                                                                  :OWLNamedIndividual_644f18d0_b719_4ce3_9f18_5ed00cfaf3e7 ;
+                                                         :RCkUIZx8f7TQwTrh3wmfyBD :OWLNamedIndividual_77064793_551f_4645_8bc4_7d69c3908246 ;
+                                                         :RDxmweKrzFGij8P5HOOsXZK "Assemble Components"^^xsd:anyURI ;
+                                                         rdfs:label "Assemble Components"@en .
+
+
+###  http://dragon.foi.hr/mago-a.owx#OWLNamedIndividual_c17807e1_7a97_4b2c_b0ef_354af3ac8e55
+:OWLNamedIndividual_c17807e1_7a97_4b2c_b0ef_354af3ac8e55 rdf:type owl:NamedIndividual ,
+                                                                  :R7dQDUF81SOJC29Sctpy6aP ;
+                                                         :OWLDataProperty_1dd27442_1507_4890_8c6b_89ff9a5a4f49 "true"^^xsd:boolean ;
+                                                         :R8l3NnmqnvjfzJkS5rDNvFm "5"^^xsd:positiveInteger ;
+                                                         :RDxmweKrzFGij8P5HOOsXZK "Check messages" ;
+                                                         rdfs:label "Check messages"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#OWLNamedIndividual_ca5f1a1d_3af7_45da_a3d1_7ee2d7bbc098
+:OWLNamedIndividual_ca5f1a1d_3af7_45da_a3d1_7ee2d7bbc098 rdf:type owl:NamedIndividual ,
+                                                                  :RWOhadIHzH5yfBTDwuDICD ;
+                                                         :OWLDataProperty_15a4602e_47e2_4459_be8c_532c6e1062ab "https://raw.githubusercontent.com/AILab-FOI/MAGO/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx"^^xsd:anyURI ;
+                                                         :RDxmweKrzFGij8P5HOOsXZK "Main ontology"^^xsd:anyURI ;
+                                                         rdfs:label "Main ontology"@en .
+
+
+###  http://dragon.foi.hr/mago-a.owx#OWLNamedIndividual_caa11e73_a20b_4e88_8068_63ae9cfe2e4c
+:OWLNamedIndividual_caa11e73_a20b_4e88_8068_63ae9cfe2e4c rdf:type owl:NamedIndividual ,
+                                                                  :R9iXau1ZAN6oZTRbdCgbmgd ;
+                                                         :RB8ofKEO8zM8jcK0WetPpLI :OWLNamedIndividual_2a83ad76_03cf_474c_ace1_5667d7689ad2 ;
+                                                         :RDxmweKrzFGij8P5HOOsXZK "Scout"^^xsd:anyURI ;
+                                                         rdfs:label "Scout"@en .
+
+
+###  http://dragon.foi.hr/mago-a.owx#OWLNamedIndividual_d422ba16_c564_422e_bca8_9e793add1c0b
+:OWLNamedIndividual_d422ba16_c564_422e_bca8_9e793add1c0b rdf:type owl:NamedIndividual ,
+                                                                  :R7dQDUF81SOJC29Sctpy6aP ;
+                                                         :RDGoFrovO0PhBCQGPkFeUuR :OWLNamedIndividual_77064793_551f_4645_8bc4_7d69c3908246 ;
+                                                         :RDxmweKrzFGij8P5HOOsXZK "Move forwards" ;
+                                                         rdfs:label "Move forwards"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#OWLNamedIndividual_df91a3a0_7a62_46fb_ac02_75dde4d82493
+:OWLNamedIndividual_df91a3a0_7a62_46fb_ac02_75dde4d82493 rdf:type owl:NamedIndividual ,
+                                                                  :RDm65h4GNQjimv0axMIRnMX ;
+                                                         :R84IuDzXJ7QCZi1bY6fzFxZ :OWLNamedIndividual_a5438295_391f_4d36_b6f9_b163ade1b2e5 ;
+                                                         :RDxmweKrzFGij8P5HOOsXZK "Manufacturing Plan"^^xsd:anyURI ;
+                                                         rdfs:label "Manufacturing Plan"@en .
+
+
+###  http://dragon.foi.hr/mago-a.owx#OWLNamedIndividual_f1ff2f43_7dbb_483e_8f22_1a5102c9a8cc
+:OWLNamedIndividual_f1ff2f43_7dbb_483e_8f22_1a5102c9a8cc rdf:type owl:NamedIndividual ,
+                                                                  :RDl2yHd2gEWyEDMtUcL67d ;
+                                                         :OWLDataProperty_15a4602e_47e2_4459_be8c_532c6e1062ab "https://raw.githubusercontent.com/AILab-FOI/MAGO/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx"^^xsd:anyURI ;
+                                                         :RDxmweKrzFGij8P5HOOsXZK "Personal knowledge" ;
+                                                         rdfs:label "Personal ontology"@en .
+
+
+###  http://dragon.foi.hr/mago-a.owx#r9lwurkbsftwsmlpcoplgzt1
+:r9lwurkbsftwsmlpcoplgzt1 rdf:type owl:NamedIndividual ,
+                                   :OWLClass_4e210354_6993_4cf7_96ae_3c18254ef7ce ;
+                          :RCcC3SXJ5MvuHMJyzs8OpU6 :OWLNamedIndividual_83d43aa5_243d_4472_8111_16f642b55228 ;
+                          :RpmDQcEqabFOwsZHv82QuP :rcdosgda0yrgzdnzgqesqx76 ;
+                          :RDxmweKrzFGij8P5HOOsXZK "SevenOfNine" ;
+                          rdfs:label "Broj dva"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#r9lwurkbsftwsmlpcoplgzt2
+:r9lwurkbsftwsmlpcoplgzt2 rdf:type owl:NamedIndividual ,
+                                   :R9lwUrkbSftwsmlPcopLgzT ;
+                          :RB8ofKEO8zM8jcK0WetPpLI :OWLNamedIndividual_ca5f1a1d_3af7_45da_a3d1_7ee2d7bbc098 ,
+                                                   :rcdosgda0yrgzdnzgqesqx76 ;
+                          :RDxmweKrzFGij8P5HOOsXZK "Jimmy" ;
+                          rdfs:label "Agent six"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#r9lwurkbsftwsmlpcoplgzt3
+:r9lwurkbsftwsmlpcoplgzt3 rdf:type owl:NamedIndividual ,
+                                   :R9lwUrkbSftwsmlPcopLgzT ;
+                          :RCcC3SXJ5MvuHMJyzs8OpU6 :OWLNamedIndividual_3a6da667_46f7_421b_84b9_afdae9406a3b ,
+                                                   :OWLNamedIndividual_83d43aa5_243d_4472_8111_16f642b55228 ;
+                          :RDxmweKrzFGij8P5HOOsXZK "Jeanie" ;
+                          rdfs:label "Agent seven"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#r9lwurkbsftwsmlpcoplgzt4
+:r9lwurkbsftwsmlpcoplgzt4 rdf:type owl:NamedIndividual ,
+                                   :R9lwUrkbSftwsmlPcopLgzT ;
+                          :RDxmweKrzFGij8P5HOOsXZK "Janice" ;
+                          rdfs:label "Agent eight"@en-gb .
+
+
+###  http://dragon.foi.hr/mago-a.owx#rcdosgda0yrgzdnzgqesqx71
+:rcdosgda0yrgzdnzgqesqx71 rdf:type owl:NamedIndividual ,
+                                   :RCdOsGdA0yrGZdnzgQesQx7 ;
+                          rdfs:label "drugi_host.com" .
+
+
+###  http://dragon.foi.hr/mago-a.owx#rcdosgda0yrgzdnzgqesqx76
+:rcdosgda0yrgzdnzgqesqx76 rdf:type owl:NamedIndividual ,
+                                   :RCdOsGdA0yrGZdnzgQesQx7 ;
+                          :OWLDataProperty_15a4602e_47e2_4459_be8c_532c6e1062ab "http://localhost"^^xsd:anyURI ;
+                          rdfs:label "localhost" .
+
+
+###  http://dragon.foi.hr/mago-a.owx#Broj%20jedan
+<http://dragon.foi.hr/mago-a.owx#Broj%20jedan> rdf:type owl:NamedIndividual ,
+                                                        :OWLClass_256a9011_3e88_4389_acde_aa6320fe2953 ;
+                                               :RB8ofKEO8zM8jcK0WetPpLI :OWLNamedIndividual_ca5f1a1d_3af7_45da_a3d1_7ee2d7bbc098 ;
+                                               :RpmDQcEqabFOwsZHv82QuP :rcdosgda0yrgzdnzgqesqx76 ;
+                                               :RDxmweKrzFGij8P5HOOsXZK "Broj jedan" ;
+                                               rdfs:label "Prvi agent"@en-gb .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

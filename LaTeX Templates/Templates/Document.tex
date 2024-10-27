@@ -12,7 +12,7 @@
 }
 % \newcommand{\pretitle}[1]{\gdef\@pretitle{#1}}
 \makeatother
-\newcommand{\useDocumentTemplate}[3]{
+\newcommand{\useDocumentTemplate}[4]{
     \RequirePackage[fulladjust]{marginnote}
     \let\marginpar\marginnote
     \let\marginnoted\marginnote
@@ -154,6 +154,8 @@
     % The back matter contains appendices, bibliographies, indices, glossaries, etc.
     
     \backmatter
+
+    #4
 
     \begin{fullwidth}
         \printbibliography

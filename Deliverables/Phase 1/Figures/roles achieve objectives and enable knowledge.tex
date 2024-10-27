@@ -2,9 +2,9 @@
   % Nodes
   \node (K) at (-3,0) {Knowledge};
   \node (R) at (0,0) {Role};
-  \node (O) at (3,0) {Objective};
+  \node (O) at (3,0) {Behaviour};
 
   % Connections
   \draw[->] (R) to[bend left] node[midway, below] {enables} (K);
-  \draw[->] (R) to[bend left] node[midway, above] {achieves} (O);
+  \draw[->] (R) to[bend left] node[midway, above] {provides} (O);
 \end{tikzpicture}

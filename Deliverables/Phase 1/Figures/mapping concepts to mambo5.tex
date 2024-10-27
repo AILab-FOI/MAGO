@@ -1,0 +1,51 @@
+\begin{tikzpicture}
+    [
+        every node/.style={minimum height=1.5em},
+        every path/.style={->},
+    ]
+    % Nodes
+    % \node (K) at (-3,0) {Knowledge};
+    % \node (R) at (0,0) {Role};
+    % \node (O) at (3,0) {Behaviour};
+    \node (mago-Agent) at (0, 0) {Agent};
+    \node [below= of mago-Agent] (mago-Action) {Action};
+    \node [below= of mago-Action] (mago-Artefact) {Artefact};
+    \node [below= of mago-Artefact] (mago-Knowledge Artefact) {Knowledge Artefact};
+    \node [below= of mago-Knowledge Artefact] (mago-Software Artefact) {Software Artefact};
+    \node [below= of mago-Software Artefact] (mago-Artefact Resource) {Artefact Resource};
+    \node [below= of mago-Artefact Resource] (mago-Behaviour) {Behaviour};
+    \node [below= of mago-Behaviour] (mago-Strategy) {Strategy};
+    \node [below= of mago-Strategy] (mago-Objective) {Objective};
+    \node [below= of mago-Objective] (mago-Plan) {Plan};
+    \node [below= of mago-Plan] (mago-Workspace) {Workspace};
+    
+    \node [above= of mago-Agent] (MAGO) {\textbf{\magoontologyname concepts}};
+    
+    \node [right= 12em of mago-Agent] (mambo-Agent) {Agent};
+    \node [below= of mambo-Agent] (mambo-Action) {Action};
+    \node [below= of mambo-Action] (mambo-Artefact) {Artefact};
+    \node [below= of mambo-Artefact] (mambo-Knowledge Artefact) {Knowledge Artefact};
+    \node [below= of mambo-Knowledge Artefact] (mambo-Software Artefact) {n/a};
+    \node [below= of mambo-Software Artefact] (mambo-Artefact Resource) {n/a};
+    \node [below= of mambo-Artefact Resource] (mambo-Behaviour) {Behaviour};
+    \node [below= of mambo-Behaviour] (mambo-Strategy) {Strategy};
+    \node [below= of mambo-Strategy] (mambo-Objective) {Objective};
+    \node [below= of mambo-Objective] (mambo-Plan) {Plan};
+    \node [below= of mambo-Plan] (mambo-Workspace) {Workspace};
+    
+    \node [above= of mambo-Agent] (MAGO) {\textbf{MAMbO5 concepts}};
+
+    \draw (mago-Agent) to [bend left=15] (mambo-Agent);
+    \draw (mago-Action) to [bend left=15] (mambo-Action);
+    \draw (mago-Artefact) to [bend left=15] (mambo-Artefact);
+    \draw (mago-Knowledge Artefact) to [bend left=15] (mambo-Knowledge Artefact);
+    \draw (mago-Behaviour) to [bend left=15] (mambo-Behaviour);
+    \draw (mago-Strategy) to [bend left=15] (mambo-Strategy);
+    \draw (mago-Objective) to [bend left=15] (mambo-Objective);
+    \draw (mago-Plan) to [bend left=15] (mambo-Plan);
+    \draw (mago-Workspace) to [bend left=15] (mambo-Workspace);
+    
+    % Connections
+    % \draw[->] (R) to[bend left] node[midway, below] {enables} (K);
+    % \draw[->] (R) to[bend left] node[midway, above] {provides} (O);
+\end{tikzpicture}

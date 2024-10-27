@@ -1,0 +1,80 @@
+\chapter{Formalisation}\label{ch: Formalisation}
+
+The formalization phase in ontology engineering focuses on applying formal semantics to the conceptual model of a domain. This phase aims to create an ontology that is precise, unambiguous, and capable of supporting complex reasoning. By using a formal language, the ontology’s structure, relationships, and constraints become systematically interpretable by both humans and machines.
+
+The process of formalising an ontology transforms a conceptual understanding into a functional and robust model, which can support various applications, ranging from data interoperability to intelligent system operations. Such a formal structure is essential for ensuring the ontology’s adaptability, reusability, and ability to integrate across different domains and systems.
+
+The main objectives of this phase are:
+
+\begin{itemize}
+    \item Encoding concepts and relationships, i.e. transforming conceptual entities and their relationships into formal representations;
+    
+    \item Defining logical constraints by establishing rules, constraints, and axioms that govern how concepts interact, and their properties, to ensure logical consistency and support reasoning processes;
+    
+    \item Specifying hierarchies and classifications, i.e. organizing concepts into clearly defined hierarchies, such as classes and subclasses, that support reasoning processes;
+    
+    \item Ensuring compatibility with ontology languages by structuring the ontology in a language that supports formal semantics, allowing it to be used with reasoning tools and knowledge-based systems.
+\end{itemize}
+
+In ontology engineering, various serialization methods and formats are commonly used to encode ontologies in a structured and machine-readable manner. Each serialization format has distinct characteristics and purposes, offering different levels of expressiveness and compatibility with tools for ontology development and reasoning. Below are three of the most frequently used serialization methods.
+
+\begin{description}
+    \item[RDF/XML]  
+    is an XML-based serialization format for \ac{RDF} data, used extensively for ontologies that follow the RDF standard. It encodes \ac{RDF} triples -- subject, predicate, and object -- in an \ac{XML} format, making it compatible with XML tools and parsers. This method is often used for semantic web applications and data interchange across platforms, particularly when XML compatibility is a priority.
+
+    \item [Turtle]
+    provides a more compact and human-readable serialization format for \ac{RDF}. It uses a simplified, text-based syntax for representing RDF triples,
+    \lookAt{\cref{lst: turtle serialization cyclic behaviour}}%
+    making it easier to read and edit manually than RDF/XML. This method is popular for ontology development and editing, especially during the ontology design process, where readability is advantageous.
+
+    \item [OWL/XML]
+    is an \ac{XML} serialization for ontologies written in \ac{OWL}. It is particularly designed to represent \ac{OWL} constructs in a structured XML format,
+    \lookAt{\cref{lst: owl-xml serialization cyclic behaviour}}%
+    supporting all \ac{OWL} semantics. This method is suitable for applications where interoperability with XML-based systems is essential and for storing complex ontologies where OWL-specific constructs are frequently used.
+\end{description}
+
+The complete Turtle syntax serialization of \magoontologyname ontology is given in appendix \nameref{ch: serialization turtle}.
+\lookAt{\nameref{ch: serialization turtle}}
+
+\begin{listing}
+    \begin{mintedXML}
+    <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx#RCjIVQ3sTEfJR8m9yEY3Mhe">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://dragon.foi.hr/mago-a.owx#R7dQDUF81SOJC29Sctpy6aP"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://dragon.foi.hr/mago-a.owx#OWLDataProperty_1dd27442_1507_4890_8c6b_89ff9a5a4f49"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://dragon.foi.hr/mago-a.owx#R7dQDUF81SOJC29Sctpy6aP"/>
+        <rdfs:label xml:lang="en-gb">Cyclic Behaviour</rdfs:label>
+    </owl:Class>
+    \end{mintedXML}
+    \caption{OWL/XML serialization of the concept labelled \mintedInline{Cyclic Behaviour}}
+    \label{lst: owl-xml serialization cyclic behaviour}
+\end{listing}
+
+\begin{listing}
+    \begin{mintedXML}
+:RCjIVQ3sTEfJR8m9yEY3Mhe rdf:type owl:Class ;
+    owl:equivalentClass [ 
+        owl:intersectionOf ( 
+            :R7dQDUF81SOJC29Sctpy6aP
+            [ 
+              rdf:type owl:Restriction ;
+              owl:onProperty :OWLDataProperty_1dd27442_1507_4890_8c6b_89ff9a5a4f49 ;
+              owl:hasValue "true"^^xsd:boolean
+            ]
+        ) ;
+        rdf:type owl:Class
+    ] ;
+    rdfs:subClassOf :R7dQDUF81SOJC29Sctpy6aP ;
+    rdfs:label "Cyclic Behaviour"@en-gb .
+    \end{mintedXML}
+    \caption{Turtle serialization of the concept labelled \mintedInline{Cyclic Behaviour}}
+    \label{lst: turtle serialization cyclic behaviour}
+\end{listing}
