@@ -41,10 +41,59 @@
     
 
 
+    <!-- http://dragon.foi.hr/mago-a.owx#OWLObjectProperty_691196cf_4ee3_4e4f_b8f0_7ee4aecc248c -->
+
+    <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx#OWLObjectProperty_691196cf_4ee3_4e4f_b8f0_7ee4aecc248c">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://dragon.foi.hr/mago-a.owx#R8nS5zlvvUfE9N1xZBYTpcG"/>
+        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx#RDqoRvx1aDeStUw4zNRdR0o"/>
+        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx#R84KrWu3ZBbXCifW6B9GSmZ"/>
+        <rdfs:label xml:lang="en-gb">is achieved by action</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx#OWLObjectProperty_78dd3dec_c844_450a_8bd0_412f69614517 -->
+
+    <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx#OWLObjectProperty_78dd3dec_c844_450a_8bd0_412f69614517">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://dragon.foi.hr/mago-a.owx#RCWrWcZCQ3lxj6jFw9zRJ6m"/>
+        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx#RChP69av2xqRwh6LALfwsKq"/>
+        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx#RB4lINuYfn41lvT2d2GduUO"/>
+        <rdfs:label xml:lang="en-gb">is provided by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx#OWLObjectProperty_ca58846c_df5f_4584_9375_8e686fdbb3fe -->
+
+    <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx#OWLObjectProperty_ca58846c_df5f_4584_9375_8e686fdbb3fe">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://dragon.foi.hr/mago-a.owx#R84IuDzXJ7QCZi1bY6fzFxZ"/>
+        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx#R84KrWu3ZBbXCifW6B9GSmZ"/>
+        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx#RDm65h4GNQjimv0axMIRnMX"/>
+        <rdfs:label xml:lang="en-gb">is required in plan</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dragon.foi.hr/mago-a.owx#OWLObjectProperty_d04b28e8_062e_4b0d_82c6_a6b9f6b31226 -->
+
+    <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx#OWLObjectProperty_d04b28e8_062e_4b0d_82c6_a6b9f6b31226">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://dragon.foi.hr/mago-a.owx#RpmDQcEqabFOwsZHv82QuP"/>
+        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx#RCdOsGdA0yrGZdnzgQesQx7"/>
+        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx#R9lwUrkbSftwsmlPcopLgzT"/>
+        <rdfs:label xml:lang="en-gb">hosts</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://dragon.foi.hr/mago-a.owx#R7MvUIWpnOdfB3dxpRXTUAK -->
 
     <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx#R7MvUIWpnOdfB3dxpRXTUAK">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://dragon.foi.hr/mago-a.owx#RCkUIZx8f7TQwTrh3wmfyBD"/>
         <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx#R7dQDUF81SOJC29Sctpy6aP"/>
         <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx#R84KrWu3ZBbXCifW6B9GSmZ"/>
         <rdfs:label xml:lang="en-gb">implements action</rdfs:label>
@@ -67,6 +116,7 @@
 
     <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx#R7o5TdA2HQOQxwVPrUJrLpq">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://dragon.foi.hr/mago-a.owx#RBntfnmvB9JVuK1xvAe6Hm8"/>
         <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx#RDqoRvx1aDeStUw4zNRdR0o"/>
         <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx#RDqoRvx1aDeStUw4zNRdR0o"/>
         <rdfs:label xml:lang="en-gb">is before objective</rdfs:label>
@@ -127,6 +177,7 @@
 
     <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx#R9QlFkpwG4P6QT3YaFGdAPM">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://dragon.foi.hr/mago-a.owx#R9wYaBAe5LQpMMDI7zKHWhc"/>
         <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx#R84KrWu3ZBbXCifW6B9GSmZ"/>
         <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx#R84KrWu3ZBbXCifW6B9GSmZ"/>
         <rdfs:label xml:lang="en-gb">is after action</rdfs:label>
@@ -227,6 +278,7 @@
 
     <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx#RCAv5UwFPy5OUQdjN61nXbw">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://dragon.foi.hr/mago-a.owx#RY56GiCpqJHON677qnE5sT"/>
         <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx#R7dQDUF81SOJC29Sctpy6aP"/>
         <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx#R9iXau1ZAN6oZTRbdCgbmgd"/>
         <owlr:python_name>is_provided_by_role</owlr:python_name>
@@ -457,7 +509,9 @@
 
     <owl:DatatypeProperty rdf:about="http://dragon.foi.hr/mago-a.owx#RBffMlV8TQxoNtbLRneUYsb">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <owlr:python_name>has_system_features</owlr:python_name>
         <rdfs:comment xml:lang="en-gb">JSON description of the basic features of the modelled system, e.g. {&quot;number of agents&quot;: 10}</rdfs:comment>
         <rdfs:label xml:lang="en-gb">has system features</rdfs:label>
     </owl:DatatypeProperty>
@@ -500,7 +554,7 @@
 
     <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx#OWLClass_27e9637c_fe4f_4875_8d16_087da4a1cb00">
         <rdfs:subClassOf rdf:resource="http://dragon.foi.hr/mago-a.owx#RChP69av2xqRwh6LALfwsKq"/>
-        <rdfs:label xml:lang="en">RestAPI Endpoint</rdfs:label>
+        <rdfs:label xml:lang="en-gb">RestAPI Endpoint</rdfs:label>
     </owl:Class>
     
 
@@ -520,7 +574,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://dragon.foi.hr/mago-a.owx#R8EpacdsHKWIyPDRwsmkSta"/>
-        <rdfs:label xml:lang="en">Time-out Behaviour</rdfs:label>
+        <rdfs:label xml:lang="en-gb">Time-out Behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -742,7 +796,7 @@
     <!-- http://dragon.foi.hr/mago-a.owx#Rce2iHbgKH3gy3TygYasFi -->
 
     <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx#Rce2iHbgKH3gy3TygYasFi">
-        <rdfs:label xml:lang="en-gb">Workspace</rdfs:label>
+        <rdfs:label xml:lang="en-gb">System</rdfs:label>
     </owl:Class>
     
 
