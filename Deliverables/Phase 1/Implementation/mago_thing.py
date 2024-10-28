@@ -4,6 +4,7 @@ from string import Template
 import os
 from itertools import chain
 import textwrap
+from json import loads
 
 from aux import *
 

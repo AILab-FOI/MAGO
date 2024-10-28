@@ -22,6 +22,7 @@ class Agent(Thing):
         self.knowledge_artefact_uris = get_related_knowledge_artefact_uris(
             self.onto_individual
         )
+        self.system_features = loads(self.onto_individual.has_system_features) if self.onto_individual.has_system_features else None
 
     def render_agent_implementation(self):
         self.set_implementation_template(
@@ -72,7 +73,6 @@ class $agent_type(Agent):
                 "ontology": world.get_ontology(ka_uri).load(reload=True)
             })
 
-        self.uri = "$uri"
         if self.available_roles_and_behaviours is not None:
             self.available_roles = list([entry.get("name") for entry in self.available_roles_and_behaviours.values()])
             self.available_behaviours = list(set(chain(*[entry.get("behaviours", {}).values()
@@ -115,8 +115,10 @@ class $agent_type(Agent):
 
         agent_instantiation_template = """
 agent = $agent_type("$name@$host_server", "$password")
+agent.uri = "$uri"
 agent.knowledge_artefact_uris = $knowledge_artefact_uris
 agent.available_roles_and_behaviours = $related_roles_and_behaviours
+agent.system_features = $system_features
 agent_individuals.setdefault("$host_server", {}).update({"$name": agent})
 """
         self.set_implementation_template(agent_instantiation_template)

@@ -75,7 +75,7 @@ class Workspace(Thing):
         result = {}
 
         plan = onto.search_one(
-            iri="http://dragon.foi.hr/mago-a.owx#RDm65h4GNQjimv0axMIRnMX"
+            label="Plan"
         ).instances()
 
         for plan in plan:
