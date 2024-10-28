@@ -996,7 +996,7 @@
         <RB8ofKEO8zM8jcK0WetPpLI rdf:resource="http://dragon.foi.hr/mago-a.owx#OWLNamedIndividual_2a83ad76_03cf_474c_ace1_5667d7689ad2"/>
         <RB8ofKEO8zM8jcK0WetPpLI rdf:resource="http://dragon.foi.hr/mago-a.owx#OWLNamedIndividual_ca5f1a1d_3af7_45da_a3d1_7ee2d7bbc098"/>
         <RY56GiCpqJHON677qnE5sT rdf:resource="http://dragon.foi.hr/mago-a.owx#OWLNamedIndividual_7bdd32fb_271c_4f2c_aafd_d20c74aa22b9"/>
-        <RDxmweKrzFGij8P5HOOsXZK>Warrior</RDxmweKrzFGij8P5HOOsXZK>
+        <RDxmweKrzFGij8P5HOOsXZK>Service consumer</RDxmweKrzFGij8P5HOOsXZK>
         <rdfs:label xml:lang="en-gb">Service consumer</rdfs:label>
     </owl:NamedIndividual>
     
