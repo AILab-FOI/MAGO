@@ -47,41 +47,49 @@ are connected to specific \mintedInline{Role} individuals. Lastly, there are sev
 \begin{figure*}
     \centering
     \includegraphics[width=\linewidth]{Deliverables/Phase 1/Figures/Example agents and roles.png}
-    \caption{Agents of the example and their connected roles and behaviours they enable}
+    \caption{Agents of the example and their connected roles and behaviours}
     \label{fig: Example agents and roles}
 \end{figure*}
 
 The modelled system is translated into the implementation template consisting of the following four files:
 \begin{itemize}
-    \item \mintedInline{Agent_Factory_Agent.py} is the place where the \mintedInline{Factory Agent} concept is translated into a \ac{SPADE} agent class.
+    \item
+    \lookAt[4px]{\cref{lst: example mago-ag factory agent}}%
+    \mintedInline{Agent_Factory_Agent.py} is the place where the \mintedInline{Factory Agent} concept is translated into a \ac{SPADE} agent class.
 
-    \item \mintedInline{Agent_Recipe_Agent.py} is the place where the \mintedInline{Recipe Agent} concept is translated into a \ac{SPADE} agent class.
+    \item
+    \lookAt[4px]{\cref{lst: example mago-ag recipe agent}}%
+    \mintedInline{Agent_Recipe_Agent.py} is the place where the \mintedInline{Recipe Agent} concept is translated into a \ac{SPADE} agent class.
 
-    \item \mintedInline{Behaviours.py} is where all the \mintedInline{Behaviour} individuals' implementation templates are located.
+    \item
+    \lookAt[4px]{\cref{lst: example mago-ag behaviours}}%
+    \mintedInline{Behaviours.py} is where all the \mintedInline{Behaviour} individuals' implementation templates are located.
 
-    \item \mintedInline{Worksapce_workspace.py} contains agent instantiations and should be run if the modelled and now translated system is to be run.
+    \item
+    \lookAt[4px]{\cref{lst: example mago-ag workspace}}%
+    \mintedInline{Worksapce_workspace.py} contains agent instantiations and should be run if the modelled and now translated system is to be run.
 \end{itemize}
 
-% \begin{longlisting}
-%     \mintedFilePython[]{Deliverables/Phase 1/Implementation/mago_thing.py}
-%     \caption{The \mintedInline{mago_thing.py} file}
-%     \label{lst: appendix mago-ag thing}
-% \end{longlisting}
+\begin{listing}
+    \mintedFilePython[]{Deliverables/Phase 1/RecipeWorld/Agent_Factory_Agent.py}
+    \caption{The \mintedInline{Agent_Factory_Agent.py} file}
+    \label{lst: example mago-ag factory agent}
+\end{listing}
 
-% \begin{longlisting}
-%     \mintedFilePython[]{Deliverables/Phase 1/Implementation/mago_thing.py}
-%     \caption{The \mintedInline{mago_thing.py} file}
-%     \label{lst: appendix mago-ag thing}
-% \end{longlisting}
+\begin{listing}
+    \mintedFilePython[]{Deliverables/Phase 1/RecipeWorld/Agent_Recipe_Agent.py}
+    \caption{The \mintedInline{Agent_Recipe_Agent.py} file}
+    \label{lst: example mago-ag recipe agent}
+\end{listing}
 
-% \begin{longlisting}
-%     \mintedFilePython[]{Deliverables/Phase 1/Implementation/mago_thing.py}
-%     \caption{The \mintedInline{mago_thing.py} file}
-%     \label{lst: appendix mago-ag thing}
-% \end{longlisting}
+\begin{listing}
+    \mintedFilePython[]{Deliverables/Phase 1/RecipeWorld/Behaviours.py}
+    \caption{The \mintedInline{Behaviours.py} file}
+    \label{lst: example mago-ag behaviours}
+\end{listing}
 
-% \begin{longlisting}
-%     \mintedFilePython[]{Deliverables/Phase 1/Implementation/mago_thing.py}
-%     \caption{The \mintedInline{mago_thing.py} file}
-%     \label{lst: appendix mago-ag thing}
-% \end{longlisting}
+\begin{longlisting}
+    \mintedFilePython[]{Deliverables/Phase 1/RecipeWorld/Workspace_workspace.py}
+    \caption{The \mintedInline{Workspace_workspace.py} file}
+    \label{lst: example mago-ag workspace}
+\end{longlisting}
