@@ -1,0 +1,93 @@
+\chapter{Knowledge Acquisition}\label{ch: given knowledge acquisition}
+
+% Researching the existing ontologies applicable to describing video games, according to the Knowledge Acquisition step of the METHONTOLOGY ontology engineering methodology, using, e.g. unstructured interviews, text analysis, and brainstorming techniques.
+
+% Finished analysis of the applicable concepts and a collection of the concepts to be used in the ontology describing video games as intelligent virtual environments, i.e. the refined first glossary with potentially relevant terms and their meaning.
+
+Several ontologies related to video games can be found in publications dating from 2008 or later \cite{bakkerud2023OntologyGameSpatiality, chan2008DigitalGameOntologya, delope2017ComprehensiveTaxonomySerious, franco2018OntologyRolePlayinga, juellarsen2020OntologyGameplayNew, junior2021RedefiningMDAFramework, parkkila2017OntologyVideogameInteroperabilitya, rocha2015LudoOntologyCreate, sacco2016CoreGameOntology, sacco2017GameCharacterOntology, teixeira2020OntoJogoOntologyGame, zagal2008GameOntologyProject}. The referenced selection of the available publications was consulted, and it was found that only two of the ontologies presented in those publications can be found as publicly available formalised ontologies \cite{parkkila2017OntologyVideogameInteroperabilitya, sacco2016CoreGameOntology}. These two ontologies are considered in this document:
+\begin{itemize}
+    \item Core Game Ontology \cite{sacco2016CoreGameOntology},
+    \item Video Game Ontology \cite{parkkila2017OntologyVideogameInteroperability}.
+\end{itemize}
+
+These above-mentioned two ontologies are the only ones that can be fully analysed. Completely available ontology files are an important prerequisite to using their concepts in further development since a concept can be fully analysed and understood only when their neighbourhood is available for analysis, too.
+
+Honourable mention is the Game Ontology Project \cite{zagal2008GameOntologyProject}, an experienced framework for describing, analysing and studying games. The resulting hierarchy of concepts pertaining to video games is not formalised and is currently available only as a collection of related wiki pages. Another honourable mention is the Game Character Ontology, presented in detail by \textcite{sacco2017GameCharacterOntology}, yet the ontology implementation can no longer be found online.
+
+What follows are the concepts identified as relevant to the domain of video games, and that can be found in the two of the above-mentioned ontologies:
+
+\begin{itemize}
+    \item Core Game Ontology,
+    \lookAt[4px]{\crefrange{gt: cgo Game}{gt: cgo hasGameplay}}%
+    \item Video Game Ontology.
+    \lookAt[4px]{\crefrange{gt: vgo Achievement}{gt: vgo InstantaneousEvent}}%
+\end{itemize}
+
+These concepts are described based on their definitions in the mentioned two ontologies, although that definition can change in the further steps of developing the \given ontology. Only a selection of the VGO concepts is given here since the ontology is richer than the CGO one. 
+
+In addition to the above ontologies related to the domain of video games, the glossary here contains a selection of concepts
+\lookAt{\crefrange{gt: mambo5 Action}{gt: mambo5 Task}}%
+from the \mambo ontology. These concepts are selected as potentially useful when considering video games in the context of \acp{IVE}. Their descriptions are cited from \cite{okresaduric2019MAMbO5NewOntology,okresaduric2019OrganizationalModelingLargeScale}.
+
+\csvreader[
+    separator=semicolon,
+    head to column names,
+    filter equal={\Include}{1},
+    ]{DDCGO.csv}{}% use head of csv as column names
+{
+\begin{table}[h]
+    \centering
+    \caption{\emph{\ConceptName} glossary entry}
+    \label{gt: cgo \ConceptName}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{0.25\linewidth}|p{0.71\linewidth}}
+        \toprule
+        \textbf{Concept name} & \ConceptName\\
+        \midrule \textbf{Definition} & \Definition \\\noalign{\vskip 2mm}
+        \textbf{Description} & \Description\\
+        \bottomrule
+
+    \end{tabular*}
+\end{table}
+}
+
+\csvreader[
+    separator=semicolon,
+    head to column names,
+    filter equal={\Include}{1},
+    ]{DDVGO.csv}{}% use head of csv as column names
+{
+\begin{table}[h]
+    \centering
+    \caption{\emph{\ConceptName} glossary entry}
+    \label{gt: vgo \ConceptName}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{0.25\linewidth}|p{0.71\linewidth}}
+        \toprule
+        \textbf{Concept name} & \ConceptName\\
+        \midrule \textbf{Definition} & \Definition \\\noalign{\vskip 2mm}
+        \textbf{Description} & \Description\\
+        \bottomrule
+
+    \end{tabular*}
+\end{table}
+}
+
+\csvreader[
+    separator=semicolon,
+    head to column names,
+    filter equal={\Include}{1},
+    ]{DDMAMbO5.csv}{}% use head of csv as column names
+{
+\begin{table}[h]
+    \centering
+    \caption{\emph{\ConceptName} glossary entry}
+    \label{gt: mambo5 \ConceptName}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{0.25\linewidth}|p{0.71\linewidth}}
+        \toprule
+        \textbf{Concept name} & \ConceptName\\
+        \midrule \textbf{Definition} & \Definition \\\noalign{\vskip 2mm}
+        \textbf{Description} & \Description\\
+        \bottomrule
+
+    \end{tabular*}
+\end{table}
+}

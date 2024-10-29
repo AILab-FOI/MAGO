@@ -1,0 +1,30 @@
+\chapter{Specification}\label{ch: given specification}
+
+% The semi-formal ontology specification document is written in natural language, using a set of intermediate representations and a middle-out approach. This document includes, at least, the intended use of the ontology, scenarios of use, the intended level of formality to be used when codifying the terms and their meaning, the scope of the ontology, and its granularity.
+
+The second part of this research is geared towards video games and the concept related to video games. The main objective of this is to combine the concepts of \acp{MAS} and video games into a working system capable of modelling video games using the concepts applicable to \acp{MAS}, with special emphasis on modelling systems of agents in \acp{IVE}. Furthermore, the modelled \magoga ontology aims to map gamification's techniques, mechanics, actions and behaviours to propose a way of introducing gamification to a system of reasoning agents. The result will be developed towards a system that can automatically adapt based on the set or emerging goals while keeping true to its initially (or planned for) gamified nature. 
+
+The \given ontology is the first step towards creating the \magoga ontology that features gamification-specific concepts. 
+
+The main objective of the \given ontology is to provide concepts necessary for describing video games as \acfp{IVE}.
+An \ac{IVE} is a concept used for describing \blockquote[\cite{okresaduric2019MAMbO5NewOntology,rincon2014DevelopingIntelligentVirtual,luck2000ApplyingArtificialIntelligence}]{a physical world inhabited by autonomous intelligent entities.} When transferred to the domain of video games, the concept of an \ac{IVE} can be considered as describing the game world inhabited by autonomous intelligent entities. Furthermore, one might consider the \enquote{physical world} concept to map to the \enquote{game world}, the people of the physical world as the artificial intelligent agents playing the \acp{NPC} in the game world, the \enquote{autonomous intelligent entities} as additional artificial agents in the game world implementing all the other needed roles.
+
+The \given ontology will be used
+\marginnote{intended use}%
+to model video games in the domain context of \acp{IVE}. Therefore, the \given ontology builds upon the already-developed \mambo ontology \cite{okresaduric2019MAMbO5NewOntology}. The \mambo ontology features concepts for modelling \acp{IVE} enhanced with concepts for describing agent-based organisational features. The concepts featured in \mambo ontology can be considered abstractions of the concepts that can be found in the \given ontology. The foreseen benefit of this approach is to create a way of modelling the simulated world of a video game, like modelling the real world, thus potentially making it easier to translate simulations created for the real world into game-based environments. Such an approach is deemed useful since simulated environments are prone to many problems that occur in the real world, such as physical constraints.
+
+The \given ontology is planned to be used
+\marginnote{scenario of use}%
+for describing video game worlds using the applicable concepts. Such models might be used in simulations or to provide the necessary context to intelligent artificial agents to enhance their reasoning capabilities. Furthermore, a model describing the main concepts of a video game as an \ac{IVE} can be used to generate various types of content for the modelled game, e.g. to generate worlds based on their ontological models or to generate \acp{NPC} that can understand the world, or to automatically generate items that can have features that are aligned with the model of the video game world.
+
+To achieve the described, the \given ontology will be expressed using a high degree of formality, namely classified as rigorously formal by \cite{uschold1996OntologiesPrinciplesMethods}.
+\marginnote{degree of formality}%
+The formal structure of the ontology, along with its various constraints, guarantees clarity, unambiguity, and ease of use. Additionally, this structure facilitates the process of extending other ontologies or allowing other ontologies to extend it. Lastly, a highly formalized expression of an ontology enhances its compatibility with other digital systems.
+
+Based on the above description of the \given ontology, the ontology is planned to comprise the concepts
+\marginnote{scope}%
+that specify the concepts that can be found in the \mambo ontology. The specification is geared towards the domain of video games and the concepts necessary to model a video game as an \ac{IVE}. The foreseen additions will be in terms of specialising the \mintedInline{Agent} concept of the \mambo ontology, possibly the \mintedInline{Artefact} concept, and similar. The \given ontology is not planned to be created to be able to provide concepts for extremely detailed modelling of a video game.
+
+The level of granularity
+\marginnote{level of granularity}%
+stemming from the description above is quite abstract. The ontology should include concepts that can be, for example, used to describe \acp{NPC}, monsters, places, and points of interest in the video game, but another layer of the specification is expected to be added where the specific genre of video games should be described and genre-specific entities defined. On top of this domain-specific layer is foreseen the individual-based layer. The \given ontology provides generalised concepts that should be further specified.
