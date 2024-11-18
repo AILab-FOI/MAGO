@@ -1,0 +1,18 @@
+individual(gandalf).
+type(gandalf, wizard).
+
+individual(wizard_title).
+type(wizard_title, title).
+label(wizard_title, "Wizard").
+
+individual(staff_and_glamdring).
+type(staff_and_glamdring, weapon).
+label(staff_and_glamdring, "Staff and Glamdring").
+
+individual(valinor).
+type(valinor, origin).
+label(valinor, "Valinor").
+
+has_title(gandalf, wizard_title).
+has_weapon(gandalf, staff_and_glamdring).
+has_origin(gandalf, valinor).
