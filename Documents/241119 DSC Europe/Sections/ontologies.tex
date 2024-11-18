@@ -36,7 +36,7 @@
 \end{frame}
 
 \begin{frame}{\insertsection}
-    Common concepts related to the domain of ontologies:
+    Common concepts related to ontologies:
 
     \begin{description}
         \item [\Ac{RDF}] is a standard for representing data on the web using triples. It helps link and describe information so computers can understand relationships between different concepts.
@@ -80,16 +80,48 @@
         \begin{listing}
         \mintedFileText[firstline=7, lastline=18]{Documents/241119 DSC Europe/Implementation/ontology example.txt}
         \end{listing}
+
+        \columnbreak
         
         \begin{listing}
         \mintedFileText[firstline=20,lastline=31]{Documents/241119 DSC Europe/Implementation/ontology example.txt}
         \end{listing}
+
+        \columnbreak
         
         \begin{listing}
         \mintedFileText[firstline=33,lastline=46]{Documents/241119 DSC Europe/Implementation/ontology example.txt}
         \end{listing}
     \end{multicols}
     \endgroup
+
+    \begin{listing}
+        \caption{Ontology serialisation using Turtle syntax}
+    \end{listing}
+\end{frame}
+
+\begin{frame}[fragile]{\insertsection}
+
+    An ontology is more than a set of related concepts.
+
+    \begingroup
+    \setlength{\columnsep}{3em}
+    \begin{multicols}{2}
+        \begin{listing}
+        \mintedFileText[firstline=7, lastline=18]{Documents/241119 DSC Europe/Implementation/ontology example.txt}
+        \end{listing}
+
+        \columnbreak
+        
+        \begin{listing}
+        \mintedFileText[firstline=33,lastline=46]{Documents/241119 DSC Europe/Implementation/ontology example.txt}
+        \end{listing}
+    \end{multicols}
+    \endgroup
+
+    \begin{listing}
+        \caption{Ontology serialisation using Turtle syntax}
+    \end{listing}
 \end{frame}
 
 \begin{frame}[fragile]{\insertsection}

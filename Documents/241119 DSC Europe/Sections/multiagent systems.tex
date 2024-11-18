@@ -101,7 +101,9 @@
     \end{listing}
 \end{frame}
 
-\activityFrame{\mintedInline{agent simple.py}}{}
+\activityFrame{\mintedInline{agent simple.py}}{https://github.com/AILab-FOI/MAGO/blob/main/Documents/241119\%20DSC\%20Europe/Implementation/agent\%20simple.py}
+
+
 
 \begin{frame}{\insertsection}
     \customFigure[0.9]{
@@ -115,11 +117,13 @@
     }{Visual representation of a simple coffee machine agent}{agent example coffee machine}
 \end{frame}
 
-\activityFrame{\mintedInline{agent coffee.py}}{}
+\activityFrame{\mintedInline{agent coffee.py}}{https://github.com/AILab-FOI/MAGO/blob/main/Documents/241119\%20DSC\%20Europe/Implementation/agent\%20coffee.py}
+
+
 
 \begin{frame}[fragile]{\insertsection: \insertsubsection}
     \begin{listing}
-    \mintedFilePythonBlack[firstline=7, lastline=30]{Documents/241119 DSC Europe/Implementation/agent one behaviour.py}
+    \mintedFilePythonBlack[firstline=7, lastline=30]{Documents/241119 DSC Europe/Implementation/agent coffee.py}
     \caption{The coffee machine agent with a single behaviour}
     \end{listing}
 \end{frame}
@@ -129,27 +133,27 @@
 \begin{frame}{\insertsection}
     \customFigure[1]{
         \includegraphics{Documents/241119 DSC Europe/Figures/example traffic light.png}
-    }{Visual representation of a traffic light agent}{agent example traffic light}
+    }{Visual representation of a traffic light agent with a finite state machine behaviour}{agent example traffic light}
 \end{frame}
 
-\activityFrame{\mintedInline{agent traffic light.py}}{https://www.foi.unizg.hr}
+\activityFrame{\mintedInline{agent traffic light.py}}{https://github.com/AILab-FOI/MAGO/blob/main/Documents/241119\%20DSC\%20Europe/Implementation/agent\%20traffic\%20light.py}
 
 \begin{frame}[fragile]{\insertsection}
-    % \begingroup
-    % \setlength{\columnsep}{3em}
-    % \begin{multicols}{2}
-    %     \begin{listing}
-    %     \mintedFilePythonBlack[firstline=9, lastline=24]{Documents/241119 DSC Europe/Implementation/agent communication.py}
-    %     \end{listing}
+    \begingroup
+    \setlength{\columnsep}{3em}
+    \begin{multicols}{2}
+        \begin{listing}
+        \mintedFilePythonBlack[firstline=11, lastline=31]{Documents/241119 DSC Europe/Implementation/agent traffic light.py}
+        \end{listing}
 
-    %     \columnbreak
+        \columnbreak
         
-    %     \begin{listing}
-    %     \mintedFilePythonBlack[firstline=27,lastline=43]{Documents/241119 DSC Europe/Implementation/agent communication.py}
-    %     \caption{Agent communication example}
-    %     \end{listing}
-    % \end{multicols}
-    % \endgroup
+        \begin{listing}
+        \mintedFilePythonBlack[firstline=34,lastline=50]{Documents/241119 DSC Europe/Implementation/agent traffic light.py}
+        \caption{Agent communication example}
+        \end{listing}
+    \end{multicols}
+    \endgroup
 \end{frame}
 
 
@@ -160,20 +164,20 @@
     }{Visual representation of two communicating agents}{agent example weather communication}
 \end{frame}
 
-\activityFrame{\mintedInline{agent weather.py}}{https://www.foi.unizg.hr}
+\activityFrame{\mintedInline{agent weather.py}}{https://github.com/AILab-FOI/MAGO/blob/main/Documents/241119\%20DSC\%20Europe/Implementation/agent\%20weather.py}
 
 \begin{frame}[fragile]{\insertsection}
     \begingroup
     \setlength{\columnsep}{3em}
     \begin{multicols}{2}
         \begin{listing}
-        \mintedFilePythonBlack[firstline=9, lastline=24]{Documents/241119 DSC Europe/Implementation/agent communication.py}
+        \mintedFilePythonBlack[firstline=9, lastline=24]{Documents/241119 DSC Europe/Implementation/agent weather.py}
         \end{listing}
 
         \columnbreak
         
         \begin{listing}
-        \mintedFilePythonBlack[firstline=27,lastline=43]{Documents/241119 DSC Europe/Implementation/agent communication.py}
+        \mintedFilePythonBlack[firstline=27,lastline=43]{Documents/241119 DSC Europe/Implementation/agent weather.py}
         \caption{Agent communication example}
         \end{listing}
     \end{multicols}
