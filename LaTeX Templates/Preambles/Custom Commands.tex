@@ -144,7 +144,7 @@
     }
 }
 
-\newcommand{\activityFrame}[1]{
+\newcommand{\activityFrame}[2]{
     \begin{frame}{\insertsection}
         \begin{tikzpicture}[overlay, remember picture]
             \draw [line width=1.5em, line join=round, line cap=round]
@@ -160,6 +160,12 @@
             {\textbf{\textsc{\huge{Activity}}}};
             
             \node[text=frontcolour, align=left, below = 0.3em of A.south west, anchor=north west, text width=6cm] {#1};
+
+            \ifthenelse{\equal{#2}{}}{}{
+                \node[text=frontcolour] (I) 
+                at ([xshift=0.5cm] A.east) 
+                {\href{#2}{\faExternalLink}};
+            }%
         \end{tikzpicture}
     \end{frame}
 }

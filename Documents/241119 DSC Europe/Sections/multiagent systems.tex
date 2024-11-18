@@ -58,5 +58,124 @@
 \subsection{Implementing Agents}
 
 \begin{frame}{\insertsection: \insertsubsection}
+    \onslide<+->
     \Ac{SPADE} is a multiagent systems implementation platform written in Python and based on instant messaging using \ac{XMPP}.
+
+    \onslide<+->
+    \medskip
+    To be run and to communicate, a \ac{SPADE} agent must be connected to an \ac{XMPP} server using its \ac{JID} comprising its name and the hostname of the server, e.g.:
+    \begin{center}
+        \mintedInline{alice}
+        \quad
+        \mintedInline{@}
+        \quad
+        \mintedInline{localhost}
+    \end{center}
+\end{frame}
+
+\begin{frame}{\insertsection: \insertsubsection}
+    \onslide<+->
+    The \ac{XMPP} server of choice is Prosody.
+    \hfill\href{https://prosody.im}{\faExternalLink}
+
+    \begin{itemize}
+        \item \mintedInline{docker-compose.yml} for running Prosody,
+        \hfill\href{https://prosody.im}{\faExternalLink}
+
+        \item \mintedInline{prosody.cfg.lua} for configuration that requires no user registration,
+        \hfill\href{https://prosody.im}{\faExternalLink}
+
+        \item generating or using SSL/TLS certificates.
+        \hfill\href{https://prosody.im/doc/certificates}{\faExternalLink}
+    \end{itemize}
+
+    \bigskip
+    Conda environment with all the required dependencies.
+    \hfill\href{https://github.com/AILab-FOI/MAGO/blob/main/Deliverables/Phase\%201/Implementation/env.yml}{\faExternalLink}
+\end{frame}
+
+\begin{frame}[fragile]{\insertsection: \insertsubsection}
+    \begin{listing}
+    \mintedFilePythonBlack{Documents/241119 DSC Europe/Implementation/agent simple.py}
+    \caption{Simple agent}
+    \end{listing}
+\end{frame}
+
+\activityFrame{\mintedInline{agent simple.py}}{}
+
+\begin{frame}{\insertsection}
+    \customFigure[0.9]{
+        \includegraphics{Documents/241119 DSC Europe/Figures/Agent behaviours in SPADE dark.png}
+    }{Different types of agent behaviours in \ac{SPADE}}{agent behaviours spade}
+\end{frame}
+
+\begin{frame}{\insertsection}
+    \customFigure[0.45]{
+        \includegraphics{Documents/241119 DSC Europe/Figures/agent coffee machine white.png}
+    }{Visual representation of a simple coffee machine agent}{agent example coffee machine}
+\end{frame}
+
+\activityFrame{\mintedInline{agent coffee.py}}{}
+
+\begin{frame}[fragile]{\insertsection: \insertsubsection}
+    \begin{listing}
+    \mintedFilePythonBlack[firstline=7, lastline=30]{Documents/241119 DSC Europe/Implementation/agent one behaviour.py}
+    \caption{The coffee machine agent with a single behaviour}
+    \end{listing}
+\end{frame}
+
+
+
+\begin{frame}{\insertsection}
+    \customFigure[1]{
+        \includegraphics{Documents/241119 DSC Europe/Figures/example traffic light.png}
+    }{Visual representation of a traffic light agent}{agent example traffic light}
+\end{frame}
+
+\activityFrame{\mintedInline{agent traffic light.py}}{https://www.foi.unizg.hr}
+
+\begin{frame}[fragile]{\insertsection}
+    % \begingroup
+    % \setlength{\columnsep}{3em}
+    % \begin{multicols}{2}
+    %     \begin{listing}
+    %     \mintedFilePythonBlack[firstline=9, lastline=24]{Documents/241119 DSC Europe/Implementation/agent communication.py}
+    %     \end{listing}
+
+    %     \columnbreak
+        
+    %     \begin{listing}
+    %     \mintedFilePythonBlack[firstline=27,lastline=43]{Documents/241119 DSC Europe/Implementation/agent communication.py}
+    %     \caption{Agent communication example}
+    %     \end{listing}
+    % \end{multicols}
+    % \endgroup
+\end{frame}
+
+
+
+\begin{frame}{\insertsection}
+    \customFigure[0.7]{
+        \includegraphics{Documents/241119 DSC Europe/Figures/weather agent example.png}
+    }{Visual representation of two communicating agents}{agent example weather communication}
+\end{frame}
+
+\activityFrame{\mintedInline{agent weather.py}}{https://www.foi.unizg.hr}
+
+\begin{frame}[fragile]{\insertsection}
+    \begingroup
+    \setlength{\columnsep}{3em}
+    \begin{multicols}{2}
+        \begin{listing}
+        \mintedFilePythonBlack[firstline=9, lastline=24]{Documents/241119 DSC Europe/Implementation/agent communication.py}
+        \end{listing}
+
+        \columnbreak
+        
+        \begin{listing}
+        \mintedFilePythonBlack[firstline=27,lastline=43]{Documents/241119 DSC Europe/Implementation/agent communication.py}
+        \caption{Agent communication example}
+        \end{listing}
+    \end{multicols}
+    \endgroup
 \end{frame}
