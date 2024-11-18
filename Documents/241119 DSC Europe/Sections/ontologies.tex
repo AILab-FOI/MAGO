@@ -70,27 +70,28 @@
     }{Ontology visualisation of the selected concepts of the Lord of the Rings novel by J.~R.~R.~Tolkien}{ontology lotr}
 \end{frame}
 
+\begin{frame}{\insertsection}
+    An ontology is more than a visual representation of related concepts.
+\end{frame}
+
 \begin{frame}[fragile]{\insertsection}
-
-    An ontology is more than a set of related concepts.
-
     \begingroup
     \setlength{\columnsep}{3em}
     \begin{multicols}{3}
         \begin{listing}
-        \mintedFileText[firstline=7, lastline=18]{Documents/241119 DSC Europe/Implementation/ontology example.txt}
+        \mintedFileText[firstline=7, lastline=18]{Documents/241119 DSC Europe/Implementation/ontology turtle.txt}
         \end{listing}
 
         \columnbreak
         
         \begin{listing}
-        \mintedFileText[firstline=20,lastline=31]{Documents/241119 DSC Europe/Implementation/ontology example.txt}
+        \mintedFileText[firstline=20,lastline=31]{Documents/241119 DSC Europe/Implementation/ontology turtle.txt}
         \end{listing}
 
         \columnbreak
         
         \begin{listing}
-        \mintedFileText[firstline=33,lastline=46]{Documents/241119 DSC Europe/Implementation/ontology example.txt}
+        \mintedFileText[firstline=33,lastline=46]{Documents/241119 DSC Europe/Implementation/ontology turtle.txt}
         \end{listing}
     \end{multicols}
     \endgroup
@@ -101,26 +102,23 @@
 \end{frame}
 
 \begin{frame}[fragile]{\insertsection}
-
-    An ontology is more than a set of related concepts.
-
     \begingroup
     \setlength{\columnsep}{3em}
     \begin{multicols}{2}
         \begin{listing}
-        \mintedFileText[firstline=7, lastline=18]{Documents/241119 DSC Europe/Implementation/ontology example.txt}
+        \mintedFileText[firstline=33, lastline=46]{Documents/241119 DSC Europe/Implementation/ontology turtle.txt}
         \end{listing}
 
         \columnbreak
         
         \begin{listing}
-        \mintedFileText[firstline=33,lastline=46]{Documents/241119 DSC Europe/Implementation/ontology example.txt}
+        \mintedFileText[]{Documents/241119 DSC Europe/Implementation/ontology prolog.P}
         \end{listing}
     \end{multicols}
     \endgroup
 
     \begin{listing}
-        \caption{Ontology serialisation using Turtle syntax}
+        \caption{Ontology individual serialisation using Turtle syntax vs. ontology individual as Prolog expressions}
     \end{listing}
 \end{frame}
 
