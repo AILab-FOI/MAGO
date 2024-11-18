@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+
+  prosody:
+    image: prosody/prosody
+    restart: unless-stopped
+    volumes:
+      - ./data/configuration:/etc/prosody
+      - ./logs:/var/log/prosody
+      - ./data/data:/var/lib/prosody
+    ports:
+      - 5222:5222
+      - 5223:5223
+    environment:
+      DOMAIN: localhost
