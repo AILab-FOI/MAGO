@@ -1,0 +1,62 @@
+\section{Agents and Multiagent Systems}
+
+\begin{frame}{\insertsection}
+    \blockquote[\cite{wooldridge2013IntelligentAgents}]{\textelp{} we require systems that can \alert{decide for themselves} what they need to do in order to achieve the objectives that we delegate to them. Such computer systems are known as \alert{agents}. Agents that must operate robustly in rapidly changing, unpredictable, or open environments, where there is a significant possibility that actions can \alert{fail}, are known as \alert{intelligent agents}, or sometimes \alert{autonomous agents}.}
+\end{frame}
+
+
+
+\subsection{What is an Agent?}
+
+\begin{frame}{\insertsection: \insertsubsection}
+    \onslide<+->
+    \blockquote[{{\cite[p. 54]{russell2022ArtificialIntelligenceModern}}}]{An agent is \alert<2->{anything} that can be viewed as \alert<2->{perceiving} its environment through sensors and \alert<2->{acting} upon that environment through actuators.}
+
+    \bigskip
+
+    \onslide<3>
+
+    More specifically,
+    
+    \smallskip
+    \blockquote[{{\cite{wooldridge2013IntelligentAgents}}}]{An agent is a computer system that is situated in some environment, and that is capable of \alert{autonomous} action in this environment in order to achieve its delegated objectives.}
+\end{frame}
+
+\begin{frame}{\insertsection}
+    \customFigure[0.9]{
+        \includegraphics{Documents/241119 DSC Europe/Figures/What is an Agent.tikz}
+    }{Visual definition of an artificial agent, based on \cite[p. 55]{russell2022ArtificialIntelligenceModern}}{whatIsAgent}
+\end{frame}
+
+
+
+
+\subsection{Agent $\in$ Multiagent System}
+
+\begin{frame}{\insertsection: \insertsubsection}
+    \onslide<+->
+    A \ac{MAS} is a system wherein \blockquote[\cite{russell2022ArtificialIntelligenceModern}]{\textelp{} an agent must make decisions in environments that contain multiple actors.}
+
+    \onslide<+->
+    \bigskip
+    In more detail, a \ac{MAS} is a system wherein \cite{dignum2013MultiagentOrganizations}:
+    \begin{itemize}
+        \item each agent has incomplete information or capabilities for solving the problem and, thus, has a \alert{limited viewpoint}; 
+        \item there is no system global \alert{control}; 
+        \item data are \alert{decentralized};
+        \item computation is \alert{asynchronous}.
+    \end{itemize}
+
+    \onslide<+->
+    \bigskip
+
+    Agents can be cooperative or competitive. Often modelled as organisations.
+\end{frame}
+
+
+
+\subsection{Implementing Agents}
+
+\begin{frame}{\insertsection: \insertsubsection}
+    \Ac{SPADE} is a multiagent systems implementation platform written in Python and based on instant messaging using \ac{XMPP}.
+\end{frame}

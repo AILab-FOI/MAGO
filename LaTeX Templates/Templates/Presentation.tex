@@ -11,7 +11,22 @@
 \newcommand{\makePreface}[1]{%
 
     \usepackage{fontawesome}
-    \usepackage{FiraSans} 
+
+    \usepackage{FiraSans}
+
+    \setmainfont{Fira Sans Light}
+
+    \setsansfont[
+      ItalicFont={Fira Sans Light Italic},
+      BoldFont={Fira Sans},
+      BoldItalicFont={Fira Sans Italic}
+    ]{Fira Sans Light}
+    \setmonofont[BoldFont={Fira Mono Medium}]{Fira Mono}
+    
+    \AtBeginEnvironment{tabular}{%
+      \addfontfeature{Numbers={Monospaced}}
+    }
+    
     
     \input{LaTeX Templates/Preambles/Colours}
 
@@ -24,9 +39,15 @@
             numbering=fraction,
             subsectionpage=simple,
             sectionpage=progressbar,
-            % block=fill
+            block=fill
         ]{moloch}
     }
+
+    \setbeamercolor{block title}{bg=blockcolour, fg=maincolour}
+    \setbeamercolor{block body}{bg=blockcolour!10!maincolour, fg=frontcolour}
+
+    \setbeamercolor{block title example}{bg=examplecolour, fg=maincolour}
+    \setbeamercolor{block body example}{bg=examplecolour!10!maincolour, fg=frontcolour}
     
     \input{LaTeX Templates/Preambles/Beamer Settings}
     % \setsansfont{Ubuntu}

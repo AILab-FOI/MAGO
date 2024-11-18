@@ -2,6 +2,7 @@
 \usepackage{newfloat}
 
 \newcommand{\magoontologyname}{\mbox{MAGO-Ag}\xspace}
+\newcommand{\magoag}{\mbox{MAGO-Ag}\xspace}
 \newcommand{\magoga}{\mbox{MAGO-Ga}\xspace}
 \newcommand{\given}{\mbox{GIVEn}\xspace}
 \newcommand{\mambo}{\mbox{MAMbO5}\xspace}
@@ -141,4 +142,24 @@
     }{
         \ifcase\month\or January\or February\or March\or April\or May\or June\or July\or August\or September\or October\or November\or December\fi\space\number\year
     }
+}
+
+\newcommand{\activityFrame}[1]{
+    \begin{frame}{\insertsection}
+        \begin{tikzpicture}[overlay, remember picture]
+            \draw [line width=1.5em, line join=round, line cap=round]
+            ([yshift=-1.77cm] current page.west) --
+            ([xshift=2cm, yshift=-1.77cm] current page.west) -- 
+            ([xshift=3.25cm, yshift=1.75cm] current page.west) -- 
+            ([xshift=-2.25cm, yshift=-0.75cm] current page.south) -- 
+            ([xshift=-1cm, yshift=-1.77cm] current page.center) -- 
+            ([xshift=1.25cm, yshift=-1.77cm] current page.center);
+            
+            \node[text=frontcolour, align=left] (A) 
+            at ([xshift=3cm, yshift=-1.77cm] current page.center) 
+            {\textbf{\textsc{\huge{Activity}}}};
+            
+            \node[text=frontcolour, align=left, below = 0.3em of A.south west, anchor=north west, text width=6cm] {#1};
+        \end{tikzpicture}
+    \end{frame}
 }
