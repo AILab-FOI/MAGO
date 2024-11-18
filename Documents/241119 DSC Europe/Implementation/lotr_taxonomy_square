@@ -1,0 +1,88 @@
+digraph {
+	size="14,14"
+	layout=neato
+	overlap=false
+	Hobbits [color=skyblue shape=box style=filled]
+	Frodo [color=lightgreen shape=ellipse style=filled]
+	Hobbits -> Frodo
+	Samwise [color=lightgreen shape=ellipse style=filled]
+	Hobbits -> Samwise
+	Merry [color=lightgreen shape=ellipse style=filled]
+	Hobbits -> Merry
+	Pippin [color=lightgreen shape=ellipse style=filled]
+	Hobbits -> Pippin
+	Elf [color=skyblue shape=box style=filled]
+	Legolas [color=lightgreen shape=ellipse style=filled]
+	Elf -> Legolas
+	Humans [color=skyblue shape=box style=filled]
+	Aragorn [color=lightgreen shape=ellipse style=filled]
+	Humans -> Aragorn
+	Boromir [color=lightgreen shape=ellipse style=filled]
+	Humans -> Boromir
+	Dwarf [color=skyblue shape=box style=filled]
+	Gimli [color=lightgreen shape=ellipse style=filled]
+	Dwarf -> Gimli
+	Wizard [color=skyblue shape=box style=filled]
+	Gandalf [color=lightgreen shape=ellipse style=filled]
+	Wizard -> Gandalf
+	"Ring-bearer" [color=lightcoral shape=diamond style=filled]
+	Frodo -> "Ring-bearer"
+	Gardener [color=lightcoral shape=diamond style=filled]
+	Samwise -> Gardener
+	"Knight of Rohan" [color=lightcoral shape=diamond style=filled]
+	Merry -> "Knight of Rohan"
+	"Guard of Gondor" [color=lightcoral shape=diamond style=filled]
+	Pippin -> "Guard of Gondor"
+	"Prince of Mirkwood" [color=lightcoral shape=diamond style=filled]
+	Legolas -> "Prince of Mirkwood"
+	"King of Gondor" [color=lightcoral shape=diamond style=filled]
+	Aragorn -> "King of Gondor"
+	"Captain of Gondor" [color=lightcoral shape=diamond style=filled]
+	Boromir -> "Captain of Gondor"
+	Warrior [color=lightcoral shape=diamond style=filled]
+	Gimli -> Warrior
+	Wizard [color=lightcoral shape=diamond style=filled]
+	Gandalf -> Wizard
+	Sting [color=gold shape=hexagon style=filled]
+	Frodo -> Sting
+	Sword [color=gold shape=hexagon style=filled]
+	Samwise -> Sword
+	Sword [color=gold shape=hexagon style=filled]
+	Merry -> Sword
+	Sword [color=gold shape=hexagon style=filled]
+	Pippin -> Sword
+	Bow [color=gold shape=hexagon style=filled]
+	Legolas -> Bow
+	"Andúril" [color=gold shape=hexagon style=filled]
+	Aragorn -> "Andúril"
+	"Sword and Shield" [color=gold shape=hexagon style=filled]
+	Boromir -> "Sword and Shield"
+	Axe [color=gold shape=hexagon style=filled]
+	Gimli -> Axe
+	"Staff and Glamdring" [color=gold shape=hexagon style=filled]
+	Gandalf -> "Staff and Glamdring"
+	Shire [color=plum shape=circle style=filled]
+	Frodo -> Shire
+	Shire [color=plum shape=circle style=filled]
+	Samwise -> Shire
+	Shire [color=plum shape=circle style=filled]
+	Merry -> Shire
+	Shire [color=plum shape=circle style=filled]
+	Pippin -> Shire
+	Mirkwood [color=plum shape=circle style=filled]
+	Legolas -> Mirkwood
+	"Dúnedain" [color=plum shape=circle style=filled]
+	Aragorn -> "Dúnedain"
+	Gondor [color=plum shape=circle style=filled]
+	Boromir -> Gondor
+	"Lonely Mountain" [color=plum shape=circle style=filled]
+	Gimli -> "Lonely Mountain"
+	Valinor [color=plum shape=circle style=filled]
+	Gandalf -> Valinor
+	Race [color=blue shape=box style=filled]
+	Race -> Hobbits
+	Race -> Elf
+	Race -> Humans
+	Race -> Dwarf
+	Race -> Wizard
+}

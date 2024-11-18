@@ -1,0 +1,24 @@
+digraph {
+	size="14,14"
+	fontname=Helvetica fontsize=10 rankdir=BT
+	layout=neato
+	sep="+1"
+	overlap=false
+	Character [label=Character fillcolor=lightblue shape=ellipse style=filled]
+	Character -> Wizard [label=subClassOf]
+	Wizard [label=Wizard fillcolor=lightblue shape=ellipse style=filled]
+	Title [label=Title fillcolor=lightblue shape=ellipse style=filled]
+	Weapon [label=Weapon fillcolor=lightblue shape=ellipse style=filled]
+	Origin [label=Origin fillcolor=lightblue shape=ellipse style=filled]
+	Character -> Title [label=hasTitle]
+	Character -> Weapon [label=hasWeapon]
+	Character -> Origin [label=hasOrigin]
+	Gandalf [label=Gandalf fillcolor=plum shape=diamond style=filled]
+	Gandalf -> Wizard [label=instanceOf]
+	WizardTitle [label=WizardTitle fillcolor=plum shape=diamond style=filled]
+	WizardTitle -> Title [label=instanceOf]
+	StaffAndGlamdring [label=StaffAndGlamdring fillcolor=plum shape=diamond style=filled]
+	StaffAndGlamdring -> Weapon [label=instanceOf]
+	Valinor [label=Valinor fillcolor=plum shape=diamond style=filled]
+	Valinor -> Origin [label=instanceOf]
+}

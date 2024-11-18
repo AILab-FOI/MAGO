@@ -1,0 +1,46 @@
+@prefix : <http://example.org/lotr#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Ontology
+<http://example.org/lotr> a owl:Ontology .
+
+# Classes
+:Character a owl:Class .
+
+:Wizard a owl:Class ;
+  rdfs:subClassOf :Character .
+
+:Title a owl:Class .
+:Weapon a owl:Class .
+:Origin a owl:Class .
+
+# Object Properties
+:hasTitle a owl:ObjectProperty ;
+  rdfs:domain :Character ;
+  rdfs:range :Title .
+
+:hasWeapon a owl:ObjectProperty ;
+  rdfs:domain :Character ;
+  rdfs:range :Weapon .
+
+:hasOrigin a owl:ObjectProperty ;
+  rdfs:domain :Character ;
+  rdfs:range :Origin .
+
+# Individuals
+:Gandalf a :Wizard ;
+  :hasTitle :WizardTitle ;
+  :hasWeapon :StaffAndGlamdring ;
+  :hasOrigin :Valinor .
+
+:WizardTitle a :Title ;
+  rdfs:label "Wizard" .
+
+:StaffAndGlamdring a :Weapon ;
+  rdfs:label "Staff and Glamdring" .
+
+:Valinor a :Origin ;
+  rdfs:label "Valinor" .
