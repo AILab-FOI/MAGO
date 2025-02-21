@@ -614,16 +614,9 @@
     <!-- https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#R9lwUrkbSftwsmlPcopLgzT -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#R9lwUrkbSftwsmlPcopLgzT">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Inhabitant_Agent"/>
-                    <rdf:Description rdf:about="http://personales.upv.es/ccarrasc/ooooaflsmas#OrganizationalUnit"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <owlr:python_name>Agent</owlr:python_name>
         <rdfs:label xml:lang="en-gb">Agent</rdfs:label>
+        <rdfs:comment xml:lang="en-gb">MAGO-Ag agent that will be translated into an implementation template</rdfs:label>
     </owl:Class>
     
 
