@@ -74,8 +74,6 @@ class Behaviour(Thing):
             }
         )
 
-        print(state_names)
-
         for state in states:
             state_name = state_names.get(state)
             class_name = f"{state_name}()"
@@ -105,20 +103,26 @@ class $name(${behaviour_type}):"""
 
         template.append(
             """
-    async def on_start(self) -> None:
+    async def on_start(self):
         print("Starting behaviour.")"""
         )
 
+        if self.system_features:
+            template.append(
+                """
+        self.system_features = $system_features"""
+            )
+        
         template.append(
             """
-    async def on_end(self) -> None:
+    async def on_end(self):
         print("Ending behaviour.")"""
         )
 
         if "FSM" not in self.behaviour_type:
             template.append(
                 """
-    async def run(self) -> None:
+    async def run(self):
         print("Running the behaviour.")"""
             )
 

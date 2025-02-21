@@ -47,16 +47,15 @@ class Thing:
         if onto_individual:
             self.onto_properties.clear()
             for prop in onto_individual.get_properties():
-                # print(prop.label)
                 self.onto_properties.setdefault(
                     prop.label[0] if prop.label else prop.name,
                     getattr(onto_individual, prop.python_name),
                 )
 
-            # print(self.onto_properties)
-
             for name, value in self.onto_properties.items():
                 setattr(self, name, value)
+
+            self.system_features = loads(self.onto_individual.has_system_features) if self.onto_individual.has_system_features else None
 
         logging.info(
             f"Individual {self.onto_individual if self.onto_individual else self.name} of type {self.entity_type} created."

@@ -33,7 +33,7 @@ class Workspace(Thing):
                 [
                     Agent(
                         agent_type=agent.is_a[0].label[0],
-                        host_server=agent.lives_on_host[0].label[0],
+                        host_server=agent.lives_on_host[0].has_uri,
                         name=agent.has_name,
                         password="tajna",
                         onto_individual=agent,
@@ -82,7 +82,7 @@ class Workspace(Thing):
             result.update(
                 Plan(
                     onto_individual=plan
-                ).get_plan_action_behaviour_objective()
+                ).get_plan_activity_behaviour_objective()
             )
 
         return result
@@ -138,14 +138,14 @@ async def main():
     agent_individuals = {}
 $agent_instantiation
     for agent in [agent for host_dict in agent_individuals.values() for agent in host_dict.values()]:
-        agent.plan_action_behaviour_objective = $plan_action_behaviour_objective
+        agent.plan_activity_behaviour_objective = $plan_activity_behaviour_objective
         await agent.start()
 
 spade.run(main())
 """
         )
 
-        self.plan_action_behaviour_objective = self.read_plan_from_ontology()
+        self.plan_activity_behaviour_objective = self.read_plan_from_ontology()
 
         self.render_agent_import_sources()
         self.render_agent_instantiation()

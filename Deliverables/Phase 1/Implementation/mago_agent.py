@@ -22,7 +22,6 @@ class Agent(Thing):
         self.knowledge_artefact_uris = get_related_knowledge_artefact_uris(
             self.onto_individual
         )
-        self.system_features = loads(self.onto_individual.has_system_features) if self.onto_individual.has_system_features else None
 
     def render_agent_implementation(self):
         self.set_implementation_template(
