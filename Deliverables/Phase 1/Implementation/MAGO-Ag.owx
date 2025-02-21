@@ -8,6 +8,7 @@
      xmlns:owlr="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://dragon.foi.hr/mago-a.owx#">
+        <owl:imports rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2016/11/MAMbO5"/>
         <rdfs:comment>The ontology for MAGO research visit.</rdfs:comment>
     </owl:Ontology>
     
@@ -46,9 +47,9 @@
     <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx#OWLObjectProperty_691196cf_4ee3_4e4f_b8f0_7ee4aecc248c">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://dragon.foi.hr/mago-a.owx#R8nS5zlvvUfE9N1xZBYTpcG"/>
-        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx#RDqoRvx1aDeStUw4zNRdR0o"/>
-        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx#R84KrWu3ZBbXCifW6B9GSmZ"/>
-        <rdfs:label xml:lang="en-gb">is achieved by action</rdfs:label>
+        <rdfs:domain rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Objective"/>
+        <rdfs:range rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Activity"/>
+        <rdfs:label xml:lang="en-gb">is achieved by activity</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -59,7 +60,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://dragon.foi.hr/mago-a.owx#RCWrWcZCQ3lxj6jFw9zRJ6m"/>
         <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx#RChP69av2xqRwh6LALfwsKq"/>
-        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx#RB4lINuYfn41lvT2d2GduUO"/>
+        <rdfs:range rdf:resource="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Artifact"/>
         <rdfs:label xml:lang="en-gb">is provided by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -70,8 +71,8 @@
     <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx#OWLObjectProperty_ca58846c_df5f_4584_9375_8e686fdbb3fe">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://dragon.foi.hr/mago-a.owx#R84IuDzXJ7QCZi1bY6fzFxZ"/>
-        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx#R84KrWu3ZBbXCifW6B9GSmZ"/>
-        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx#RDm65h4GNQjimv0axMIRnMX"/>
+        <rdfs:domain rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Activity"/>
+        <rdfs:range rdf:resource="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Plan"/>
         <rdfs:label xml:lang="en-gb">is required in plan</rdfs:label>
     </owl:ObjectProperty>
     
@@ -95,8 +96,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://dragon.foi.hr/mago-a.owx#RCkUIZx8f7TQwTrh3wmfyBD"/>
         <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx#R7dQDUF81SOJC29Sctpy6aP"/>
-        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx#R84KrWu3ZBbXCifW6B9GSmZ"/>
-        <rdfs:label xml:lang="en-gb">implements action</rdfs:label>
+        <rdfs:range rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Activity"/>
+        <rdfs:label xml:lang="en-gb">implements activity</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -105,8 +106,8 @@
 
     <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx#R7NTCPsMvJdxinMk2P28ppg">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx#RDqoRvx1aDeStUw4zNRdR0o"/>
-        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx#RDqoRvx1aDeStUw4zNRdR0o"/>
+        <rdfs:domain rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Objective"/>
+        <rdfs:range rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Objective"/>
         <rdfs:label xml:lang="en-gb">has final objective</rdfs:label>
     </owl:ObjectProperty>
     
@@ -117,8 +118,8 @@
     <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx#R7o5TdA2HQOQxwVPrUJrLpq">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://dragon.foi.hr/mago-a.owx#RBntfnmvB9JVuK1xvAe6Hm8"/>
-        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx#RDqoRvx1aDeStUw4zNRdR0o"/>
-        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx#RDqoRvx1aDeStUw4zNRdR0o"/>
+        <rdfs:domain rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Objective"/>
+        <rdfs:range rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Objective"/>
         <rdfs:label xml:lang="en-gb">is before objective</rdfs:label>
     </owl:ObjectProperty>
     
@@ -128,10 +129,10 @@
 
     <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx#R84IuDzXJ7QCZi1bY6fzFxZ">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx#RDm65h4GNQjimv0axMIRnMX"/>
-        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx#R84KrWu3ZBbXCifW6B9GSmZ"/>
-        <owlr:python_name>requires_action</owlr:python_name>
-        <rdfs:label xml:lang="en-gb">requires action</rdfs:label>
+        <rdfs:domain rdf:resource="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Plan"/>
+        <rdfs:range rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Activity"/>
+        <owlr:python_name>requires_activity</owlr:python_name>
+        <rdfs:label xml:lang="en-gb">requires activity</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -154,8 +155,8 @@
 
     <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx#R8ZXgNqWa8M3RnwigsFBxvc">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx#R9iXau1ZAN6oZTRbdCgbmgd"/>
-        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx#R9iXau1ZAN6oZTRbdCgbmgd"/>
+        <rdfs:domain rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Role"/>
+        <rdfs:range rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Role"/>
         <rdfs:label xml:lang="en-gb">features role</rdfs:label>
     </owl:ObjectProperty>
     
@@ -165,8 +166,8 @@
 
     <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx#R8nS5zlvvUfE9N1xZBYTpcG">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx#R84KrWu3ZBbXCifW6B9GSmZ"/>
-        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx#RDqoRvx1aDeStUw4zNRdR0o"/>
+        <rdfs:domain rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Activity"/>
+        <rdfs:range rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Objective"/>
         <owlr:python_name>has_objective</owlr:python_name>
         <rdfs:label xml:lang="en-gb">has objective</rdfs:label>
     </owl:ObjectProperty>
@@ -178,9 +179,9 @@
     <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx#R9QlFkpwG4P6QT3YaFGdAPM">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://dragon.foi.hr/mago-a.owx#R9wYaBAe5LQpMMDI7zKHWhc"/>
-        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx#R84KrWu3ZBbXCifW6B9GSmZ"/>
-        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx#R84KrWu3ZBbXCifW6B9GSmZ"/>
-        <rdfs:label xml:lang="en-gb">is after action</rdfs:label>
+        <rdfs:domain rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Activity"/>
+        <rdfs:range rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Activity"/>
+        <rdfs:label xml:lang="en-gb">is after activity</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -189,8 +190,8 @@
 
     <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx#R9Y2982rI3hZL4oBhv8Ohhv">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx#RDm65h4GNQjimv0axMIRnMX"/>
-        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx#RDm65h4GNQjimv0axMIRnMX"/>
+        <rdfs:domain rdf:resource="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Plan"/>
+        <rdfs:range rdf:resource="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Plan"/>
         <rdfs:label xml:lang="en-gb">is part of process</rdfs:label>
     </owl:ObjectProperty>
     
@@ -200,9 +201,9 @@
 
     <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx#R9wYaBAe5LQpMMDI7zKHWhc">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx#R84KrWu3ZBbXCifW6B9GSmZ"/>
-        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx#R84KrWu3ZBbXCifW6B9GSmZ"/>
-        <rdfs:label xml:lang="en-gb">is before action</rdfs:label>
+        <rdfs:domain rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Activity"/>
+        <rdfs:range rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Activity"/>
+        <rdfs:label xml:lang="en-gb">is before activity</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -214,12 +215,12 @@
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://dragon.foi.hr/mago-a.owx#R9iXau1ZAN6oZTRbdCgbmgd"/>
                     <rdf:Description rdf:about="http://dragon.foi.hr/mago-a.owx#R9lwUrkbSftwsmlPcopLgzT"/>
+                    <rdf:Description rdf:about="http://personales.upv.es/ccarrasc/ooooaflsmas#Role"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx#RB4lINuYfn41lvT2d2GduUO"/>
+        <rdfs:range rdf:resource="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Artifact"/>
         <owlr:python_name>can_access_artefact</owlr:python_name>
         <rdfs:label xml:lang="en-gb">can access artefact</rdfs:label>
     </owl:ObjectProperty>
@@ -230,8 +231,8 @@
 
     <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx#RBOL8y2xs4VvKc6D0kikOup">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx#R9iXau1ZAN6oZTRbdCgbmgd"/>
-        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx#R9iXau1ZAN6oZTRbdCgbmgd"/>
+        <rdfs:domain rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Role"/>
+        <rdfs:range rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Role"/>
         <owlr:python_name>is_part_of_role</owlr:python_name>
         <rdfs:label xml:lang="en-gb">is part of role</rdfs:label>
     </owl:ObjectProperty>
@@ -244,7 +245,7 @@
         <rdfs:subPropertyOf rdf:resource="http://dragon.foi.hr/mago-a.owx#RCcC3SXJ5MvuHMJyzs8OpU6"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx#R9lwUrkbSftwsmlPcopLgzT"/>
-        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx#R9iXau1ZAN6oZTRbdCgbmgd"/>
+        <rdfs:range rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Role"/>
         <owlr:python_name>plays_role</owlr:python_name>
         <rdfs:label xml:lang="en-gb">plays role</rdfs:label>
     </owl:ObjectProperty>
@@ -255,8 +256,8 @@
 
     <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx#RBntfnmvB9JVuK1xvAe6Hm8">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx#RDqoRvx1aDeStUw4zNRdR0o"/>
-        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx#RDqoRvx1aDeStUw4zNRdR0o"/>
+        <rdfs:domain rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Objective"/>
+        <rdfs:range rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Objective"/>
         <rdfs:label xml:lang="en-gb">is after objective</rdfs:label>
     </owl:ObjectProperty>
     
@@ -280,7 +281,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://dragon.foi.hr/mago-a.owx#RY56GiCpqJHON677qnE5sT"/>
         <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx#R7dQDUF81SOJC29Sctpy6aP"/>
-        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx#R9iXau1ZAN6oZTRbdCgbmgd"/>
+        <rdfs:range rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Role"/>
         <owlr:python_name>is_provided_by_role</owlr:python_name>
         <rdfs:label xml:lang="en-gb">is provided by role</rdfs:label>
     </owl:ObjectProperty>
@@ -303,7 +304,7 @@
 
     <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx#RCWrWcZCQ3lxj6jFw9zRJ6m">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx#RB4lINuYfn41lvT2d2GduUO"/>
+        <rdfs:domain rdf:resource="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Artifact"/>
         <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx#RChP69av2xqRwh6LALfwsKq"/>
         <owlr:python_name>provides_resource</owlr:python_name>
         <rdfs:label xml:lang="en-gb">provides resource</rdfs:label>
@@ -316,7 +317,7 @@
     <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx#RCcC3SXJ5MvuHMJyzs8OpU6">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx#R9lwUrkbSftwsmlPcopLgzT"/>
-        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx#R9iXau1ZAN6oZTRbdCgbmgd"/>
+        <rdfs:range rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Role"/>
         <owlr:python_name>can_play_role</owlr:python_name>
         <rdfs:label xml:lang="en-gb">can play role</rdfs:label>
     </owl:ObjectProperty>
@@ -327,7 +328,7 @@
 
     <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx#RCkUIZx8f7TQwTrh3wmfyBD">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx#R84KrWu3ZBbXCifW6B9GSmZ"/>
+        <rdfs:domain rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Activity"/>
         <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx#R7dQDUF81SOJC29Sctpy6aP"/>
         <owlr:python_name>has_behaviour</owlr:python_name>
         <rdfs:label xml:lang="en-gb">is implemented using behaviour</rdfs:label>
@@ -339,8 +340,8 @@
 
     <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx#RCsnmcyqIe70G3lagH4y3bE">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx#RDqoRvx1aDeStUw4zNRdR0o"/>
-        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx#RDqoRvx1aDeStUw4zNRdR0o"/>
+        <rdfs:domain rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Objective"/>
+        <rdfs:range rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Objective"/>
         <rdfs:label xml:lang="en-gb">is part of objective</rdfs:label>
     </owl:ObjectProperty>
     
@@ -363,8 +364,8 @@
 
     <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx#RDrm00K6AJVd5OJmoVCqPy6">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx#RDqoRvx1aDeStUw4zNRdR0o"/>
-        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx#RDqoRvx1aDeStUw4zNRdR0o"/>
+        <rdfs:domain rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Objective"/>
+        <rdfs:range rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Objective"/>
         <rdfs:label xml:lang="en-gb">has initial objective</rdfs:label>
     </owl:ObjectProperty>
     
@@ -374,7 +375,7 @@
 
     <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx#RY56GiCpqJHON677qnE5sT">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx#R9iXau1ZAN6oZTRbdCgbmgd"/>
+        <rdfs:domain rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Role"/>
         <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx#R7dQDUF81SOJC29Sctpy6aP"/>
         <owlr:python_name>provides_behaviour</owlr:python_name>
         <rdfs:label xml:lang="en-gb">provides behaviour</rdfs:label>
@@ -386,8 +387,8 @@
 
     <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx#ReKEcwE01zu4hSOL1gSBu2">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx#RDqoRvx1aDeStUw4zNRdR0o"/>
-        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx#RDqoRvx1aDeStUw4zNRdR0o"/>
+        <rdfs:domain rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Objective"/>
+        <rdfs:range rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Objective"/>
         <rdfs:label xml:lang="en-gb">features objective</rdfs:label>
     </owl:ObjectProperty>
     
@@ -397,8 +398,8 @@
 
     <owl:ObjectProperty rdf:about="http://dragon.foi.hr/mago-a.owx#RoDHPMWwB604EEv4qQbsGC">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://dragon.foi.hr/mago-a.owx#RDm65h4GNQjimv0axMIRnMX"/>
-        <rdfs:range rdf:resource="http://dragon.foi.hr/mago-a.owx#RDm65h4GNQjimv0axMIRnMX"/>
+        <rdfs:domain rdf:resource="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Plan"/>
+        <rdfs:range rdf:resource="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Plan"/>
         <rdfs:label xml:lang="en-gb">features process</rdfs:label>
     </owl:ObjectProperty>
     
@@ -443,8 +444,8 @@
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://dragon.foi.hr/mago-a.owx#RB4lINuYfn41lvT2d2GduUO"/>
                     <rdf:Description rdf:about="http://dragon.foi.hr/mago-a.owx#RChP69av2xqRwh6LALfwsKq"/>
+                    <rdf:Description rdf:about="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Artifact"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -551,15 +552,6 @@
     
 
 
-    <!-- http://dragon.foi.hr/mago-a.owx#OWLClass_256a9011_3e88_4389_acde_aa6320fe2953 -->
-
-    <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx#OWLClass_256a9011_3e88_4389_acde_aa6320fe2953">
-        <rdfs:subClassOf rdf:resource="http://dragon.foi.hr/mago-a.owx#R9lwUrkbSftwsmlPcopLgzT"/>
-        <rdfs:label xml:lang="en-gb">Factory Agent</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://dragon.foi.hr/mago-a.owx#OWLClass_27e9637c_fe4f_4875_8d16_087da4a1cb00 -->
 
     <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx#OWLClass_27e9637c_fe4f_4875_8d16_087da4a1cb00">
@@ -589,28 +581,12 @@
     
 
 
-    <!-- http://dragon.foi.hr/mago-a.owx#OWLClass_4e210354_6993_4cf7_96ae_3c18254ef7ce -->
-
-    <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx#OWLClass_4e210354_6993_4cf7_96ae_3c18254ef7ce">
-        <rdfs:subClassOf rdf:resource="http://dragon.foi.hr/mago-a.owx#R9lwUrkbSftwsmlPcopLgzT"/>
-        <rdfs:label xml:lang="en-gb">Recipe Agent</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://dragon.foi.hr/mago-a.owx#R7dQDUF81SOJC29Sctpy6aP -->
 
     <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx#R7dQDUF81SOJC29Sctpy6aP">
-        <owl:disjointWith rdf:resource="http://dragon.foi.hr/mago-a.owx#R84KrWu3ZBbXCifW6B9GSmZ"/>
+        <rdfs:subClassOf rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Behavior"/>
+        <owl:disjointWith rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Activity"/>
         <rdfs:label xml:lang="en-gb">Behaviour</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://dragon.foi.hr/mago-a.owx#R84KrWu3ZBbXCifW6B9GSmZ -->
-
-    <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx#R84KrWu3ZBbXCifW6B9GSmZ">
-        <rdfs:label xml:lang="en-gb">Action</rdfs:label>
     </owl:Class>
     
 
@@ -635,36 +611,19 @@
     
 
 
-    <!-- http://dragon.foi.hr/mago-a.owx#R9iXau1ZAN6oZTRbdCgbmgd -->
-
-    <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx#R9iXau1ZAN6oZTRbdCgbmgd">
-        <rdfs:subClassOf rdf:resource="http://dragon.foi.hr/mago-a.owx#RWOhadIHzH5yfBTDwuDICD"/>
-        <rdfs:label xml:lang="en-gb">Role</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://dragon.foi.hr/mago-a.owx#R9lwUrkbSftwsmlPcopLgzT -->
 
     <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx#R9lwUrkbSftwsmlPcopLgzT">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Inhabitant_Agent"/>
+                    <rdf:Description rdf:about="http://personales.upv.es/ccarrasc/ooooaflsmas#OrganizationalUnit"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <owlr:python_name>Agent</owlr:python_name>
         <rdfs:label xml:lang="en-gb">Agent</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://dragon.foi.hr/mago-a.owx#RB4lINuYfn41lvT2d2GduUO -->
-
-    <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx#RB4lINuYfn41lvT2d2GduUO">
-        <rdfs:label xml:lang="en-gb">Artefact</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://dragon.foi.hr/mago-a.owx#RBGp2C7WAHzeIMoeFp3K6lr -->
-
-    <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx#RBGp2C7WAHzeIMoeFp3K6lr">
-        <rdfs:label xml:lang="en-gb">Strategy</rdfs:label>
     </owl:Class>
     
 
@@ -672,7 +631,7 @@
     <!-- http://dragon.foi.hr/mago-a.owx#RBzqbNmJP5lfpPIgYCvLGDa -->
 
     <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx#RBzqbNmJP5lfpPIgYCvLGDa">
-        <rdfs:subClassOf rdf:resource="http://dragon.foi.hr/mago-a.owx#RB4lINuYfn41lvT2d2GduUO"/>
+        <rdfs:subClassOf rdf:resource="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Artifact"/>
         <rdfs:label xml:lang="en-gb">Software Artefact</rdfs:label>
     </owl:Class>
     
@@ -770,26 +729,8 @@
     <!-- http://dragon.foi.hr/mago-a.owx#RDl2yHd2gEWyEDMtUcL67d -->
 
     <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx#RDl2yHd2gEWyEDMtUcL67d">
-        <rdfs:subClassOf rdf:resource="http://dragon.foi.hr/mago-a.owx#Rm3YabirGXstrtBtkrthoH"/>
+        <rdfs:subClassOf rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#KnowledgeArtifact"/>
         <rdfs:label xml:lang="en-gb">Individual Knowledge Artefact</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://dragon.foi.hr/mago-a.owx#RDm65h4GNQjimv0axMIRnMX -->
-
-    <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx#RDm65h4GNQjimv0axMIRnMX">
-        <rdfs:subClassOf rdf:resource="http://dragon.foi.hr/mago-a.owx#RBGp2C7WAHzeIMoeFp3K6lr"/>
-        <rdfs:label xml:lang="en-gb">Plan</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://dragon.foi.hr/mago-a.owx#RDqoRvx1aDeStUw4zNRdR0o -->
-
-    <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx#RDqoRvx1aDeStUw4zNRdR0o">
-        <rdfs:subClassOf rdf:resource="http://dragon.foi.hr/mago-a.owx#RBGp2C7WAHzeIMoeFp3K6lr"/>
-        <rdfs:label xml:lang="en-gb">Objective</rdfs:label>
     </owl:Class>
     
 
@@ -797,7 +738,7 @@
     <!-- http://dragon.foi.hr/mago-a.owx#RWOhadIHzH5yfBTDwuDICD -->
 
     <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx#RWOhadIHzH5yfBTDwuDICD">
-        <rdfs:subClassOf rdf:resource="http://dragon.foi.hr/mago-a.owx#Rm3YabirGXstrtBtkrthoH"/>
+        <rdfs:subClassOf rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#KnowledgeArtifact"/>
         <rdfs:label xml:lang="en-gb">Organisational Knowledge Artefact</rdfs:label>
     </owl:Class>
     
@@ -830,12 +771,52 @@
     
 
 
-    <!-- http://dragon.foi.hr/mago-a.owx#Rm3YabirGXstrtBtkrthoH -->
+    <!-- http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Artifact -->
 
-    <owl:Class rdf:about="http://dragon.foi.hr/mago-a.owx#Rm3YabirGXstrtBtkrthoH">
-        <rdfs:subClassOf rdf:resource="http://dragon.foi.hr/mago-a.owx#RB4lINuYfn41lvT2d2GduUO"/>
-        <rdfs:label xml:lang="en-gb">Knowledge Artefact</rdfs:label>
+    <rdf:Description rdf:about="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Artifact">
+        <owlr:python_name>Artefact</owlr:python_name>
+        <rdfs:label xml:lang="en-gb">Artefact</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Plan -->
+
+    <owl:Class rdf:about="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Plan">
+        <rdfs:label xml:lang="en-gb">Plan</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://personales.upv.es/ccarrasc/ooooaflsmas#Objective -->
+
+    <rdf:Description rdf:about="http://personales.upv.es/ccarrasc/ooooaflsmas#Objective">
+        <owlr:python_name>Objective</owlr:python_name>
+        <rdfs:label xml:lang="en-gb">Objective</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://personales.upv.es/ccarrasc/ooooaflsmas#Role -->
+
+    <rdf:Description rdf:about="http://personales.upv.es/ccarrasc/ooooaflsmas#Role">
+        <owlr:python_name>Role</owlr:python_name>
+        <rdfs:label xml:lang="en-gb">Role</rdfs:label>
+    </rdf:Description>
+    
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://personales.upv.es/ccarrasc/ooooaflsmas#Activity">
+        <owlr:python_name>Activity</owlr:python_name>
+        <rdfs:label xml:lang="en-gb">Activity</rdfs:label>
+    </rdf:Description>
 </rdf:RDF>
 
 
