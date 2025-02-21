@@ -616,7 +616,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#R9lwUrkbSftwsmlPcopLgzT">
         <owlr:python_name>Agent</owlr:python_name>
         <rdfs:label xml:lang="en-gb">Agent</rdfs:label>
-        <rdfs:comment>MAGO-Ag agent that will be translated into an implementation template</rdfs:label>
+        <rdfs:comment>MAGO-Ag agent that will be translated into an implementation template</rdfs:comment>
     </owl:Class>
     
 
