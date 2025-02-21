@@ -50,7 +50,8 @@ def get_related_knowledge_artefact_uris(onto_individual) -> dict:
     artefact_names_uris = {
         artefact.has_name: artefact.has_uri
         for artefact in artefacts
-        if "Knowledge" in str(artefact.is_a[0].label[0])
+        if "KnowledgeArtifact" in [ancestor.name for ancestor in artefact.is_a[0].ancestors()]
+        # if "knowledge" in str(artefact.is_a[0].label[0])
     }
 
     return artefact_names_uris
