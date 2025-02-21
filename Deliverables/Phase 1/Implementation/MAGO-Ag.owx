@@ -48,7 +48,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#R8nS5zlvvUfE9N1xZBYTpcG"/>
         <rdfs:domain rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Objective"/>
-        <rdfs:range rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Activity"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#OWLClass_b2094825_e79e_4d64_8f85_bb17d5e892db"/>
         <rdfs:label xml:lang="en-gb">is achieved by activity</rdfs:label>
     </owl:ObjectProperty>
     
@@ -71,7 +71,7 @@
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#OWLObjectProperty_ca58846c_df5f_4584_9375_8e686fdbb3fe">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#R84IuDzXJ7QCZi1bY6fzFxZ"/>
-        <rdfs:domain rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Activity"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#OWLClass_b2094825_e79e_4d64_8f85_bb17d5e892db"/>
         <rdfs:range rdf:resource="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Plan"/>
         <rdfs:label xml:lang="en-gb">is required in plan</rdfs:label>
     </owl:ObjectProperty>
@@ -96,7 +96,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RCkUIZx8f7TQwTrh3wmfyBD"/>
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#R7dQDUF81SOJC29Sctpy6aP"/>
-        <rdfs:range rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Activity"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#OWLClass_b2094825_e79e_4d64_8f85_bb17d5e892db"/>
         <rdfs:label xml:lang="en-gb">implements activity</rdfs:label>
     </owl:ObjectProperty>
     
@@ -130,7 +130,7 @@
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#R84IuDzXJ7QCZi1bY6fzFxZ">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Plan"/>
-        <rdfs:range rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Activity"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#OWLClass_b2094825_e79e_4d64_8f85_bb17d5e892db"/>
         <owlr:python_name>requires_activity</owlr:python_name>
         <rdfs:label xml:lang="en-gb">requires activity</rdfs:label>
     </owl:ObjectProperty>
@@ -166,7 +166,7 @@
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#R8nS5zlvvUfE9N1xZBYTpcG">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Activity"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#OWLClass_b2094825_e79e_4d64_8f85_bb17d5e892db"/>
         <rdfs:range rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Objective"/>
         <owlr:python_name>has_objective</owlr:python_name>
         <rdfs:label xml:lang="en-gb">has objective</rdfs:label>
@@ -179,8 +179,8 @@
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#R9QlFkpwG4P6QT3YaFGdAPM">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#R9wYaBAe5LQpMMDI7zKHWhc"/>
-        <rdfs:domain rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Activity"/>
-        <rdfs:range rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Activity"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#OWLClass_b2094825_e79e_4d64_8f85_bb17d5e892db"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#OWLClass_b2094825_e79e_4d64_8f85_bb17d5e892db"/>
         <rdfs:label xml:lang="en-gb">is after activity</rdfs:label>
     </owl:ObjectProperty>
     
@@ -201,8 +201,8 @@
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#R9wYaBAe5LQpMMDI7zKHWhc">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Activity"/>
-        <rdfs:range rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Activity"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#OWLClass_b2094825_e79e_4d64_8f85_bb17d5e892db"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#OWLClass_b2094825_e79e_4d64_8f85_bb17d5e892db"/>
         <rdfs:label xml:lang="en-gb">is before activity</rdfs:label>
     </owl:ObjectProperty>
     
@@ -215,8 +215,8 @@
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#R9lwUrkbSftwsmlPcopLgzT"/>
                     <rdf:Description rdf:about="http://personales.upv.es/ccarrasc/ooooaflsmas#Role"/>
+                    <rdf:Description rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#R9lwUrkbSftwsmlPcopLgzT"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -328,7 +328,7 @@
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RCkUIZx8f7TQwTrh3wmfyBD">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Activity"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#OWLClass_b2094825_e79e_4d64_8f85_bb17d5e892db"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#R7dQDUF81SOJC29Sctpy6aP"/>
         <owlr:python_name>has_behaviour</owlr:python_name>
         <rdfs:label xml:lang="en-gb">is implemented using behaviour</rdfs:label>
@@ -444,8 +444,8 @@
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RChP69av2xqRwh6LALfwsKq"/>
                     <rdf:Description rdf:about="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Artifact"/>
+                    <rdf:Description rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RChP69av2xqRwh6LALfwsKq"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -552,6 +552,41 @@
     
 
 
+    <!-- http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Artifact -->
+
+    <rdf:Description rdf:about="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Artifact">
+        <owlr:python_name>Artefact</owlr:python_name>
+        <rdfs:label xml:lang="en-gb">Artefact</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Plan -->
+
+    <owl:Class rdf:about="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Plan">
+        <rdfs:label xml:lang="en-gb">Plan</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://personales.upv.es/ccarrasc/ooooaflsmas#Objective -->
+
+    <rdf:Description rdf:about="http://personales.upv.es/ccarrasc/ooooaflsmas#Objective">
+        <owlr:python_name>Objective</owlr:python_name>
+        <rdfs:label xml:lang="en-gb">Objective</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://personales.upv.es/ccarrasc/ooooaflsmas#Role -->
+
+    <rdf:Description rdf:about="http://personales.upv.es/ccarrasc/ooooaflsmas#Role">
+        <owlr:python_name>Role</owlr:python_name>
+        <rdfs:label xml:lang="en-gb">Role</rdfs:label>
+    </rdf:Description>
+    
+
+
     <!-- https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#OWLClass_27e9637c_fe4f_4875_8d16_087da4a1cb00 -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#OWLClass_27e9637c_fe4f_4875_8d16_087da4a1cb00">
@@ -581,11 +616,21 @@
     
 
 
+    <!-- https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#OWLClass_b2094825_e79e_4d64_8f85_bb17d5e892db -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#OWLClass_b2094825_e79e_4d64_8f85_bb17d5e892db">
+        <rdfs:subClassOf rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Activity"/>
+        <owlr:python_name>Activity</owlr:python_name>
+        <rdfs:comment>Activity that will be translated into an implementation template.</rdfs:comment>
+        <rdfs:label xml:lang="en-gb">Activity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#R7dQDUF81SOJC29Sctpy6aP -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#R7dQDUF81SOJC29Sctpy6aP">
         <rdfs:subClassOf rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Behavior"/>
-        <owl:disjointWith rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Activity"/>
         <rdfs:label xml:lang="en-gb">Behaviour</rdfs:label>
     </owl:Class>
     
@@ -615,8 +660,8 @@
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#R9lwUrkbSftwsmlPcopLgzT">
         <owlr:python_name>Agent</owlr:python_name>
-        <rdfs:label xml:lang="en-gb">Agent</rdfs:label>
         <rdfs:comment>MAGO-Ag agent that will be translated into an implementation template</rdfs:comment>
+        <rdfs:label xml:lang="en-gb">Agent</rdfs:label>
     </owl:Class>
     
 
@@ -761,55 +806,6 @@
         </owl:equivalentClass>
         <rdfs:label xml:lang="en-gb">Periodic Behaviour</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Artifact -->
-
-    <rdf:Description rdf:about="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Artifact">
-        <owlr:python_name>Artefact</owlr:python_name>
-        <rdfs:label xml:lang="en-gb">Artefact</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Plan -->
-
-    <owl:Class rdf:about="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Plan">
-        <rdfs:label xml:lang="en-gb">Plan</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://personales.upv.es/ccarrasc/ooooaflsmas#Objective -->
-
-    <rdf:Description rdf:about="http://personales.upv.es/ccarrasc/ooooaflsmas#Objective">
-        <owlr:python_name>Objective</owlr:python_name>
-        <rdfs:label xml:lang="en-gb">Objective</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://personales.upv.es/ccarrasc/ooooaflsmas#Role -->
-
-    <rdf:Description rdf:about="http://personales.upv.es/ccarrasc/ooooaflsmas#Role">
-        <owlr:python_name>Role</owlr:python_name>
-        <rdfs:label xml:lang="en-gb">Role</rdfs:label>
-    </rdf:Description>
-    
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="http://personales.upv.es/ccarrasc/ooooaflsmas#Activity">
-        <owlr:python_name>Activity</owlr:python_name>
-        <rdfs:label xml:lang="en-gb">Activity</rdfs:label>
-    </rdf:Description>
 </rdf:RDF>
 
 
