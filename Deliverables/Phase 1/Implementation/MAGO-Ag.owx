@@ -8,7 +8,7 @@
      xmlns:owlr="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#">
-        <owl:imports rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2016/11/MAMbO5"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Previous%20Work/MAMbO5.owl"/>
         <rdfs:comment>The ontology for MAGO research visit.</rdfs:comment>
     </owl:Ontology>
     
