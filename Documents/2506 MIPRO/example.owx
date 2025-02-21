@@ -1,0 +1,623 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/bogdan/ontologies/2025/1/untitled-ontology-61"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/bogdan/ontologies/2025/1/untitled-ontology-61">
+    <Prefix name="" IRI="http://www.semanticweb.org/bogdan/ontologies/2025/1/untitled-ontology-61/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#</Import>
+    <Declaration>
+        <Class IRI="#OWLClass_0ffc3d3c_3316_4c76_9366_7898113840bd"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_49ad68fc_41f6_46a3_9075_0f5d29ae822b"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OWLNamedIndividual_0a81203a_ba8a_46ec_966e_872413866f6b"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OWLNamedIndividual_17edd4ec_29a9_436b_9663_67e1bf8566b9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OWLNamedIndividual_2c03a469_e5f6_4457_88fd_ea52baa92d90"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OWLNamedIndividual_3549ddc0_d607_4cf6_b228_f5935c4286b9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OWLNamedIndividual_3b3b5c35_e4fb_40be_84bc_5214acb33383"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OWLNamedIndividual_425d5376_dea5_4a4c_997f_4f55948984ef"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OWLNamedIndividual_47fad8aa_ee9c_4eec_9eb4_ce5597ac8d5f"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OWLNamedIndividual_4a3838ca_d779_4bae_96fb_414192faacfe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OWLNamedIndividual_4da682c1_d958_4515_a6b7_9ea1f6b3c440"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OWLNamedIndividual_5233e185_5d97_479c_b3e1_95821d9b6fa2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OWLNamedIndividual_57dd6716_3160_42e8_bb55_95cdbe24e344"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OWLNamedIndividual_5e0fbf47_0d58_4c8e_848d_6323c50fe5a1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OWLNamedIndividual_78f60112_f7b3_4bd1_96a0_ff800086eb96"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OWLNamedIndividual_7a89ddb8_bd4d_4ab1_b090_8d2f4c284819"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OWLNamedIndividual_87825340_42b2_48bc_85a0_c156c54afb05"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OWLNamedIndividual_8f8a8fa0_6cd4_43f0_8ea1_6ebf4276bde5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OWLNamedIndividual_a35965ca_0692_4e10_9aae_2b6623493223"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OWLNamedIndividual_c22d49d5_7dc1_472e_a3c2_63fbee4509d0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OWLNamedIndividual_c9afe7a3_de59_454f_960a_3f985977f2b9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OWLNamedIndividual_cf4d7c8a_5cd2_4f78_90b7_4350e310e08e"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OWLNamedIndividual_d4ea876c_7bcc_465c_a63c_7feaf7e18b78"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OWLNamedIndividual_d85cd524_e1b2_4b91_ab4f_4685a12bd3ad"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OWLNamedIndividual_e159d657_91bf_4f28_8f92_f2b5dbc6550a"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OWLNamedIndividual_e5a6ab40_d803_4b60_8c3f_59f4e0e6cdcd"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OWLNamedIndividual_fb0bfef8_e39f_4024_acb7_a6925bb440d8"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0ffc3d3c_3316_4c76_9366_7898113840bd"/>
+        <Class IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#R9lwUrkbSftwsmlPcopLgzT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_49ad68fc_41f6_46a3_9075_0f5d29ae822b"/>
+        <Class IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#R9lwUrkbSftwsmlPcopLgzT"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RDgoxtmVWC61IdqtaNK9QBf"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_0a81203a_ba8a_46ec_966e_872413866f6b"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://personales.upv.es/ccarrasc/ooooaflsmas#Activity"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_17edd4ec_29a9_436b_9663_67e1bf8566b9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://personales.upv.es/ccarrasc/ooooaflsmas#Role"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_2c03a469_e5f6_4457_88fd_ea52baa92d90"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RDgoxtmVWC61IdqtaNK9QBf"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_3549ddc0_d607_4cf6_b228_f5935c4286b9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://personales.upv.es/ccarrasc/ooooaflsmas#Activity"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_3b3b5c35_e4fb_40be_84bc_5214acb33383"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RDgoxtmVWC61IdqtaNK9QBf"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_425d5376_dea5_4a4c_997f_4f55948984ef"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RDgoxtmVWC61IdqtaNK9QBf"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_47fad8aa_ee9c_4eec_9eb4_ce5597ac8d5f"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RDMv7ayhi9xuRAzbfALLhKS"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_4a3838ca_d779_4bae_96fb_414192faacfe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#Rip7CRo5Sv8C6NFZrhvEDH"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_4da682c1_d958_4515_a6b7_9ea1f6b3c440"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://personales.upv.es/ccarrasc/ooooaflsmas#Objective"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_5233e185_5d97_479c_b3e1_95821d9b6fa2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RDgoxtmVWC61IdqtaNK9QBf"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_57dd6716_3160_42e8_bb55_95cdbe24e344"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://personales.upv.es/ccarrasc/ooooaflsmas#Role"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_5e0fbf47_0d58_4c8e_848d_6323c50fe5a1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RDgoxtmVWC61IdqtaNK9QBf"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_78f60112_f7b3_4bd1_96a0_ff800086eb96"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RCdOsGdA0yrGZdnzgQesQx7"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_7a89ddb8_bd4d_4ab1_b090_8d2f4c284819"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RDl2yHd2gEWyEDMtUcL67d"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_87825340_42b2_48bc_85a0_c156c54afb05"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://personales.upv.es/ccarrasc/ooooaflsmas#Objective"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_8f8a8fa0_6cd4_43f0_8ea1_6ebf4276bde5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://personales.upv.es/ccarrasc/ooooaflsmas#Role"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_a35965ca_0692_4e10_9aae_2b6623493223"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OWLClass_49ad68fc_41f6_46a3_9075_0f5d29ae822b"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_c22d49d5_7dc1_472e_a3c2_63fbee4509d0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RDl2yHd2gEWyEDMtUcL67d"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_c9afe7a3_de59_454f_960a_3f985977f2b9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OWLClass_0ffc3d3c_3316_4c76_9366_7898113840bd"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_cf4d7c8a_5cd2_4f78_90b7_4350e310e08e"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OWLClass_0ffc3d3c_3316_4c76_9366_7898113840bd"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_d4ea876c_7bcc_465c_a63c_7feaf7e18b78"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OWLClass_49ad68fc_41f6_46a3_9075_0f5d29ae822b"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_d85cd524_e1b2_4b91_ab4f_4685a12bd3ad"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RDMv7ayhi9xuRAzbfALLhKS"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_e159d657_91bf_4f28_8f92_f2b5dbc6550a"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#R8EpacdsHKWIyPDRwsmkSta"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_e5a6ab40_d803_4b60_8c3f_59f4e0e6cdcd"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RWOhadIHzH5yfBTDwuDICD"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_fb0bfef8_e39f_4024_acb7_a6925bb440d8"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RDGoFrovO0PhBCQGPkFeUuR"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_0a81203a_ba8a_46ec_966e_872413866f6b"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_57dd6716_3160_42e8_bb55_95cdbe24e344"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://personales.upv.es/ccarrasc/ooooaflsmas#achieves"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_17edd4ec_29a9_436b_9663_67e1bf8566b9"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_8f8a8fa0_6cd4_43f0_8ea1_6ebf4276bde5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#R8nS5zlvvUfE9N1xZBYTpcG"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_17edd4ec_29a9_436b_9663_67e1bf8566b9"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_8f8a8fa0_6cd4_43f0_8ea1_6ebf4276bde5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RY56GiCpqJHON677qnE5sT"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_2c03a469_e5f6_4457_88fd_ea52baa92d90"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_4a3838ca_d779_4bae_96fb_414192faacfe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RDGoFrovO0PhBCQGPkFeUuR"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_3549ddc0_d607_4cf6_b228_f5935c4286b9"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_47fad8aa_ee9c_4eec_9eb4_ce5597ac8d5f"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://personales.upv.es/ccarrasc/ooooaflsmas#achieves"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_3b3b5c35_e4fb_40be_84bc_5214acb33383"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_5233e185_5d97_479c_b3e1_95821d9b6fa2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#R8nS5zlvvUfE9N1xZBYTpcG"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_3b3b5c35_e4fb_40be_84bc_5214acb33383"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_5233e185_5d97_479c_b3e1_95821d9b6fa2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RDGoFrovO0PhBCQGPkFeUuR"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_425d5376_dea5_4a4c_997f_4f55948984ef"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_0a81203a_ba8a_46ec_966e_872413866f6b"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RDGoFrovO0PhBCQGPkFeUuR"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_47fad8aa_ee9c_4eec_9eb4_ce5597ac8d5f"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_78f60112_f7b3_4bd1_96a0_ff800086eb96"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RC6rldf2VsWBaHtUobIELQL"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_4a3838ca_d779_4bae_96fb_414192faacfe"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_3549ddc0_d607_4cf6_b228_f5935c4286b9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RCPuCz8AunmmX3PS6A0U0XL"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_4a3838ca_d779_4bae_96fb_414192faacfe"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_78f60112_f7b3_4bd1_96a0_ff800086eb96"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RY56GiCpqJHON677qnE5sT"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_5e0fbf47_0d58_4c8e_848d_6323c50fe5a1"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_e159d657_91bf_4f28_8f92_f2b5dbc6550a"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RY56GiCpqJHON677qnE5sT"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_5e0fbf47_0d58_4c8e_848d_6323c50fe5a1"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_e5a6ab40_d803_4b60_8c3f_59f4e0e6cdcd"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RY56GiCpqJHON677qnE5sT"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_a35965ca_0692_4e10_9aae_2b6623493223"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_4a3838ca_d779_4bae_96fb_414192faacfe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RY56GiCpqJHON677qnE5sT"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_a35965ca_0692_4e10_9aae_2b6623493223"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_4da682c1_d958_4515_a6b7_9ea1f6b3c440"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RCcC3SXJ5MvuHMJyzs8OpU6"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_c22d49d5_7dc1_472e_a3c2_63fbee4509d0"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_5e0fbf47_0d58_4c8e_848d_6323c50fe5a1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RpmDQcEqabFOwsZHv82QuP"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_c22d49d5_7dc1_472e_a3c2_63fbee4509d0"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_7a89ddb8_bd4d_4ab1_b090_8d2f4c284819"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RB8ofKEO8zM8jcK0WetPpLI"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_cf4d7c8a_5cd2_4f78_90b7_4350e310e08e"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_fb0bfef8_e39f_4024_acb7_a6925bb440d8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RCcC3SXJ5MvuHMJyzs8OpU6"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_cf4d7c8a_5cd2_4f78_90b7_4350e310e08e"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_2c03a469_e5f6_4457_88fd_ea52baa92d90"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RCcC3SXJ5MvuHMJyzs8OpU6"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_cf4d7c8a_5cd2_4f78_90b7_4350e310e08e"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_a35965ca_0692_4e10_9aae_2b6623493223"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RpmDQcEqabFOwsZHv82QuP"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_cf4d7c8a_5cd2_4f78_90b7_4350e310e08e"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_7a89ddb8_bd4d_4ab1_b090_8d2f4c284819"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RB8ofKEO8zM8jcK0WetPpLI"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_d4ea876c_7bcc_465c_a63c_7feaf7e18b78"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_87825340_42b2_48bc_85a0_c156c54afb05"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RCcC3SXJ5MvuHMJyzs8OpU6"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_d4ea876c_7bcc_465c_a63c_7feaf7e18b78"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_a35965ca_0692_4e10_9aae_2b6623493223"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RpmDQcEqabFOwsZHv82QuP"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_d4ea876c_7bcc_465c_a63c_7feaf7e18b78"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_7a89ddb8_bd4d_4ab1_b090_8d2f4c284819"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RCcC3SXJ5MvuHMJyzs8OpU6"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_d85cd524_e1b2_4b91_ab4f_4685a12bd3ad"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_5e0fbf47_0d58_4c8e_848d_6323c50fe5a1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RpmDQcEqabFOwsZHv82QuP"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_d85cd524_e1b2_4b91_ab4f_4685a12bd3ad"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_7a89ddb8_bd4d_4ab1_b090_8d2f4c284819"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RC6rldf2VsWBaHtUobIELQL"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_e159d657_91bf_4f28_8f92_f2b5dbc6550a"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_425d5376_dea5_4a4c_997f_4f55948984ef"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RCPuCz8AunmmX3PS6A0U0XL"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_e159d657_91bf_4f28_8f92_f2b5dbc6550a"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_57dd6716_3160_42e8_bb55_95cdbe24e344"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RDxmweKrzFGij8P5HOOsXZK"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_0a81203a_ba8a_46ec_966e_872413866f6b"/>
+        <Literal>Survey</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RDxmweKrzFGij8P5HOOsXZK"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_2c03a469_e5f6_4457_88fd_ea52baa92d90"/>
+        <Literal>Field manager</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RDxmweKrzFGij8P5HOOsXZK"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_3549ddc0_d607_4cf6_b228_f5935c4286b9"/>
+        <Literal>AssessTasks</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RDxmweKrzFGij8P5HOOsXZK"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_425d5376_dea5_4a4c_997f_4f55948984ef"/>
+        <Literal>Idle</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RDxmweKrzFGij8P5HOOsXZK"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_47fad8aa_ee9c_4eec_9eb4_ce5597ac8d5f"/>
+        <Literal>DecideOnTask</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RDxmweKrzFGij8P5HOOsXZK"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_4a3838ca_d779_4bae_96fb_414192faacfe"/>
+        <Literal>Task planning behaviour</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RDxmweKrzFGij8P5HOOsXZK"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_57dd6716_3160_42e8_bb55_95cdbe24e344"/>
+        <Literal>Return</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RDxmweKrzFGij8P5HOOsXZK"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_5e0fbf47_0d58_4c8e_848d_6323c50fe5a1"/>
+        <Literal>Surveyor</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RDxmweKrzFGij8P5HOOsXZK"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_78f60112_f7b3_4bd1_96a0_ff800086eb96"/>
+        <Literal>ImplementTask</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#OWLDataProperty_15a4602e_47e2_4459_be8c_532c6e1062ab"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_7a89ddb8_bd4d_4ab1_b090_8d2f4c284819"/>
+        <Literal>localhost</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RDxmweKrzFGij8P5HOOsXZK"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_7a89ddb8_bd4d_4ab1_b090_8d2f4c284819"/>
+        <Literal>localhost</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#OWLDataProperty_15a4602e_47e2_4459_be8c_532c6e1062ab"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_87825340_42b2_48bc_85a0_c156c54afb05"/>
+        <Literal>./weather.owx</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RDxmweKrzFGij8P5HOOsXZK"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_87825340_42b2_48bc_85a0_c156c54afb05"/>
+        <Literal>Local weather knowledge</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RDxmweKrzFGij8P5HOOsXZK"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_a35965ca_0692_4e10_9aae_2b6623493223"/>
+        <Literal>Agronomist</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RDxmweKrzFGij8P5HOOsXZK"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_c22d49d5_7dc1_472e_a3c2_63fbee4509d0"/>
+        <Literal>Drone 002</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#OWLDataProperty_15a4602e_47e2_4459_be8c_532c6e1062ab"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_c9afe7a3_de59_454f_960a_3f985977f2b9"/>
+        <Literal>./topography.owx</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RDxmweKrzFGij8P5HOOsXZK"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_c9afe7a3_de59_454f_960a_3f985977f2b9"/>
+        <Literal>Topography knowledge</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RDxmweKrzFGij8P5HOOsXZK"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_cf4d7c8a_5cd2_4f78_90b7_4350e310e08e"/>
+        <Literal>Beatriz</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RBffMlV8TQxoNtbLRneUYsb"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_d4ea876c_7bcc_465c_a63c_7feaf7e18b78"/>
+        <Literal>{
+  &quot;location&quot;: {
+    &quot;x&quot;: 42,
+    &quot;y&quot;: 13
+  },
+  &quot;prompt&quot;: &quot;You are a farmer with the knowledge of the local weather working on a farm with several colleague farmers and a couple of drones at your disposal.&quot;
+}</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RDxmweKrzFGij8P5HOOsXZK"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_d4ea876c_7bcc_465c_a63c_7feaf7e18b78"/>
+        <Literal>Antonio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RDxmweKrzFGij8P5HOOsXZK"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_d85cd524_e1b2_4b91_ab4f_4685a12bd3ad"/>
+        <Literal>Drone 001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RDxmweKrzFGij8P5HOOsXZK"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_e159d657_91bf_4f28_8f92_f2b5dbc6550a"/>
+        <Literal>Navigation behaviour</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RBffMlV8TQxoNtbLRneUYsb"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_e5a6ab40_d803_4b60_8c3f_59f4e0e6cdcd"/>
+        <Literal>{
+  &quot;threshold&quot;: 50
+}</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RDxmweKrzFGij8P5HOOsXZK"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_e5a6ab40_d803_4b60_8c3f_59f4e0e6cdcd"/>
+        <Literal>Aerial survey behaviour</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#OWLDataProperty_15a4602e_47e2_4459_be8c_532c6e1062ab"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_fb0bfef8_e39f_4024_acb7_a6925bb440d8"/>
+        <Literal>https://example.com/crop-growth.owx</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/MAGO-Ag.owx#RDxmweKrzFGij8P5HOOsXZK"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_fb0bfef8_e39f_4024_acb7_a6925bb440d8"/>
+        <Literal>Crop growth knowledge</Literal>
+    </DataPropertyAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0ffc3d3c_3316_4c76_9366_7898113840bd</IRI>
+        <Literal xml:lang="en-gb">Agent Farmer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_49ad68fc_41f6_46a3_9075_0f5d29ae822b</IRI>
+        <Literal xml:lang="en-gb">Agent Drone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLNamedIndividual_0a81203a_ba8a_46ec_966e_872413866f6b</IRI>
+        <Literal xml:lang="en-gb">Survey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLNamedIndividual_17edd4ec_29a9_436b_9663_67e1bf8566b9</IRI>
+        <Literal xml:lang="en-gb">Crop health analysis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLNamedIndividual_2c03a469_e5f6_4457_88fd_ea52baa92d90</IRI>
+        <Literal xml:lang="en-gb">Field manager</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLNamedIndividual_3549ddc0_d607_4cf6_b228_f5935c4286b9</IRI>
+        <Literal xml:lang="en-gb">Assess tasks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLNamedIndividual_3b3b5c35_e4fb_40be_84bc_5214acb33383</IRI>
+        <Literal xml:lang="en-gb">Irrigation scheduling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLNamedIndividual_425d5376_dea5_4a4c_997f_4f55948984ef</IRI>
+        <Literal xml:lang="en-gb">Idle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLNamedIndividual_47fad8aa_ee9c_4eec_9eb4_ce5597ac8d5f</IRI>
+        <Literal xml:lang="en-gb">Decide on task</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLNamedIndividual_4a3838ca_d779_4bae_96fb_414192faacfe</IRI>
+        <Literal xml:lang="en-gb">Task planning behaviour</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLNamedIndividual_4da682c1_d958_4515_a6b7_9ea1f6b3c440</IRI>
+        <Literal xml:lang="en-gb">Soil monitoring behaviour</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLNamedIndividual_5233e185_5d97_479c_b3e1_95821d9b6fa2</IRI>
+        <Literal xml:lang="en-gb">Reduce resource waste</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLNamedIndividual_57dd6716_3160_42e8_bb55_95cdbe24e344</IRI>
+        <Literal xml:lang="en-gb">Return</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLNamedIndividual_5e0fbf47_0d58_4c8e_848d_6323c50fe5a1</IRI>
+        <Literal xml:lang="en-gb">Surveyor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLNamedIndividual_78f60112_f7b3_4bd1_96a0_ff800086eb96</IRI>
+        <Literal xml:lang="en-gb">Implement task</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLNamedIndividual_7a89ddb8_bd4d_4ab1_b090_8d2f4c284819</IRI>
+        <Literal xml:lang="en-gb">Local XMPP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLNamedIndividual_87825340_42b2_48bc_85a0_c156c54afb05</IRI>
+        <Literal xml:lang="en-gb">Local weather knowledge</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLNamedIndividual_8f8a8fa0_6cd4_43f0_8ea1_6ebf4276bde5</IRI>
+        <Literal xml:lang="en-gb">Optimise crop yield</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLNamedIndividual_a35965ca_0692_4e10_9aae_2b6623493223</IRI>
+        <Literal xml:lang="en-gb">Agronomist</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLNamedIndividual_c22d49d5_7dc1_472e_a3c2_63fbee4509d0</IRI>
+        <Literal xml:lang="en-gb">Drone B</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLNamedIndividual_c9afe7a3_de59_454f_960a_3f985977f2b9</IRI>
+        <Literal xml:lang="en-gb">Topography map knowledge</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLNamedIndividual_cf4d7c8a_5cd2_4f78_90b7_4350e310e08e</IRI>
+        <Literal xml:lang="en-gb">Farmer Beatriz</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLNamedIndividual_d4ea876c_7bcc_465c_a63c_7feaf7e18b78</IRI>
+        <Literal xml:lang="en-gb">Farmer Antonio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLNamedIndividual_d85cd524_e1b2_4b91_ab4f_4685a12bd3ad</IRI>
+        <Literal xml:lang="en-gb">Drone A</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLNamedIndividual_e159d657_91bf_4f28_8f92_f2b5dbc6550a</IRI>
+        <Literal xml:lang="en-gb">Navigation behaviour</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLNamedIndividual_e5a6ab40_d803_4b60_8c3f_59f4e0e6cdcd</IRI>
+        <Literal xml:lang="en-gb">Aerial survey behaviour</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLNamedIndividual_fb0bfef8_e39f_4024_acb7_a6925bb440d8</IRI>
+        <Literal xml:lang="en-gb">Crop growth knowledge</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
