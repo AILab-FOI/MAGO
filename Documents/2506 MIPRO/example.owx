@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/bogdan/ontologies/2025/1/untitled-ontology-61"
+     xml:base="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Documents/2506%20MIPRO/example.owx"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/bogdan/ontologies/2025/1/untitled-ontology-61">
+     ontologyIRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Documents/2506%20MIPRO/example.owx">
     <Prefix name="" IRI="http://www.semanticweb.org/bogdan/ontologies/2025/1/untitled-ontology-61/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
