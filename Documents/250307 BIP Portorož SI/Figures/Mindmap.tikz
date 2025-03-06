@@ -1,0 +1,22 @@
+\begin{tikzpicture}
+[mindmap,concept color=Xanthous]
+  \node [concept] {What we know?} 
+    [clockwise from=45]
+    child {
+        node [concept] (game) {Game}
+        [clockwise from=60]
+        child {
+            node [concept] (classification) {Classes}
+            [clockwise from=135]
+            child { node [concept] {Ag\^{o}n} }
+            child { node [concept] {Alea} }
+            child { node [concept] {Mimicry} }
+            child { node [concept] {Ilinx} }
+        }
+    }
+    child {node [concept] (play) {Play}}
+    ;
+
+    \node [annotation,right] at (game.east) {A game is freedom.};
+    \node [annotation,right] at (classification.east) {Game classification by \textcite{caillois2001ManPlayGames}.};
+\end{tikzpicture}

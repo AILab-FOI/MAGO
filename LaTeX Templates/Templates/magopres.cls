@@ -1,7 +1,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{magopres}[2025/03/06 Custom Presentation Class]
 
-\LoadClass{beamer}
+\LoadClass[11pt, aspectratio=169]{beamer}
 
 \RequirePackage{fontspec}
 \RequirePackage{fontawesome}
