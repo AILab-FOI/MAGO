@@ -467,12 +467,12 @@ class BOWLDIConverter:
         # Add concepts as facts
         for concept, features in data.items():
             converted_lines.append(
-                f"concept({features.get('concept')})[source({features.get('source')})]."
+                f'concept({features.get("concept")})[source("{features.get("source")[0]}")].'
             )
             if features.get("is a") and "Thing" not in features.get("is a"):
                 for super_concept in features.get("is a"):
                     converted_lines.append(
-                        f"is_a({features.get('concept')}, {data.get(super_concept).get('concept')})[source({features.get('source')})]."
+                        f'is_a({features.get("concept")}, {data.get(super_concept).get("concept")})[source("{features.get("source")[0]}")].'
                     )
 
         return converted_lines
@@ -497,11 +497,11 @@ class BOWLDIConverter:
             ):
                 inverse_property_features = data.get(features.get("inverse_property"))
                 converted_lines.append(
-                    f"object_property({inverse_property_features.get('range')}, {features.get('property')}, {inverse_property_features.get('domain')})[source({features.get('source')})]."
+                    f'object_property({inverse_property_features.get("range")}, {features.get("property")}, {inverse_property_features.get("domain")})[source("{features.get("source")[0]}")].'
                 )
             else:
                 converted_lines.append(
-                    f"object_property({features.get('domain')}, {features.get('property')}, {features.get('range')})[source({features.get('source')})]."
+                    f'object_property({features.get("domain")}, {features.get("property")}, {features.get("range")})[source("{features.get("source")[0]}")].'
                 )
 
         return converted_lines
@@ -522,7 +522,7 @@ class BOWLDIConverter:
             pattern = r"<class '(\w+)'>"
             range_value = re.search(pattern, str(features.get("range")))
             converted_lines.append(
-                f"data_property({features.get('domain')}, {features.get('property')}, {range_value.group(1)})[source({features.get('source')})]."
+                f'data_property({features.get("domain")}, {features.get("property")}, {range_value.group(1)})[source("{features.get("source")[0]}")].'
             )
 
         return converted_lines
@@ -541,7 +541,7 @@ class BOWLDIConverter:
         # Add individuals as facts
         for individual, features in data.items():
             converted_lines.append(
-                f"individual({features.get('name').replace(', ', ' ')}, {features.get('type')})[source({features.get('source')})]."
+                f'individual({features.get("name").replace(", ", " ")}, {features.get("type")})[source("{features.get("source")[0]}")].'
             )
 
         return converted_lines
@@ -581,9 +581,9 @@ class BOWLDIConverter:
                         continue
                     # for property_object in features.get("object"):
                     converted_lines.append(
-                        f"relation({features.get('subject').replace(', ', ' ')}, {features.get('property')}, {features.get('object')})[source({features.get('source')})]."
+                        f'relation({features.get("subject").replace(", ", " ")}, {features.get("property")}, {features.get("object")})[source("{features.get("source")}")].'
                         if features.get("type") == "object property"
-                        else f'relation({features.get("subject").replace(", ", " ")}, {features.get("property")}, "{features.get("object")}")[source({features.get("source")})].'
+                        else f'relation({features.get("subject").replace(", ", " ")}, {features.get("property")}, "{features.get("object")}")[source("{features.get("source")}")].'
                     )
 
         return converted_lines
