@@ -900,7 +900,6 @@ class BOWLDIConverter:
                 self.create_individual(elements[0], elements[1], source)
 
             elif concept_type == "relation":
-                print(elements)
                 if (
                     owlready2.DataProperty
                     in self.ontology.world.search_one(iri=f"*{elements[1]}").ancestors()
