@@ -5,10 +5,10 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:shared="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/bowldi.owl#">
-    <owl:Ontology rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/bowldi_example.owl">
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/bowldi.owl"/>
+     xmlns:lotr="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Documents/250320%20Class/lotr_example.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Documents/250320%20Class/onto_example.rdf">
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Documents/250320%20Class/lotr_example.owl"/>
     </owl:Ontology>
     
 
@@ -24,40 +24,40 @@
     
 
 
-    <!-- https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/bowldi_example.owl#OWLNamedIndividual_443b4123_3a46_49a2_b8c2_29ced3899779 -->
+    <!-- https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Documents/250320%20Class/onto_example.rdf#OWLNamedIndividual_443b4123_3a46_49a2_b8c2_29ced3899779 -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/bowldi_example.owl#OWLNamedIndividual_443b4123_3a46_49a2_b8c2_29ced3899779">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/bowldi.owl#wizard"/>
-        <shared:has_name>Gandalf the Grey</shared:has_name>
-        <shared:has_name>Mithrandir</shared:has_name>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Documents/250320%20Class/onto_example.rdf#OWLNamedIndividual_443b4123_3a46_49a2_b8c2_29ced3899779">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Documents/250320%20Class/lotr_example.owl#wizard"/>
+        <lotr:has_name>Gandalf the Grey</lotr:has_name>
+        <lotr:has_name>Mithrandir</lotr:has_name>
         <rdfs:label xml:lang="en-gb">Gandalf the Grey</rdfs:label>
     </owl:NamedIndividual>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/bowldi_example.owl#OWLNamedIndividual_443b4123_3a46_49a2_b8c2_29ced3899779"/>
-        <owl:annotatedProperty rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/bowldi.owl#has_name"/>
+        <owl:annotatedSource rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Documents/250320%20Class/onto_example.rdf#OWLNamedIndividual_443b4123_3a46_49a2_b8c2_29ced3899779"/>
+        <owl:annotatedProperty rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Documents/250320%20Class/lotr_example.owl#has_name"/>
         <owl:annotatedTarget>Gandalf the Grey</owl:annotatedTarget>
         <rdfs:isDefinedBy>Bogdan</rdfs:isDefinedBy>
     </owl:Axiom>
     
 
 
-    <!-- https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/bowldi_example.owl#OWLNamedIndividual_8584c614_acbd_4080_9032_a3a6dd9d1a9b -->
+    <!-- https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Documents/250320%20Class/onto_example.rdf#OWLNamedIndividual_8584c614_acbd_4080_9032_a3a6dd9d1a9b -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/bowldi_example.owl#OWLNamedIndividual_8584c614_acbd_4080_9032_a3a6dd9d1a9b">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/bowldi.owl#human"/>
-        <shared:is_friend_with rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/bowldi_example.owl#OWLNamedIndividual_443b4123_3a46_49a2_b8c2_29ced3899779"/>
-        <shared:is_friend_with rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/bowldi_example.owl#OWLNamedIndividual_96afddcd_81ae_467a_9468_225b426210f4"/>
-        <shared:has_name>Aragorn, son of Arathorn</shared:has_name>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Documents/250320%20Class/onto_example.rdf#OWLNamedIndividual_8584c614_acbd_4080_9032_a3a6dd9d1a9b">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Documents/250320%20Class/lotr_example.owl#human"/>
+        <lotr:is_friend_with rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Documents/250320%20Class/onto_example.rdf#OWLNamedIndividual_443b4123_3a46_49a2_b8c2_29ced3899779"/>
+        <lotr:is_friend_with rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Documents/250320%20Class/onto_example.rdf#OWLNamedIndividual_96afddcd_81ae_467a_9468_225b426210f4"/>
+        <lotr:has_name>Aragorn, son of Arathorn</lotr:has_name>
         <rdfs:label xml:lang="en-gb">Aragorn, son of Arathorn</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/bowldi_example.owl#OWLNamedIndividual_96afddcd_81ae_467a_9468_225b426210f4 -->
+    <!-- https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Documents/250320%20Class/onto_example.rdf#OWLNamedIndividual_96afddcd_81ae_467a_9468_225b426210f4 -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/bowldi_example.owl#OWLNamedIndividual_96afddcd_81ae_467a_9468_225b426210f4">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%201/Implementation/bowldi.owl#elf"/>
-        <shared:has_name>Legolas Greenleaf</shared:has_name>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Documents/250320%20Class/onto_example.rdf#OWLNamedIndividual_96afddcd_81ae_467a_9468_225b426210f4">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Documents/250320%20Class/lotr_example.owl#elf"/>
+        <lotr:has_name>Legolas Greenleaf</lotr:has_name>
         <rdfs:label xml:lang="en-gb">Legolas</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
