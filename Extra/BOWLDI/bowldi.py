@@ -851,10 +851,10 @@ class BOWLDIConverter:
             cleaned = match.strip("[]")
             if "," in cleaned:
                 source_strings.extend(
-                    [s.strip().strip("'") for s in cleaned.split(",")]
+                    [s.strip().strip('"') for s in cleaned.split(",")]
                 )
             else:
-                source_strings.append(cleaned.strip().strip("'"))
+                source_strings.append(cleaned.strip().strip('"'))
 
         url_or_file_uris = [
             s
