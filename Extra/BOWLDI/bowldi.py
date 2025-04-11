@@ -560,20 +560,20 @@ class BOWLDIConverter:
         # Add individual relations
         for individual, relations in data.items():
             if (
-                self.ontology["rule"]
-                and individual in self.ontology["rule"].instances()
+                self.ontology["plan"]
+                and individual in self.ontology["plan"].instances()
             ):
-                rule_event, rule_context, rule_body = None, None, []
+                plan_event, plan_context, plan_body = None, None, []
                 for _, value in relations.items():
-                    if value.get("property") == "rule has event":
-                        rule_event = value.get("object")
-                    elif value.get("property") == "rule has context":
-                        rule_context = value.get("object")
-                    elif value.get("property") == "rule has body":
-                        rule_body.append(value.get("object"))
+                    if value.get("property") == "plan has event":
+                        plan_event = value.get("object")
+                    elif value.get("property") == "plan has context":
+                        plan_context = value.get("object")
+                    elif value.get("property") == "plan has body":
+                        plan_body.append(value.get("object"))
 
                 converted_lines.append(
-                    f"{rule_event} : {rule_context} <- {'; '.join(rule_body)}."
+                    f"{plan_event} : {plan_context} <- {'; '.join(plan_body)}."
                 )
             else:
                 for features in relations.values():
@@ -807,21 +807,21 @@ class BOWLDIConverter:
                 individual, property_, value
             ).isDefinedBy.append(source)
 
-    def create_agentspeak_plan(self, rule, event, context, body):
-        rule_individual = self.create_individual(rule, "rule")
+    def create_agentspeak_plan(self, plan, event, context, body):
+        plan_individual = self.create_individual(plan, "plan")
         self.add_data_property_to_individual(
-            rule_individual.name, "rule_has_event", str(event)
+            plan_individual.name, "plan_has_event", str(event)
         )
         self.add_data_property_to_individual(
-            rule_individual.name, "rule_has_context", str(context)
+            plan_individual.name, "plan_has_context", str(context)
         )
         for body_part in body:
             body_part = body_part.strip()
             self.add_data_property_to_individual(
-                rule_individual.name, "rule_has_body", body_part
+                plan_individual.name, "plan_has_body", body_part
             )
 
-        return rule_individual
+        return plan_individual
 
     def save_ontology(self, file_path: Path):
         if file_path.exists():
@@ -875,7 +875,6 @@ class BOWLDIConverter:
 
         for match in matches:
             concept_type = match.group("type")
-            # elements = match.group("elements").split(", ")
             elements = match.group("elements")
             elements_list = re.findall(r"\".*?\"|\'.*?\'|[^,]+", elements)
             elements = [element.strip().strip("'\"") for element in elements_list]
@@ -927,7 +926,7 @@ class BOWLDIConverter:
                 ";"
             )
 
-            self.create_agentspeak_plan(f"rule_{i}", event, context, body)
+            self.create_agentspeak_plan(f"plan_{i}", event, context, body)
 
         print(f"Conversion complete.")
 
