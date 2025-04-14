@@ -5,6 +5,10 @@ import argparse
 import os
 import json
 import hashlib
+import agentspeak
+from agentspeak import Literal
+from agentspeak.runtime import Intention
+
 from pprint import pprint
 
 import re
@@ -30,7 +34,6 @@ class BOWLDIConverter:
             )
 
         else:
-
             self.input_data_path = input_data_path
             self.data = {}
 
@@ -51,18 +54,9 @@ class BOWLDIConverter:
                     self.output_data_path.resolve().as_uri()
                 )
 
-                self.input_data = input_data
-                self.parse_agentspeak_expressions(self.input_data)
-                self.save_ontology(self.output_data_path)
-
-                self.prepare_response(
-                    status="success",
-                    message="Conversion complete.",
-                    file=self.output_data_path.resolve().as_posix(),
-                )
+                self.convert_asl_string_to_ontology(input_data)
 
             else:
-
                 if Path(self.input_data_path).exists():
                     self.input_data_path = Path(self.input_data_path).resolve()
 
@@ -78,14 +72,8 @@ class BOWLDIConverter:
                         )
 
                         expressions = self.input_data_path.read_text()
-                        self.parse_agentspeak_expressions(expressions)
 
-                        self.save_ontology(self.output_data_path)
-                    self.prepare_response(
-                        status="success",
-                        message="Conversion complete.",
-                        file=self.output_data_path.resolve().as_posix(),
-                    )
+                        self.convert_asl_string_to_ontology(expressions)
 
                 else:
                     self.prepare_response(
@@ -968,6 +956,131 @@ class BOWLDIConverter:
 
     def get_response(self):
         return self.response
+
+    def add_beliefs_to_agent(self, agent: agentspeak.runtime.Agent=None, beliefs=None):
+        if not beliefs:
+            result = json.loads(self.convert_asl_output_to_beliefs())
+
+        if result.get("status") == "error":
+            return result
+        else:
+            beliefs = self.beliefs
+
+        if not agent:
+            return self.prepare_response(
+                status="error",
+                message=f"No agent provided.",
+            )
+        
+        for belief in beliefs:
+            agent.call(
+                agentspeak.Trigger.addition,
+                agentspeak.GoalType.belief,
+                belief, Intention())
+
+        return self.prepare_response(
+            status="success",
+            message=f"Beliefs added to agent.",
+        )
+
+    def convert_asl_string_to_belief(self, asl_string: str=None):
+        import re
+
+        if not asl_string:
+            return self.prepare_response(
+                status="error",
+                message=f"No AgentSpeak input found.",
+            )
+
+        # Regular expression to match functor and terms
+        pattern = r'(\w+)\((.*?)\)(?:\[source\(\"(.*?)\"\)\])?'
+        match = re.match(pattern, asl_string)
+
+        if match:
+            string_term = False
+            # Parse the matched groups
+            functor = match.group(1)
+            terms = match.group(2).split(", ")[0:]
+            if any('"' in term for term in terms):
+                string_term = True
+            terms = [term.strip().strip("'\"") for term in terms]
+            if len(terms) > 3:
+                terms = [terms[0], terms[1], ", ".join(terms[2:])]
+            source = match.group(3) if match.group(3) else 'self'
+
+            # Convert terms to Literal objects
+            if string_term:
+                literal_terms = [Literal(term) for term in terms[:2]] + [terms[2]]
+            else:
+                literal_terms = [Literal(term) for term in terms]
+
+            # Create the belief structure
+            belief = Literal(functor, literal_terms, frozenset({Literal('source', {source})}))
+            return belief
+
+    def convert_asl_output_to_beliefs(self):
+        agentspeak_output = self.agentspeak_output.split("\n")
+
+        self.beliefs = [self.convert_asl_string_to_belief(line) for line in agentspeak_output]
+
+        return self.prepare_response(
+            status="success",
+            message=f"Beliefs converted."
+        )
+
+    def dump_agent_beliefs(self, agent: agentspeak.runtime.Agent=None):
+        if not agent:
+            return self.prepare_response(
+                status="error",
+                message=f"No agent provided.",
+            )
+
+        beliefs_dump = [agentspeak.asl_repr(belief) for beliefs in agent.beliefs.values() for belief in beliefs]
+        beliefs_dump = "\n".join(beliefs_dump)
+
+        return self.prepare_response(
+            status="success",
+            message=f"Beliefs dumped.",
+            output=beliefs_dump
+        )
+
+    def convert_agent_beliefs_to_ontology(self, agent: agentspeak.runtime.Agent=None, output_data_path: str=None):
+        if not agent:
+            return self.prepare_response(
+                status="error",
+                message=f"No agent provided.",
+            )
+
+        if output_data_path:
+            self.output_data_path = Path(output_data_path)
+        else:
+            self.output_data_path = Path("output.owl")
+
+        self.ontology, self.world = self.load_ontology(
+            self.output_data_path.resolve().as_uri()
+        )
+
+        agent_beliefs = json.loads(self.dump_agent_beliefs(agent)).get("output")
+
+        self.input_data = agent_beliefs
+        return self.convert_asl_string_to_ontology(agent_beliefs)
+
+    def convert_asl_string_to_ontology(self, input_data: str=None) -> str:
+
+        if not input_data:
+            return self.prepare_response(
+                status="error",
+                message=f"No AgentSpeak input data found.",
+            )
+
+        self.parse_agentspeak_expressions(input_data)
+        self.save_ontology(self.output_data_path)
+
+        return self.prepare_response(
+            status="success",
+            message="Conversion complete.",
+            file=self.output_data_path.resolve().as_posix(),
+        )
 
 
 # Run the main function
