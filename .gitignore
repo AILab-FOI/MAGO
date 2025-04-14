@@ -5,3 +5,4 @@ Deliverables/Phase 1/Implementation/Template/*
 Deliverables/Phase 1/Implementation/test.py
 Deliverables/Phase 1/Implementation/agent_test.py
 Deliverables/Phase 1/Implementation/log.log
+*/__pycache__/*
