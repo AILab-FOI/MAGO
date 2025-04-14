@@ -1,7 +1,7 @@
 [project]
 name = "bowldi"
 version = "0.1.0"
-description = "Implementation of BOWLDI -- an OWL to AgentSpeak translator"
+description = "Implementation of BOWLDI -- an OWL to AgentSpeak and vice versa translator"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
