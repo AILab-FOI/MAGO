@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="file:///home/bogdan/Documents/Projekti%20FOI/MAGO/Documents/250400%20BOWLDI%20paper/ontology.owl"
+         xmlns="file:///home/bogdan/Documents/Projekti%20FOI/MAGO/Documents/250400%20BOWLDI%20paper/ontology.owl#"
+         xmlns:lotr="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Documents/250320%20Class/lotr_example.owl#">
+
+<owl:Ontology rdf:about="file:///home/bogdan/Documents/Projekti%20FOI/MAGO/Documents/250400%20BOWLDI%20paper/ontology.owl">
+  <owl:imports rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Documents/250320%20Class/lotr_example.owl"/>
+</owl:Ontology>
+
+<owl:NamedIndividual rdf:about="#gandalf_the_grey">
+  <rdf:type rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Documents/250320%20Class/lotr_example.owl#wizard"/>
+  <rdfs:label xml:lang="en-gb">gandalf the grey</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">self</rdfs:isDefinedBy>
+  <lotr:has_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gandalf the Grey</lotr:has_name>
+  <lotr:has_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mithrandir</lotr:has_name>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#aragorn_son_of_arathorn">
+  <rdf:type rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Documents/250320%20Class/lotr_example.owl#human"/>
+  <lotr:is_friend_with rdf:resource="#gandalf_the_grey"/>
+  <lotr:is_friend_with rdf:resource="#legolas"/>
+  <rdfs:label xml:lang="en-gb">aragorn son of arathorn</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">self</rdfs:isDefinedBy>
+  <lotr:has_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aragorn, son of Arathorn</lotr:has_name>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#legolas">
+  <rdf:type rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Documents/250320%20Class/lotr_example.owl#elf"/>
+  <rdfs:label xml:lang="en-gb">legolas</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">self</rdfs:isDefinedBy>
+  <lotr:has_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Legolas Greenleaf</lotr:has_name>
+</owl:NamedIndividual>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="#legolas"/>
+  <owl:annotatedProperty rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Documents/250320%20Class/lotr_example.owl#has_name"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Legolas Greenleaf</owl:annotatedTarget>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">self</rdfs:isDefinedBy>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="#aragorn_son_of_arathorn"/>
+  <owl:annotatedProperty rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Documents/250320%20Class/lotr_example.owl#is_friend_with"/>
+  <owl:annotatedTarget rdf:resource="#legolas"/>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">self</rdfs:isDefinedBy>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="#aragorn_son_of_arathorn"/>
+  <owl:annotatedProperty rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Documents/250320%20Class/lotr_example.owl#is_friend_with"/>
+  <owl:annotatedTarget rdf:resource="#gandalf_the_grey"/>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">self</rdfs:isDefinedBy>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="#aragorn_son_of_arathorn"/>
+  <owl:annotatedProperty rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Documents/250320%20Class/lotr_example.owl#has_name"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aragorn, son of Arathorn</owl:annotatedTarget>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">self</rdfs:isDefinedBy>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="#gandalf_the_grey"/>
+  <owl:annotatedProperty rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Documents/250320%20Class/lotr_example.owl#has_name"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mithrandir</owl:annotatedTarget>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">self</rdfs:isDefinedBy>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedSource rdf:resource="#gandalf_the_grey"/>
+  <owl:annotatedProperty rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Documents/250320%20Class/lotr_example.owl#has_name"/>
+  <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gandalf the Grey</owl:annotatedTarget>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">self</rdfs:isDefinedBy>
+</owl:Axiom>
+
+
+</rdf:RDF>
