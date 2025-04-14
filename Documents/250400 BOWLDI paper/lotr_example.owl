@@ -3,10 +3,10 @@
          xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xml:base="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Documents/250320%20Class/lotr_example.owl"
-         xmlns="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Documents/250320%20Class/lotr_example.owl#">
+         xml:base="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Documents/250400%20BOWLDI%20paper/lotr_example.owl"
+         xmlns="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Documents/250400%20BOWLDI%20paper/lotr_example.owl#">
 
-<owl:Ontology rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Documents/250320%20Class/lotr_example.owl"/>
+<owl:Ontology rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Documents/250400%20BOWLDI%20paper/lotr_example.owl"/>
 
 <owl:ObjectProperty rdf:about="#has_king">
   <rdfs:domain rdf:resource="#kingdom"/>
