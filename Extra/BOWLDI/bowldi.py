@@ -931,7 +931,7 @@ class BOWLDIConverter:
             print(
                 f"Conversion complete. Output saved to {Path(self.output_data_path).resolve()}"
             )
-            self.prepare_response(
+            return self.prepare_response(
                 status="success",
                 message="Conversion complete.",
                 output=Path(self.output_data_path).resolve().as_uri()
