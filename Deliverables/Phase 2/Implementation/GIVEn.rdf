@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/bogdan/ontologies/2025/5/untitled-ontology-83/"
-     xml:base="http://www.semanticweb.org/bogdan/ontologies/2025/5/untitled-ontology-83/"
+<rdf:RDF xmlns="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf#"
+     xml:base="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:cgo="http://autosemanticgame.eu/ontologies/cgo#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -11,10 +11,18 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/bogdan/ontologies/2025/5/untitled-ontology-83">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf">
         <owl:imports rdf:resource="http://autosemanticgame.eu/ontologies/cgo#"/>
         <owl:imports rdf:resource="http://purl.org/net/VideoGameOntology"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Previous%20Work/MAMbO5.owl"/>
+        <dc:description>This is an ontology that combines video game-related concepts with concepts related to organisational modelling of multi-agent systems as intelligent virtual environments.</dc:description>
+        <dc:title>Gamified Intelligent Virtual Environment Ontology (GIVEn)</dc:title>
+        <terms:description>This is an ontology that combines video game-related concepts with concepts related to organisational modelling of multi-agent systems as intelligent virtual environments.</terms:description>
+        <terms:partOf>This study is supported by the project MOBODL-2023-08-5618 funded by the European Union and the Croatian Science Foundation.</terms:partOf>
+        <terms:title>Gamified Intelligent Virtual Environment Ontology (GIVEn)</terms:title>
+        <rdfs:comment>This is an ontology that combines video game-related concepts with concepts related to organisational modelling of multi-agent systems as intelligent virtual environments.</rdfs:comment>
+        <foaf:homepage>https://github.com/AILab-FOI/MAGO</foaf:homepage>
+        <foaf:name>Gamified Intelligent Virtual Environment Ontology (GIVEn)</foaf:name>
     </owl:Ontology>
     
 
@@ -30,19 +38,19 @@
     
 
 
-    <!-- http://www.semanticweb.org/bogdan/ontologies/2025/5/untitled-ontology-83#OWLObjectProperty_0658272e_b138_4c80_96d5_1666a2a8e370 -->
+    <!-- https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf#OWLObjectProperty_0658272e_b138_4c80_96d5_1666a2a8e370 -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2025/5/untitled-ontology-83#OWLObjectProperty_0658272e_b138_4c80_96d5_1666a2a8e370">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2025/5/untitled-ontology-83#OWLClass_1dcf5fa9_2d15_4876_8912_5a3079ab8ea3"/>
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf#OWLObjectProperty_0658272e_b138_4c80_96d5_1666a2a8e370">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf#OWLClass_1dcf5fa9_2d15_4876_8912_5a3079ab8ea3"/>
         <rdfs:range rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Objective"/>
         <rdfs:label xml:lang="en-gb">consists of objectives</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/bogdan/ontologies/2025/5/untitled-ontology-83#OWLObjectProperty_0fb074df_59e7_46e3_873f_42ac624a80cc -->
+    <!-- https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf#OWLObjectProperty_0fb074df_59e7_46e3_873f_42ac624a80cc -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2025/5/untitled-ontology-83#OWLObjectProperty_0fb074df_59e7_46e3_873f_42ac624a80cc">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf#OWLObjectProperty_0fb074df_59e7_46e3_873f_42ac624a80cc">
         <rdfs:domain rdf:resource="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Observable_Event"/>
         <rdfs:range rdf:resource="http://purl.org/net/VideoGameOntology#Achievement"/>
         <rdfs:label xml:lang="en-gb">provides achievement</rdfs:label>
@@ -50,9 +58,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/bogdan/ontologies/2025/5/untitled-ontology-83#OWLObjectProperty_1b06a07c_e2fe_4d5c_affb_36d050530a9c -->
+    <!-- https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf#OWLObjectProperty_1b06a07c_e2fe_4d5c_affb_36d050530a9c -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2025/5/untitled-ontology-83#OWLObjectProperty_1b06a07c_e2fe_4d5c_affb_36d050530a9c">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf#OWLObjectProperty_1b06a07c_e2fe_4d5c_affb_36d050530a9c">
         <rdfs:domain rdf:resource="http://autosemanticgame.eu/ontologies/cgo#Narrative"/>
         <rdfs:range rdf:resource="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Workspace"/>
         <rdfs:label xml:lang="en-gb">depends on workspace</rdfs:label>
@@ -60,39 +68,39 @@
     
 
 
-    <!-- http://www.semanticweb.org/bogdan/ontologies/2025/5/untitled-ontology-83#OWLObjectProperty_1c340508_ab6d_4a77_b307_913a61c0f36d -->
+    <!-- https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf#OWLObjectProperty_1c340508_ab6d_4a77_b307_913a61c0f36d -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2025/5/untitled-ontology-83#OWLObjectProperty_1c340508_ab6d_4a77_b307_913a61c0f36d">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf#OWLObjectProperty_1c340508_ab6d_4a77_b307_913a61c0f36d">
         <rdfs:domain rdf:resource="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Agent"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2025/5/untitled-ontology-83#OWLClass_0c864038_db01_4f7d_87c0_650ad7f84af1"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf#OWLClass_0c864038_db01_4f7d_87c0_650ad7f84af1"/>
         <rdfs:label xml:lang="en-gb">is described using</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/bogdan/ontologies/2025/5/untitled-ontology-83#OWLObjectProperty_5230412c_73be_4291_839e_734a671a5b28 -->
+    <!-- https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf#OWLObjectProperty_5230412c_73be_4291_839e_734a671a5b28 -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2025/5/untitled-ontology-83#OWLObjectProperty_5230412c_73be_4291_839e_734a671a5b28">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf#OWLObjectProperty_5230412c_73be_4291_839e_734a671a5b28">
         <rdfs:domain rdf:resource="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Observable_Event"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2025/5/untitled-ontology-83#OWLClass_1dcf5fa9_2d15_4876_8912_5a3079ab8ea3"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf#OWLClass_1dcf5fa9_2d15_4876_8912_5a3079ab8ea3"/>
         <rdfs:label xml:lang="en-gb">depends on</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/bogdan/ontologies/2025/5/untitled-ontology-83#OWLObjectProperty_5daa59b7_9bbb_40b5_800a_2ab2f3537424 -->
+    <!-- https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf#OWLObjectProperty_5daa59b7_9bbb_40b5_800a_2ab2f3537424 -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2025/5/untitled-ontology-83#OWLObjectProperty_5daa59b7_9bbb_40b5_800a_2ab2f3537424">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf#OWLObjectProperty_5daa59b7_9bbb_40b5_800a_2ab2f3537424">
         <rdfs:domain rdf:resource="http://purl.org/net/VideoGameOntology#Achievement"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2025/5/untitled-ontology-83#OWLClass_0c864038_db01_4f7d_87c0_650ad7f84af1"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf#OWLClass_0c864038_db01_4f7d_87c0_650ad7f84af1"/>
         <rdfs:label xml:lang="en-gb">affects inventory</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/bogdan/ontologies/2025/5/untitled-ontology-83#OWLObjectProperty_88097da3_4059_4b9c_8161_89d2417f8a5e -->
+    <!-- https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf#OWLObjectProperty_88097da3_4059_4b9c_8161_89d2417f8a5e -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bogdan/ontologies/2025/5/untitled-ontology-83#OWLObjectProperty_88097da3_4059_4b9c_8161_89d2417f8a5e">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf#OWLObjectProperty_88097da3_4059_4b9c_8161_89d2417f8a5e">
         <rdfs:domain rdf:resource="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Observable_Event"/>
         <rdfs:range rdf:resource="http://autosemanticgame.eu/ontologies/cgo#Narrative"/>
         <rdfs:label xml:lang="en-gb">affects narrative</rdfs:label>
@@ -163,7 +171,7 @@
     <!-- http://personales.upv.es/ccarrasc/ooooaflsmas#Objective -->
 
     <rdf:Description rdf:about="http://personales.upv.es/ccarrasc/ooooaflsmas#Objective">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2025/5/untitled-ontology-83#OWLClass_1dcf5fa9_2d15_4876_8912_5a3079ab8ea3"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf#OWLClass_1dcf5fa9_2d15_4876_8912_5a3079ab8ea3"/>
     </rdf:Description>
     
 
@@ -224,36 +232,36 @@
     
 
 
-    <!-- http://www.semanticweb.org/bogdan/ontologies/2025/5/untitled-ontology-83#OWLClass_0c864038_db01_4f7d_87c0_650ad7f84af1 -->
+    <!-- https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf#OWLClass_0c864038_db01_4f7d_87c0_650ad7f84af1 -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2025/5/untitled-ontology-83#OWLClass_0c864038_db01_4f7d_87c0_650ad7f84af1">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf#OWLClass_0c864038_db01_4f7d_87c0_650ad7f84af1">
         <rdfs:subClassOf rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#KnowledgeArtifact"/>
         <rdfs:label xml:lang="en-gb">Inventory</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/bogdan/ontologies/2025/5/untitled-ontology-83#OWLClass_1dcf5fa9_2d15_4876_8912_5a3079ab8ea3 -->
+    <!-- https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf#OWLClass_1dcf5fa9_2d15_4876_8912_5a3079ab8ea3 -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2025/5/untitled-ontology-83#OWLClass_1dcf5fa9_2d15_4876_8912_5a3079ab8ea3">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf#OWLClass_1dcf5fa9_2d15_4876_8912_5a3079ab8ea3">
         <rdfs:label xml:lang="en-gb">Quest</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/bogdan/ontologies/2025/5/untitled-ontology-83#OWLClass_455b23c2_5f8a_4397_841f_33132d3b92a2 -->
+    <!-- https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf#OWLClass_455b23c2_5f8a_4397_841f_33132d3b92a2 -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2025/5/untitled-ontology-83#OWLClass_455b23c2_5f8a_4397_841f_33132d3b92a2">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf#OWLClass_455b23c2_5f8a_4397_841f_33132d3b92a2">
         <rdfs:subClassOf rdf:resource="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#IVE_Law"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bogdan/ontologies/2025/5/untitled-ontology-83#OWLClass_b16d01eb_7c6a_47a7_b7a4_32d3f83f30f3"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf#OWLClass_b16d01eb_7c6a_47a7_b7a4_32d3f83f30f3"/>
         <rdfs:label xml:lang="en-gb">Local rule</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/bogdan/ontologies/2025/5/untitled-ontology-83#OWLClass_b16d01eb_7c6a_47a7_b7a4_32d3f83f30f3 -->
+    <!-- https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf#OWLClass_b16d01eb_7c6a_47a7_b7a4_32d3f83f30f3 -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/bogdan/ontologies/2025/5/untitled-ontology-83#OWLClass_b16d01eb_7c6a_47a7_b7a4_32d3f83f30f3">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf#OWLClass_b16d01eb_7c6a_47a7_b7a4_32d3f83f30f3">
         <rdfs:subClassOf rdf:resource="http://personales.upv.es/ccarrasc/ooooaflsmas#Norm"/>
         <rdfs:label xml:lang="en-gb">Rule</rdfs:label>
     </owl:Class>
