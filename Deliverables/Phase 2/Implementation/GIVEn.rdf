@@ -16,13 +16,13 @@
         <owl:imports rdf:resource="http://purl.org/net/VideoGameOntology"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Previous%20Work/MAMbO5.owl"/>
         <dc:description>This is an ontology that combines video game-related concepts with concepts related to organisational modelling of multi-agent systems as intelligent virtual environments.</dc:description>
-        <dc:title>Gamified Intelligent Virtual Environment Ontology (GIVEn)</dc:title>
+        <dc:title>Games in Intelligent Virtual Environments Ontology (GIVEn)</dc:title>
         <terms:description>This is an ontology that combines video game-related concepts with concepts related to organisational modelling of multi-agent systems as intelligent virtual environments.</terms:description>
         <terms:partOf>This study is supported by the project MOBODL-2023-08-5618 funded by the European Union and the Croatian Science Foundation.</terms:partOf>
-        <terms:title>Gamified Intelligent Virtual Environment Ontology (GIVEn)</terms:title>
+        <terms:title>Games in Intelligent Virtual Environments Ontology (GIVEn)</terms:title>
         <rdfs:comment>This is an ontology that combines video game-related concepts with concepts related to organisational modelling of multi-agent systems as intelligent virtual environments.</rdfs:comment>
         <foaf:homepage>https://github.com/AILab-FOI/MAGO</foaf:homepage>
-        <foaf:name>Gamified Intelligent Virtual Environment Ontology (GIVEn)</foaf:name>
+        <foaf:name>Games in Intelligent Virtual Environments Ontology (GIVEn)</foaf:name>
     </owl:Ontology>
     
 
@@ -188,6 +188,14 @@
 
     <rdf:Description rdf:about="http://purl.org/net/VideoGameOntology#Character">
         <rdfs:subClassOf rdf:resource="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Agent"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Feature -->
+
+    <rdf:Description rdf:about="http://purl.org/net/VideoGameOntology#Feature">
+        <rdfs:subClassOf rdf:resource="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Observable_Property"/>
     </rdf:Description>
     
 
