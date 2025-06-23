@@ -108,6 +108,16 @@
     
 
 
+    <!-- https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf#OWLObjectProperty_eb2068d8_392c_4fd7_9ddf_31245a7f9a4d -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf#OWLObjectProperty_eb2068d8_392c_4fd7_9ddf_31245a7f9a4d">
+        <rdfs:domain rdf:resource="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Agent"/>
+        <rdfs:range rdf:resource="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Observable_Property"/>
+        <rdfs:label xml:lang="en-gb">has observable property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
