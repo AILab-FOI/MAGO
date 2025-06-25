@@ -1,0 +1,314 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/MAGO-Ga.owx"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/MAGO-Ga.owx">
+    <Prefix name="" IRI="http://www.semanticweb.org/bogdan/ontologies/2025/5/untitled-ontology-91/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">The MAGO-Ga ontology is designed to model gamified multi-agent systems modelled as intelligent virtual environments.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal xml:lang="en">The Gamification of an Intelligent Virtual Environment Ontology (MAGO-Ga)</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#OWLClass_0613fb28_22ee_4c72_939f_4344f65624d7"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_161fdab5_a39e_42b4_9cee_84a03f52ee88"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_19a73670_711c_40c7_a371_230c83aaa5b5"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_420f7e1b_f0c8_4d4c_abfb_365f50700f53"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_5f4dc944_3afc_4327_873a_483885f4114b"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_6dae9e4d_d430_445c_b054_d2db632a0da9"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_abf22d34_f468_41bb_826c_c555a1846b3f"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_ade1dd36_ed64_46ec_842b_e97727baed7f"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_b3f8233f_1eca_4632_895f_8ec633cf37e4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_d7900a7c_c25b_4ea3_ad4e_8716bbf24045"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#OWLObjectProperty_033c65dc_4b0b_49a0_9bde_461467eb76d6"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#OWLObjectProperty_268d7ca3_6f86_4e57_9627_e0320f1d33d1"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#OWLObjectProperty_37fa3a36_2699_4e83_b0d7_8b8e6349fd73"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#OWLObjectProperty_67cb4fc7_8aa5_4668_a353_308e7d7b6dd1"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#OWLObjectProperty_68e185c9_f82f_4507_8f25_4d50e8b3cc3c"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#OWLObjectProperty_8c046b10_bc4c_4cb2_aaf8_98113094df12"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#OWLObjectProperty_a5d640f9_c2fc_479c_ab6a_0d354f65e652"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#OWLObjectProperty_dcd17b13_165e_4453_a7f5_24ded1c0bc7e"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#OWLDataProperty_40390f82_26b7_4600_a674_c779002bf747"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#OWLDataProperty_aaa77578_43f1_4b25_9e75_c8fdd0126c56"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OWLNamedIndividual_dc90836e_f55d_4c85_93b4_10b826be7ff7"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#OWLClass_19a73670_711c_40c7_a371_230c83aaa5b5"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_420f7e1b_f0c8_4d4c_abfb_365f50700f53"/>
+        <Class IRI="#OWLClass_b3f8233f_1eca_4632_895f_8ec633cf37e4"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_5f4dc944_3afc_4327_873a_483885f4114b"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_6dae9e4d_d430_445c_b054_d2db632a0da9"/>
+        <Class IRI="http://personales.upv.es/ccarrasc/ooooaflsmas#Objective"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_abf22d34_f468_41bb_826c_c555a1846b3f"/>
+        <Class IRI="#OWLClass_b3f8233f_1eca_4632_895f_8ec633cf37e4"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_ade1dd36_ed64_46ec_842b_e97727baed7f"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_d7900a7c_c25b_4ea3_ad4e_8716bbf24045"/>
+        <Class IRI="http://personales.upv.es/ccarrasc/ooooaflsmas#KnowledgeArtifact"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#OWLClass_d7900a7c_c25b_4ea3_ad4e_8716bbf24045"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_dc90836e_f55d_4c85_93b4_10b826be7ff7"/>
+    </ClassAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#OWLObjectProperty_67cb4fc7_8aa5_4668_a353_308e7d7b6dd1"/>
+        <ObjectProperty IRI="#OWLObjectProperty_68e185c9_f82f_4507_8f25_4d50e8b3cc3c"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#OWLObjectProperty_37fa3a36_2699_4e83_b0d7_8b8e6349fd73"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#OWLObjectProperty_a5d640f9_c2fc_479c_ab6a_0d354f65e652"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#OWLObjectProperty_033c65dc_4b0b_49a0_9bde_461467eb76d6"/>
+        <Class IRI="#OWLClass_d7900a7c_c25b_4ea3_ad4e_8716bbf24045"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#OWLObjectProperty_268d7ca3_6f86_4e57_9627_e0320f1d33d1"/>
+        <Class IRI="#OWLClass_d7900a7c_c25b_4ea3_ad4e_8716bbf24045"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#OWLObjectProperty_37fa3a36_2699_4e83_b0d7_8b8e6349fd73"/>
+        <Class IRI="#OWLClass_0613fb28_22ee_4c72_939f_4344f65624d7"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#OWLObjectProperty_68e185c9_f82f_4507_8f25_4d50e8b3cc3c"/>
+        <Class IRI="#OWLClass_b3f8233f_1eca_4632_895f_8ec633cf37e4"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#OWLObjectProperty_8c046b10_bc4c_4cb2_aaf8_98113094df12"/>
+        <Class IRI="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Observable_Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#OWLObjectProperty_a5d640f9_c2fc_479c_ab6a_0d354f65e652"/>
+        <ObjectUnionOf>
+            <Class IRI="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Agent"/>
+            <Class IRI="#OWLClass_0613fb28_22ee_4c72_939f_4344f65624d7"/>
+            <Class IRI="#OWLClass_d7900a7c_c25b_4ea3_ad4e_8716bbf24045"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#OWLObjectProperty_dcd17b13_165e_4453_a7f5_24ded1c0bc7e"/>
+        <Class IRI="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#OWLObjectProperty_033c65dc_4b0b_49a0_9bde_461467eb76d6"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#GainEvent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#OWLObjectProperty_268d7ca3_6f86_4e57_9627_e0320f1d33d1"/>
+        <Class IRI="#OWLClass_6dae9e4d_d430_445c_b054_d2db632a0da9"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#OWLObjectProperty_37fa3a36_2699_4e83_b0d7_8b8e6349fd73"/>
+        <Class IRI="#OWLClass_b3f8233f_1eca_4632_895f_8ec633cf37e4"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#OWLObjectProperty_68e185c9_f82f_4507_8f25_4d50e8b3cc3c"/>
+        <Class IRI="#OWLClass_161fdab5_a39e_42b4_9cee_84a03f52ee88"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#OWLObjectProperty_8c046b10_bc4c_4cb2_aaf8_98113094df12"/>
+        <Class IRI="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Physical_Artifact"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#OWLObjectProperty_a5d640f9_c2fc_479c_ab6a_0d354f65e652"/>
+        <Class IRI="#OWLClass_19a73670_711c_40c7_a371_230c83aaa5b5"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#OWLObjectProperty_dcd17b13_165e_4453_a7f5_24ded1c0bc7e"/>
+        <Class IRI="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Observable_Property"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#OWLDataProperty_40390f82_26b7_4600_a674_c779002bf747"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#OWLDataProperty_40390f82_26b7_4600_a674_c779002bf747"/>
+        <Class IRI="#OWLClass_0613fb28_22ee_4c72_939f_4344f65624d7"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#OWLDataProperty_40390f82_26b7_4600_a674_c779002bf747"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#OWLDataProperty_aaa77578_43f1_4b25_9e75_c8fdd0126c56"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0613fb28_22ee_4c72_939f_4344f65624d7</IRI>
+        <Literal xml:lang="en-gb">Feature weight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_161fdab5_a39e_42b4_9cee_84a03f52ee88</IRI>
+        <Literal xml:lang="en-gb">Personality model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_19a73670_711c_40c7_a371_230c83aaa5b5</IRI>
+        <Literal xml:lang="en-gb">Personality profile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_420f7e1b_f0c8_4d4c_abfb_365f50700f53</IRI>
+        <Literal xml:lang="en-gb">Facet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_5f4dc944_3afc_4327_873a_483885f4114b</IRI>
+        <Literal xml:lang="en-gb">Gender</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_6dae9e4d_d430_445c_b054_d2db632a0da9</IRI>
+        <Literal xml:lang="en-gb">Gamification goal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_abf22d34_f468_41bb_826c_c555a1846b3f</IRI>
+        <Literal xml:lang="en-gb">Trait</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_ade1dd36_ed64_46ec_842b_e97727baed7f</IRI>
+        <Literal xml:lang="en-gb">Age</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_b3f8233f_1eca_4632_895f_8ec633cf37e4</IRI>
+        <Literal xml:lang="en-gb">Personality feature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_d7900a7c_c25b_4ea3_ad4e_8716bbf24045</IRI>
+        <Literal xml:lang="en-gb">Gamification technique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLDataProperty_40390f82_26b7_4600_a674_c779002bf747</IRI>
+        <Literal xml:lang="en-gb">has weight value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLDataProperty_aaa77578_43f1_4b25_9e75_c8fdd0126c56</IRI>
+        <Literal xml:lang="en-gb">has name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLNamedIndividual_dc90836e_f55d_4c85_93b4_10b826be7ff7</IRI>
+        <Literal xml:lang="en-gb">price optimiser</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLObjectProperty_033c65dc_4b0b_49a0_9bde_461467eb76d6</IRI>
+        <Literal xml:lang="en-gb">has gamification outcome</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLObjectProperty_268d7ca3_6f86_4e57_9627_e0320f1d33d1</IRI>
+        <Literal xml:lang="en-gb">has gamification goal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLObjectProperty_37fa3a36_2699_4e83_b0d7_8b8e6349fd73</IRI>
+        <Literal xml:lang="en-gb">has personality feature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLObjectProperty_67cb4fc7_8aa5_4668_a353_308e7d7b6dd1</IRI>
+        <Literal xml:lang="en-gb">defines feature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLObjectProperty_68e185c9_f82f_4507_8f25_4d50e8b3cc3c</IRI>
+        <Literal xml:lang="en-gb">is a part of model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLObjectProperty_8c046b10_bc4c_4cb2_aaf8_98113094df12</IRI>
+        <Literal xml:lang="en-gb">has event object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLObjectProperty_a5d640f9_c2fc_479c_ab6a_0d354f65e652</IRI>
+        <Literal xml:lang="en-gb">has personality profile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLObjectProperty_dcd17b13_165e_4453_a7f5_24ded1c0bc7e</IRI>
+        <Literal xml:lang="en-gb">has observable property</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,306 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf">
+    <Prefix name="" IRI="https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Deliverables/Phase%202/Implementation/GIVEn.rdf#"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="cgo" IRI="http://autosemanticgame.eu/ontologies/cgo#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
+    <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
+    <Import>http://autosemanticgame.eu/ontologies/cgo#</Import>
+    <Import>http://purl.org/net/VideoGameOntology</Import>
+    <Import>https://raw.githubusercontent.com/AILab-FOI/MAGO/refs/heads/main/Previous%20Work/MAMbO5.owl</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <Literal>This is an ontology that combines video game-related concepts with concepts related to organisational modelling of multi-agent systems as intelligent virtual environments.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <Literal>Games in Intelligent Virtual Environments Ontology (GIVEn)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
+        <Literal>This is an ontology that combines video game-related concepts with concepts related to organisational modelling of multi-agent systems as intelligent virtual environments.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:partOf"/>
+        <Literal>This study is supported by the project MOBODL-2023-08-5618 funded by the European Union and the Croatian Science Foundation.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
+        <Literal>Games in Intelligent Virtual Environments Ontology (GIVEn)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>This is an ontology that combines video game-related concepts with concepts related to organisational modelling of multi-agent systems as intelligent virtual environments.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="foaf:homepage"/>
+        <Literal>https://github.com/AILab-FOI/MAGO</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="foaf:name"/>
+        <Literal>Games in Intelligent Virtual Environments Ontology (GIVEn)</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#OWLClass_0c864038_db01_4f7d_87c0_650ad7f84af1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_1dcf5fa9_2d15_4876_8912_5a3079ab8ea3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_455b23c2_5f8a_4397_841f_33132d3b92a2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_b16d01eb_7c6a_47a7_b7a4_32d3f83f30f3"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#OWLObjectProperty_0658272e_b138_4c80_96d5_1666a2a8e370"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#OWLObjectProperty_0fb074df_59e7_46e3_873f_42ac624a80cc"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#OWLObjectProperty_1b06a07c_e2fe_4d5c_affb_36d050530a9c"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#OWLObjectProperty_1c340508_ab6d_4a77_b307_913a61c0f36d"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#OWLObjectProperty_5230412c_73be_4291_839e_734a671a5b28"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#OWLObjectProperty_5daa59b7_9bbb_40b5_800a_2ab2f3537424"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#OWLObjectProperty_88097da3_4059_4b9c_8161_89d2417f8a5e"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#OWLObjectProperty_eb2068d8_392c_4fd7_9ddf_31245a7f9a4d"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="cgo:Game"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Game"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class abbreviatedIRI="cgo:Audio"/>
+        <Class IRI="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#IVE_Artifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="cgo:Game"/>
+        <Class IRI="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#IVE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="cgo:GameDesign"/>
+        <Class IRI="http://personales.upv.es/ccarrasc/ooooaflsmas#Norm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="cgo:Gameplay"/>
+        <Class IRI="http://personales.upv.es/ccarrasc/ooooaflsmas#Strategy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="cgo:LevelDesign"/>
+        <Class IRI="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#IVE_Artifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="cgo:Visuals"/>
+        <Class IRI="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#IVE_Artifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://personales.upv.es/ccarrasc/ooooaflsmas#Objective"/>
+        <Class IRI="#OWLClass_1dcf5fa9_2d15_4876_8912_5a3079ab8ea3"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Achievement"/>
+        <Class IRI="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Artifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Character"/>
+        <Class IRI="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Feature"/>
+        <Class IRI="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Observable_Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Game"/>
+        <Class IRI="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#IVE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/VideoGameOntology#InstantaneousEvent"/>
+        <Class IRI="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Observable_Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Item"/>
+        <Class IRI="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Physical_Artifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Player"/>
+        <Class IRI="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Human_Immersed_Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/VideoGameOntology#PlayingArea"/>
+        <Class IRI="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#IVE_Workspace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0c864038_db01_4f7d_87c0_650ad7f84af1"/>
+        <Class IRI="http://personales.upv.es/ccarrasc/ooooaflsmas#KnowledgeArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_455b23c2_5f8a_4397_841f_33132d3b92a2"/>
+        <Class IRI="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#IVE_Law"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_455b23c2_5f8a_4397_841f_33132d3b92a2"/>
+        <Class IRI="#OWLClass_b16d01eb_7c6a_47a7_b7a4_32d3f83f30f3"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_b16d01eb_7c6a_47a7_b7a4_32d3f83f30f3"/>
+        <Class IRI="http://personales.upv.es/ccarrasc/ooooaflsmas#Norm"/>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#OWLObjectProperty_0658272e_b138_4c80_96d5_1666a2a8e370"/>
+        <Class IRI="#OWLClass_1dcf5fa9_2d15_4876_8912_5a3079ab8ea3"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#OWLObjectProperty_0fb074df_59e7_46e3_873f_42ac624a80cc"/>
+        <Class IRI="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Observable_Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#OWLObjectProperty_1b06a07c_e2fe_4d5c_affb_36d050530a9c"/>
+        <Class abbreviatedIRI="cgo:Narrative"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#OWLObjectProperty_1c340508_ab6d_4a77_b307_913a61c0f36d"/>
+        <Class IRI="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#OWLObjectProperty_5230412c_73be_4291_839e_734a671a5b28"/>
+        <Class IRI="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Observable_Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#OWLObjectProperty_5daa59b7_9bbb_40b5_800a_2ab2f3537424"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Achievement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#OWLObjectProperty_88097da3_4059_4b9c_8161_89d2417f8a5e"/>
+        <Class IRI="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Observable_Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#OWLObjectProperty_eb2068d8_392c_4fd7_9ddf_31245a7f9a4d"/>
+        <Class IRI="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#OWLObjectProperty_0658272e_b138_4c80_96d5_1666a2a8e370"/>
+        <Class IRI="http://personales.upv.es/ccarrasc/ooooaflsmas#Objective"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#OWLObjectProperty_0fb074df_59e7_46e3_873f_42ac624a80cc"/>
+        <Class IRI="http://purl.org/net/VideoGameOntology#Achievement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#OWLObjectProperty_1b06a07c_e2fe_4d5c_affb_36d050530a9c"/>
+        <Class IRI="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Workspace"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#OWLObjectProperty_1c340508_ab6d_4a77_b307_913a61c0f36d"/>
+        <Class IRI="#OWLClass_0c864038_db01_4f7d_87c0_650ad7f84af1"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#OWLObjectProperty_5230412c_73be_4291_839e_734a671a5b28"/>
+        <Class IRI="#OWLClass_1dcf5fa9_2d15_4876_8912_5a3079ab8ea3"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#OWLObjectProperty_5daa59b7_9bbb_40b5_800a_2ab2f3537424"/>
+        <Class IRI="#OWLClass_0c864038_db01_4f7d_87c0_650ad7f84af1"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#OWLObjectProperty_88097da3_4059_4b9c_8161_89d2417f8a5e"/>
+        <Class abbreviatedIRI="cgo:Narrative"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#OWLObjectProperty_eb2068d8_392c_4fd7_9ddf_31245a7f9a4d"/>
+        <Class IRI="http://personales.upv.es/ccarrasc/JaCalIVE_Ontology#Observable_Property"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0c864038_db01_4f7d_87c0_650ad7f84af1</IRI>
+        <Literal xml:lang="en-gb">Inventory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_1dcf5fa9_2d15_4876_8912_5a3079ab8ea3</IRI>
+        <Literal xml:lang="en-gb">Quest</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_455b23c2_5f8a_4397_841f_33132d3b92a2</IRI>
+        <Literal xml:lang="en-gb">Local rule</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_b16d01eb_7c6a_47a7_b7a4_32d3f83f30f3</IRI>
+        <Literal xml:lang="en-gb">Rule</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLObjectProperty_0658272e_b138_4c80_96d5_1666a2a8e370</IRI>
+        <Literal xml:lang="en-gb">consists of objectives</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLObjectProperty_0fb074df_59e7_46e3_873f_42ac624a80cc</IRI>
+        <Literal xml:lang="en-gb">provides achievement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLObjectProperty_1b06a07c_e2fe_4d5c_affb_36d050530a9c</IRI>
+        <Literal xml:lang="en-gb">depends on workspace</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLObjectProperty_1c340508_ab6d_4a77_b307_913a61c0f36d</IRI>
+        <Literal xml:lang="en-gb">is described using</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLObjectProperty_5230412c_73be_4291_839e_734a671a5b28</IRI>
+        <Literal xml:lang="en-gb">depends on</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLObjectProperty_5daa59b7_9bbb_40b5_800a_2ab2f3537424</IRI>
+        <Literal xml:lang="en-gb">affects inventory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLObjectProperty_88097da3_4059_4b9c_8161_89d2417f8a5e</IRI>
+        <Literal xml:lang="en-gb">affects narrative</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLObjectProperty_eb2068d8_392c_4fd7_9ddf_31245a7f9a4d</IRI>
+        <Literal xml:lang="en-gb">has observable property</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
